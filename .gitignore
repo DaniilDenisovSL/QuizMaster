@@ -1,0 +1,57 @@
+# Visual Studio and IDE local settings
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Build output in every project
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]ld/
+artifacts/
+
+# Tests and coverage
+[Tt]est[Rr]esults/
+coverage/
+*.coverage
+*.coveragexml
+*.trx
+
+# NuGet restore output (keep packages.config and lock files)
+packages/
+*.nupkg
+*.snupkg
+
+# Temporary files and logs
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+~$*
+
+# Private publishing settings and signing keys
+*.pubxml.user
+*.publishsettings
+*.pfx
+*.snk
+.env
+.env.*
+!.env.example
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Keep source, solution, Designer.cs and .resx files tracked.
