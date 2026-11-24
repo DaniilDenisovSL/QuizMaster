@@ -1,0 +1,12 @@
+PASS JSON question bank and localized labels
+PASS year questions contain four years and answer sets stay attached
+PASS correct/wrong scoring and lives
+PASS timeout uses injected clock once
+PASS last life ends session
+PASS last question completes session
+PASS streak and best streak
+PASS duplicate and stale answers are ignored
+PASS shuffle preserves bank and answer ids
+PASS restart clears all state
+PASS leaderboard saves, filters, deduplicates and handles corruption
+Passed 11 backend checks.

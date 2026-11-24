@@ -1,0 +1,3 @@
+Test artifacts: ..\qa\menu-final
+DPI=96; client={Width=1040, Height=700}
+Menu checks: 156, failures: 0.

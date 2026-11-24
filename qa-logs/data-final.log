@@ -1,0 +1,6 @@
+Test artifacts: ..\qa\data-final
+PASS required category
+PASS required difficulty
+PASS null leaderboard record safely handled
+PASS unknown category filtered out
+Data audit: 0 failing cases.

@@ -1,0 +1,33 @@
+PASS JSON question bank and localized labels
+PASS year questions contain four years and answer sets stay attached
+PASS correct/wrong scoring and lives
+PASS timeout uses injected clock once
+PASS last life ends session
+PASS last question completes session
+PASS streak and best streak
+PASS duplicate and stale answers are ignored
+PASS shuffle preserves bank and answer ids
+PASS restart clears all state
+PASS leaderboard saves, filters, deduplicates and handles corruption
+Passed 11 backend checks.
+PASS N01 required category and difficulty
+PASS N02 null question JSON
+PASS N03 null answer JSON
+PASS N04 question bank owns answer collections
+PASS N05 null leaderboard entries
+PASS N06 invalid records, warning and recovery backup
+PASS N07 duplicate and interrupted records on load
+PASS N08 invalid result rejected on save
+PASS N09 score overflow rejected before starting
+PASS N10 excessive deadline preserves current session
+PASS N11 invalid request preserves current session
+PASS N12 invalid answers and premature next
+PASS N13 exact deadline and late clicks
+PASS N14 concurrent duplicate answer
+PASS P01 concurrent saves through separate stores
+PASS N15 missing, malformed and empty bank
+PASS N16 cancelled save leaves existing file intact
+PASS P02 trimmed name, zero points and result accuracy
+PASS P03 leaderboard score, accuracy and date ordering
+PASS N17 invalid configuration and catalog values
+Regression scenarios: 20, passed: 20, failed: 0.

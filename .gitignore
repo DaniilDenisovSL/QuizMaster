@@ -55,3 +55,8 @@ Desktop.ini
 .DS_Store
 
 # Keep source, solution, Designer.cs and .resx files tracked.
+
+# Local design backups; retain supplied QA evidence.
+Design/backup/
+*.original
+!qa-logs/*.log

@@ -1,0 +1,25 @@
+Test artifacts: ..\qa\game-final
+SKIP native F11/Esc and active-window maximize routing: --no-focus
+PASS difficulty cards and repeated fullscreen API transitions
+PASS exit button / X confirmation, pause, resume, state protection and abort persistence
+PASS all ten questions: Games/Easy
+PASS all ten questions: Games/Medium
+PASS all ten questions: Games/Hard
+PASS all ten questions: Programming/Easy
+PASS all ten questions: Programming/Medium
+PASS all ten questions: Programming/Hard
+PASS all ten questions: Sports/Easy
+PASS all ten questions: Sports/Medium
+PASS all ten questions: Sports/Hard
+PASS all ten questions: Movies/Easy
+PASS all ten questions: Movies/Medium
+PASS all ten questions: Movies/Hard
+PASS all ten questions: GeneralKnowledge/Easy
+PASS all ten questions: GeneralKnowledge/Medium
+PASS all ten questions: GeneralKnowledge/Hard
+PASS timeout, polling, continue, streak reset and interrupted save
+PASS real completion and saving
+PASS real lives-exhausted defeat and saving
+PASS save failure preserves result and reports error
+PASS menu -> setup -> quiz -> confirmed exit -> menu with deterministic order
+PASS 22 UI regression scenarios.
