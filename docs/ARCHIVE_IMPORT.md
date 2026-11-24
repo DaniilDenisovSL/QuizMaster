@@ -1,5 +1,30 @@
 # Походження версій
 
+## Доступ до всіх шести версій
+
+| Версія | Архів користувача | Код на GitHub |
+| --- | --- | --- |
+| 1 | `LR2_QuizMaster_Finished.zip` — обрано користувачем як першу версію | [archive-v1](https://github.com/DaniilDenisovSL/QuizMaster/tree/archive-v1) |
+| 2 | `LR2_QuizMaster 2 реліз.zip` | [archive-v2](https://github.com/DaniilDenisovSL/QuizMaster/tree/archive-v2) |
+| 3 | `LR2_QuizMaster 3 версія.zip` | [archive-v3](https://github.com/DaniilDenisovSL/QuizMaster/tree/archive-v3) |
+| 4 | `LR2_QuizMaster 4 версія.zip` | [archive-v4](https://github.com/DaniilDenisovSL/QuizMaster/tree/archive-v4) |
+| 5 | `LR2_QuizMaster 5 версія.zip` | [archive-v5](https://github.com/DaniilDenisovSL/QuizMaster/tree/archive-v5) |
+| 6 | `LR2_QuizMaster 6 версія.zip` | [archive-v6](https://github.com/DaniilDenisovSL/QuizMaster/tree/archive-v6) |
+
+Версії 1–3 додано окремими комітами до гілки `archive/versions-1-3`. Версії 4–6 позначено мітками на вже наявних комітах імпорту. Мітки дозволяють переглядати та завантажувати кожний стан коду; це не підтверджені релізи чи оригінальні дати розробки. `main` і `develop` зберігають фінальний код версії 6, доповнений документацією імпорту. Старі архіви повторно не оголошуються протестованими.
+
+Підтверджені відмінності: у v2 оновлено підключення форм і backend; у v3 змінено банк запитань, навігацію, паузу таймера та елементи інтерфейсу. Авторство цих змін не визначається під час імпорту.
+
+SHA-256 додаткових архівів:
+
+```text
+v1 FFBF27F92D76CC3D5580546531DC767B5A8C7D818844053874E3ED055AEE9439
+v2 5BED3B2666D1386FA2CC85EAF56463B4CDCF75E38A9EEF59287430D2F7A4961A
+v3 E6DE524122AAB0BA0E34C1ADB338762B59F41F9FDE1AA8D455FF1A33673AD54A
+```
+
+## Початковий імпорт версій 4–6
+
 24.11.2026 до репозиторію імпортовано три надані ZIP-архіви, знайдені в папці завантажень Telegram Desktop. Коміти фіксують імпорт із поточною датою. Вони не відтворюють оригінальні дати розробки, витрачений час чи авторство учасників.
 
 | Архів | Коміт імпорту | Зміст |
