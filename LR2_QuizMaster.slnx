@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="LR2_QuizMaster/LR2_QuizMaster.csproj" />
+  <Project Path="LR2_QuizMaster.Tests/LR2_QuizMaster.Tests.csproj" />
+  <Project Path="LR2_QuizMaster.UiTests/LR2_QuizMaster.UiTests.csproj" />
+</Solution>
+

@@ -1,0 +1,6 @@
+Test artifacts: ..\qa\baseline-data
+FAIL DATA-01: missing category silently becomes Games/Medium
+FAIL DATA-01: missing difficulty silently becomes Programming/Easy
+FAIL DATA-02: [null] throws NullReferenceException
+FAIL DATA-02: unknown category causes ArgumentOutOfRangeException
+Data audit: 4 failing cases.

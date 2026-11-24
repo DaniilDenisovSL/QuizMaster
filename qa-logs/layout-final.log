@@ -1,0 +1,8 @@
+Test artifacts: ..\qa\layout-final
+DPI=96, window={Width=1056, Height=739}, client={Width=1040, Height=700}
+header=46, row=49, table={Width=976, Height=308}
+header=46, row=49, table={Width=976, Height=308}
+header=46, row=49, table={Width=976, Height=308}
+header=46, row=49, table={Width=976, Height=308}
+SKIP native modal activation and F11 routing: --no-focus
+PASS 52 checks; leaderboard size/header/columns locked, empty and populated filters, fullscreen parent return.

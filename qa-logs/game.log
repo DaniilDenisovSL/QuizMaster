@@ -1,0 +1,6 @@
+Test artifacts: ..\qa\game
+System.Exception: F11 consumed
+   at GameChecks.Assert(Boolean value, String message) in D:\Codex\2026-11-23\new-chat-3\work\QuizMaster\LR2_QuizMaster.UiTests\GameChecks.cs:line 273
+   at GameChecks.SetupAndFullScreen() in D:\Codex\2026-11-23\new-chat-3\work\QuizMaster\LR2_QuizMaster.UiTests\GameChecks.cs:line 81
+   at GameChecks.Run() in D:\Codex\2026-11-23\new-chat-3\work\QuizMaster\LR2_QuizMaster.UiTests\GameChecks.cs:line 39
+   at GameChecks.<>c__DisplayClass4_0.<<Run>b__0>d.MoveNext() in D:\Codex\2026-11-23\new-chat-3\work\QuizMaster\LR2_QuizMaster.UiTests\GameChecks.cs:line 27

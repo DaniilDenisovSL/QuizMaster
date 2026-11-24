@@ -1,0 +1,97 @@
+UI integration patch proposal
+============================
+
+Apply these code-behind changes on the full-stack branch. Keep all Designer.cs, resx, and UI files as they are. GameSetupForm already exposes the required Ukrainian names and shuffle options.
+
+MainMenuForm.cs
+---------------
+
+Add the backend namespaces and fields:
+
+    using LR2_QuizMaster.Backend.Domain;
+    using LR2_QuizMaster.Backend.Services;
+
+    private QuestionBank? questionBank;
+    private readonly LeaderboardStore leaderboardStore = new();
+
+In the constructor after InitializeComponent(), load the bank once. If it fails, disable btnStart and show the exception message in a MessageBox:
+
+    try { questionBank = QuestionBank.Load(QuestionBank.DefaultFilePath); }
+    catch (Exception ex)
+    {
+        btnStart.Enabled = false;
+        MessageBox.Show(this, ex.Message, "Банк питань", MessageBoxButtons.OK, MessageBoxIcon.Error);
+    }
+
+Pass leaderboardStore into LeaderboardForm. When setup returns DialogResult.OK, use QuizCatalog.ParseCategory(setup.SelectedCategory) and ParseDifficulty(setup.SelectedDifficulty); pass the loaded QuestionBank, category, difficulty, existing shuffle flags, and leaderboardStore into QuizForm. Catch InsufficientQuestionsException and show its message without opening QuizForm.
+
+GameSetupForm.cs
+----------------
+
+No change required. It returns the five category names, the three Ukrainian difficulty names, and both shuffle flags. Map the two strings at the MainMenuForm boundary, rather than changing the form contract.
+
+QuizForm.cs
+-----------
+
+Replace the demo question state with one QuizSession. Constructor shape:
+
+    public QuizForm(string playerName, QuizCategory category, Difficulty difficulty,
+                    bool shuffleQuestions, bool shuffleAnswers,
+                    QuestionBank bank, LeaderboardStore leaderboardStore)
+
+Create the session and call Start with:
+
+    new QuizRequest(playerName, category, difficulty,
+        new QuizOptions { ShuffleQuestions = shuffleQuestions, ShuffleAnswers = shuffleAnswers })
+
+Keep the QuestionTicket returned by GetState(). Bind each button to its Answer.Id through Tag, and submit that ID with both ticket identifiers:
+
+    var ticket = state.CurrentQuestion!;
+    var answerId = (string)answerButton.Tag!;
+    session.SubmitAnswer(ticket.SessionId, ticket.QuestionToken, answerId);
+    RenderState(session.GetState());
+
+Render the four existing answer buttons from ticket.Answers. It is fine to show A–D as visual prefixes, but never use the letter or button index to grade the answer. Use LastAnswer.CorrectAnswerId to highlight the correct option.
+
+Use a WinForms Timer only to repaint the countdown from state.RemainingTime. Each Tick should call session.GetState(); do not decrement a local counter. Stop and dispose this timer in the form's close path. When status is AwaitingNext, enable the existing btnNextQuestion and call NextQuestion(state.SessionId, state.CurrentQuestion.QuestionToken) from its click handler. After every transition, render a fresh GetState() snapshot.
+
+If status becomes Finished, stop the timer, call leaderboardStore.SaveAsync(state.Result), and show ResultsForm with that QuizResult. If btnExitQuiz is clicked while active, call session.Interrupt(), stop the timer, and close with DialogResult.Cancel; do not save that result or open the successful results screen.
+
+ResultsForm.cs
+--------------
+
+Add a constructor accepting QuizResult and the same LeaderboardStore. Populate the existing controls without touching layout:
+
+    lblPlayer.Text = $"{result.PlayerName} · {QuizCatalog.CategoryName(result.Category)} · {QuizCatalog.DifficultyName(result.Difficulty)}";
+    lblTotalScore.Text = $"{result.Score} балів";
+    lblCorrect.Text = $"Правильно: {result.CorrectAnswers}/{result.QuestionsPlayed}";
+    lblAccuracy.Text = $"Точність: {result.Accuracy:P0}";
+    lblBestStreak.Text = $"Найкраща серія: {result.BestStreak}";
+
+Set lblSummaryNote to describe result.EndReason (completed or lives exhausted). The quiz form saves once before opening ResultsForm; LeaderboardStore also rejects duplicate SessionIds. Keep the existing Retry/OK DialogResult behavior for Play Again and Main Menu.
+
+LeaderboardForm.cs
+------------------
+
+Inject LeaderboardStore through a constructor overload. Remove demoRows and fill the existing columns from saved results. In RefreshRowsAsync, call LoadAsync so a damaged file's Warning can be shown; filter by the selected category, sort by Score descending, then Accuracy and FinishedAtUtc descending, and add rank/player/category/difficulty/score to dgvLeaderboard. Use QuizCatalog to display localized category and difficulty names. Hide lblDemoData; keep lblEmptyState for a genuinely empty filtered list.
+
+The existing category combo already has “Усі категорії” and the localized category labels. Convert a selected category with QuizCatalog.TryParseCategory before filtering. Refresh after SelectedIndexChanged and once when the leaderboard opens.
+
+Suggested answer-button projection:
+
+    for (var i = 0; i < ticket.Answers.Count; i++)
+    {
+        buttons[i].Tag = ticket.Answers[i].Id;
+        buttons[i].Text = $"{(char)('A' + i)}. {ticket.Answers[i].Text}";
+    }
+
+Suggested status-driven timer projection:
+
+    var seconds = (int)Math.Ceiling(state.RemainingTime.TotalSeconds);
+    lblTimer.Text = seconds.ToString();
+    lblProgress.Text = $"{state.QuestionNumber}/{state.TotalQuestions}";
+    lblScore.Text = state.Score.ToString();
+    lblLives.Text = state.Lives.ToString();
+    lblStreak.Text = state.CurrentStreak.ToString();
+
+The result accuracy value is a fraction from 0 to 1; the format string P0 renders it as a percentage.
