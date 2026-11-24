@@ -37,6 +37,12 @@ internal static class QuizDrawing
 
 public class QuizButton : Button
 {
+    private string description = "";
+    private bool selected;
+    [DefaultValue("")]
+    public string Description { get => description; set { description = value; Invalidate(); } }
+    [DefaultValue(false)]
+    public bool Selected { get => selected; set { selected = value; Invalidate(); } }
     private bool hover;
     private bool preserveColorsWhenDisabled;
 
@@ -98,7 +104,7 @@ public class QuizButton : Button
         using var body = QuizDrawing.Round(new RectangleF(pad, pad, Width - pad * 3, Height - pad * 3), 12 * dpi);
         using var brush = new SolidBrush(fill);
         g.FillPath(brush, body);
-        using var border = new Pen(accent ? Color.FromArgb(141, 127, 255) : Color.FromArgb(48, 62, 86), dpi);
+        using var border = new Pen(accent || Selected ? Color.FromArgb(141, 127, 255) : QuizDrawing.Lighten(Color.FromArgb(48, 62, 86), (int)(hoverAmount * 12)), Selected ? 1.7f * dpi : dpi);
         g.DrawPath(border, body);
         var textBounds = new Rectangle((int)(14 * dpi), 0, Width - (int)(28 * dpi), Height - (int)(2 * dpi));
         if (IconKind != QuizIcon.None)
@@ -111,7 +117,17 @@ public class QuizButton : Button
         }
         var flags = TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis | TextFormatFlags.NoPadding;
         if (!UseMnemonic) flags |= TextFormatFlags.NoPrefix;
-        TextRenderer.DrawText(g, Text, Font, textBounds, Enabled || PreserveColorsWhenDisabled ? ForeColor : Color.FromArgb(147, 160, 182), flags);
+        if (Description.Length == 0)
+            TextRenderer.DrawText(g, Text, Font, textBounds, Enabled || PreserveColorsWhenDisabled ? ForeColor : Color.FromArgb(147, 160, 182), flags);
+        else
+        {
+            var title = new Rectangle(textBounds.X, (int)(Height * .14f), textBounds.Width, (int)(Height * .35f));
+            var subtitle = new Rectangle(textBounds.X, (int)(Height * .52f), textBounds.Width, (int)(Height * .29f));
+            TextRenderer.DrawText(g, Text, Font, title, ForeColor, flags);
+            using var small = new Font(Font.FontFamily, Math.Max(7, Font.SizeInPoints * .76f), FontStyle.Regular);
+            TextRenderer.DrawText(g, Description, small, subtitle, Selected ? Color.FromArgb(232, 227, 255) : Color.FromArgb(170, 182, 204), flags);
+            if (Selected) QuizIcons.Draw(g, QuizIcon.Completed, new RectangleF(Width - 25 * dpi, 9 * dpi, 14 * dpi, 14 * dpi), Color.FromArgb(180, 169, 255));
+        }
         if (Focused && ShowFocusCues)
         {
             using var pen = new Pen(Color.FromArgb(180, 169, 255), dpi) { DashStyle = DashStyle.Dot };

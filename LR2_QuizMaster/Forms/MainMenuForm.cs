@@ -15,13 +15,14 @@ public partial class MainMenuForm : Form
     {
         leaderboardStore = store ?? new LeaderboardStore();
         InitializeComponent();
+        DoubleBuffered = true;
         WindowPresentation.Attach(this);
         AcceptButton = btnStart;
         btnStart.Click += StartGame;
         btnLeaderboard.Click += (_, _) =>
         {
             using var form = new LeaderboardForm(leaderboardStore);
-            form.ShowDialog(this);
+            WindowNavigation.ShowDialog(this, form);
         };
         btnExit.Click += (_, _) => Close();
         try { questionBank = bank ?? QuestionBank.Load(QuestionBank.DefaultFilePath); }
@@ -45,8 +46,8 @@ public partial class MainMenuForm : Form
         while (true)
         {
             using var setup = new GameSetupForm();
-            if (setup.ShowDialog(this) != DialogResult.OK) return;
-            var options = new QuizOptions { ShuffleQuestions = setup.ShuffleQuestions, ShuffleAnswers = setup.ShuffleAnswers };
+            if (WindowNavigation.ShowDialog(this, setup) != DialogResult.OK) return;
+            var options = new QuizOptions { ShuffleQuestions = false, ShuffleAnswers = false };
             var category = QuizCatalog.ParseCategory(setup.SelectedCategory);
             var difficulty = QuizCatalog.ParseDifficulty(setup.SelectedDifficulty);
             try { questionBank.EnsureCanStart(category, difficulty, options.QuestionCount); }
@@ -57,13 +58,8 @@ public partial class MainMenuForm : Form
             }
             var request = new QuizRequest(txtPlayerName.Text.Trim(), category, difficulty, options);
             DialogResult outcome;
-            Hide();
-            try
-            {
-                using var quiz = new QuizForm(request, questionBank, leaderboardStore);
-                outcome = quiz.ShowDialog();
-            }
-            finally { Show(); Activate(); }
+            using (var quiz = new QuizForm(request, questionBank, leaderboardStore))
+                outcome = WindowNavigation.ShowDialog(this, quiz);
             if (outcome != DialogResult.Retry) return;
         }
     }

@@ -9,6 +9,7 @@ internal static class Program
     private static async Task<int> Main()
     {
         Run("JSON question bank and localized labels", Bank);
+        Run("year questions contain four years and answer sets stay attached", BankAnswerSets);
         Run("correct/wrong scoring and lives", CorrectWrongAndLives);
         Run("timeout uses injected clock once", Timeout);
         Run("last life ends session", LastLife);
@@ -31,6 +32,38 @@ internal static class Program
                 Equal(10, bank.Find(category, difficulty).Count);
         Equal(QuizCategory.GeneralKnowledge, QuizCatalog.ParseCategory("  Загальні знання "));
         Equal(Difficulty.Hard, QuizCatalog.ParseDifficulty("Складна"));
+    }
+
+    private static void BankAnswerSets()
+    {
+        var bank = QuestionBank.Load(Path.Combine(AppContext.BaseDirectory, "Data", "questions.json"));
+        var years = bank.Questions.Where(q => q.Text.Contains("У якому році"));
+        True(years.Any());
+        foreach (var q in years)
+            True(q.Answers.All(a => System.Text.RegularExpressions.Regex.IsMatch(a.Text, @"^\d{4}$")));
+        foreach (var q in bank.Questions)
+            Equal(4, q.Answers.Select(a => a.Text).Distinct(StringComparer.OrdinalIgnoreCase).Count());
+        foreach (var category in Enum.GetValues<QuizCategory>())
+        foreach (var difficulty in Enum.GetValues<Difficulty>())
+        foreach (bool shuffle in new[] { false, true })
+        {
+            var session = new QuizSession(bank);
+            session.Start(new QuizRequest("Перевірка", category, difficulty,
+                new QuizOptions { ShuffleQuestions = shuffle, ShuffleAnswers = shuffle, RandomSeed = 42 }));
+            var seen = new HashSet<string>();
+            while (session.GetState() is { Status: SessionStatus.QuestionActive, CurrentQuestion: { } ticket } state)
+            {
+                True(seen.Add(ticket.QuestionId));
+                var source = bank.Questions.Single(q => q.Id == ticket.QuestionId);
+                Equal(source.Text, ticket.Text);
+                SequenceEqual(source.Answers.OrderBy(a => a.Id), ticket.Answers.OrderBy(a => a.Id));
+                session.SubmitAnswer(state.SessionId, ticket.QuestionToken, source.CorrectAnswerId);
+                if (session.GetState().Status == SessionStatus.AwaitingNext)
+                    True(session.NextQuestion(state.SessionId, ticket.QuestionToken));
+            }
+            Equal(10, seen.Count);
+            Equal(10, session.GetState().Result!.CorrectAnswers);
+        }
     }
 
     private static void CorrectWrongAndLives()

@@ -13,6 +13,7 @@ public partial class LeaderboardForm : Form
     public LeaderboardForm()
     {
         InitializeComponent();
+        DoubleBuffered = true;
         WindowPresentation.Attach(this);
         btnBack.Click += (_, _) => Close();
         CancelButton = btnBack;

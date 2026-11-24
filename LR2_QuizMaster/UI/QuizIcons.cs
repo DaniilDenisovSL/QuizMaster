@@ -4,7 +4,7 @@ using System.Drawing.Imaging;
 
 namespace LR2_QuizMaster.UI;
 
-public enum QuizIcon { None, Logo, Games, Code, Sport, Movies, Knowledge, Trophy, Clock, Star, Heart, Flame, Completed }
+public enum QuizIcon { None, Logo, Games, Code, Sport, Movies, Knowledge, Trophy, Clock, Star, Heart, Flame, Completed, Defeat }
 
 public static class QuizIcons
 {
@@ -111,6 +111,14 @@ public static class QuizIcons
                     flame.AddBezier(19, 16, 18, 23, 5, 23, 5, 15);
                     flame.AddBezier(5, 15, 5, 11, 9, 10, 8, 7);
                     flame.AddBezier(8, 7, 12, 8, 11, 4, 12, 2); g.DrawPath(pen, flame);
+                }
+                break;
+            case QuizIcon.Defeat:
+                g.FillEllipse(fill, 1, 1, 22, 22);
+                using (var white = new Pen(Color.White, 2.1f) { StartCap = LineCap.Round, EndCap = LineCap.Round })
+                {
+                    g.DrawLine(white, 8, 8, 16, 16);
+                    g.DrawLine(white, 16, 8, 8, 16);
                 }
                 break;
             case QuizIcon.Completed:

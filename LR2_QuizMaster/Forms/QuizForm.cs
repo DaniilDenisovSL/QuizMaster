@@ -13,6 +13,13 @@ public partial class QuizForm : Form
     private readonly System.Windows.Forms.Timer refreshTimer;
     private readonly QuizButton[] answerButtons;
     private QuizSession? session;
+    private PausableQuizClock? quizClock;
+    private bool exitConfirmed;
+    private bool confirmingExit;
+    [Browsable(false), DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+    internal Func<IWin32Window, DialogResult> ConfirmExit { get; set; } = owner => MessageBox.Show(owner,
+        "Справді вийти та завершити тест?\nНезавершений результат не буде збережено.\n\nПоки це вікно відкрите, таймер призупинено.",
+        "Вийти з тесту?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
     private QuizRequest? request;
     private QuizOptions options = new();
     private LeaderboardStore leaderboardStore = new();
@@ -24,6 +31,7 @@ public partial class QuizForm : Form
     public QuizForm()
     {
         InitializeComponent();
+        DoubleBuffered = true;
         WindowPresentation.Attach(this);
         components ??= new Container();
         refreshTimer = new System.Windows.Forms.Timer(components) { Interval = 100 };
@@ -31,7 +39,7 @@ public partial class QuizForm : Form
         answerButtons = [btnAnswerA, btnAnswerB, btnAnswerC, btnAnswerD];
         foreach (var button in answerButtons) { button.Enabled = false; button.Click += AnswerClicked; }
         btnNextQuestion.Click += NextQuestion;
-        btnExitQuiz.Click += (_, _) => { DialogResult = DialogResult.Cancel; Close(); };
+        btnExitQuiz.Click += (_, _) => Close();
         CancelButton = btnExitQuiz;
         Shown += (_, _) => StartSession();
         FormClosing += ClosingSession;
@@ -44,7 +52,8 @@ public partial class QuizForm : Form
         this.request = request ?? throw new ArgumentNullException(nameof(request));
         this.leaderboardStore = leaderboardStore ?? throw new ArgumentNullException(nameof(leaderboardStore));
         options = request.Options ?? new QuizOptions();
-        session = new QuizSession(bank, clock);
+        quizClock = new PausableQuizClock(clock ?? TimeProvider.System);
+        session = new QuizSession(bank, quizClock);
         lblCategory.Text = $"{QuizCatalog.CategoryName(request.Category)}  /  {QuizCatalog.DifficultyName(request.Difficulty)}";
     }
 
@@ -144,9 +153,8 @@ public partial class QuizForm : Form
         await Task.Delay(450);
         var saved = await saving;
         if (IsDisposed || Disposing || !Visible) return;
-        Hide();
         using var form = new ResultsForm(result, leaderboardStore, saved.Warning);
-        DialogResult = form.ShowDialog() == DialogResult.Retry ? DialogResult.Retry : DialogResult.OK;
+        DialogResult = WindowNavigation.ShowDialog(this, form, returnToSource: false) == DialogResult.Retry ? DialogResult.Retry : DialogResult.OK;
         Close();
     }
 
@@ -161,10 +169,31 @@ public partial class QuizForm : Form
 
     private void ClosingSession(object? sender, FormClosingEventArgs e)
     {
-        refreshTimer.Stop();
         if (session == null) return;
+        if (confirmingExit) { e.Cancel = true; DialogResult = DialogResult.None; return; }
         var state = session.GetState();
         if (state.Status == SessionStatus.NotStarted) return;
+        if (!exitConfirmed && (state.Status is SessionStatus.QuestionActive or SessionStatus.AwaitingNext) &&
+            e.CloseReason is not (CloseReason.WindowsShutDown or CloseReason.TaskManagerClosing))
+        {
+            confirmingExit = true;
+            refreshTimer.Stop();
+            DialogResult choice;
+            using (quizClock!.Pause())
+            {
+                try { choice = ConfirmExit(this); }
+                finally { confirmingExit = false; }
+            }
+            if (choice != DialogResult.Yes)
+            {
+                e.Cancel = true;
+                DialogResult = DialogResult.None;
+                RefreshState();
+                return;
+            }
+            exitConfirmed = true;
+        }
+        refreshTimer.Stop();
         if (state.Result is { EndReason: not GameEndReason.Interrupted } result) _ = EnsureSavedAsync(result);
         else if (state.Status != SessionStatus.Interrupted) session.Interrupt();
     }

@@ -4,6 +4,8 @@ using System.Runtime.CompilerServices;
 
 namespace LR2_QuizMaster.UI;
 
+internal enum GameResultVisual { Completed, Lost }
+
 /// <summary>Presentation only: window placement, transitions, icons and responsive layout.</summary>
 public static class WindowPresentation
 {
@@ -21,6 +23,11 @@ public static class WindowPresentation
     }
 
     public static bool IsFullScreen(Form form) => presenters.TryGetValue(form, out var presenter) && presenter.FullScreen;
+
+    internal static void PrepareReturn(Form form)
+    {
+        if (presenters.TryGetValue(form, out var presenter)) presenter.PrepareReturn();
+    }
 
     private enum DisplayMode { Normal, Maximized, FullScreen }
     private static DisplayMode sessionMode;
@@ -83,7 +90,7 @@ public static class WindowPresentation
             form.Controls.Add(hint);
             float dpi = Dpi;
             logicalCanvas = new SizeF(1040, 700);
-            canvas = new Panel
+            canvas = new BufferedCanvas
             {
                 Name = "pnlResponsiveCanvas", BackColor = form.BackColor,
                 Size = new Size((int)(1040 * dpi), (int)(700 * dpi)), TabStop = false
@@ -132,14 +139,15 @@ public static class WindowPresentation
 
         private void ApplyMode()
         {
+            if (applying || disposed) return;
             var screen = TargetScreen();
             monitorName = screen.DeviceName;
             applying = true;
             try
             {
+                FullScreen = sessionMode == DisplayMode.FullScreen;
                 form.WindowState = FormWindowState.Normal;
-                form.FormBorderStyle = FormBorderStyle.Sizable;
-                FullScreen = false;
+                form.FormBorderStyle = FullScreen ? FormBorderStyle.None : FormBorderStyle.Sizable;
                 UpdateMinimum(screen);
                 var frame = form.Size - form.ClientSize;
                 var normal = CenteredBounds(screen, ScaleSize(1040, 700) + frame);
@@ -157,7 +165,7 @@ public static class WindowPresentation
 
         public void ToggleFullScreen()
         {
-            if (!initialized || disposed) return;
+            if (!initialized || disposed || applying) return;
             applying = true;
             try
             {
@@ -165,19 +173,19 @@ public static class WindowPresentation
                 {
                     windowedState = form.WindowState == FormWindowState.Maximized ? FormWindowState.Maximized : FormWindowState.Normal;
                     windowedBounds = form.WindowState == FormWindowState.Normal ? form.Bounds : form.RestoreBounds;
-                    EnterFullScreen(Screen.FromControl(form));
                     sessionMode = DisplayMode.FullScreen;
+                    EnterFullScreen(Screen.FromControl(form));
                 }
                 else
                 {
                     var screen = Screen.FromControl(form);
+                    FullScreen = false;
+                    sessionMode = windowedState == FormWindowState.Maximized ? DisplayMode.Maximized : DisplayMode.Normal;
                     form.WindowState = FormWindowState.Normal;
                     form.FormBorderStyle = FormBorderStyle.Sizable;
-                    FullScreen = false;
                     UpdateMinimum(screen);
                     form.Bounds = CenteredBounds(screen, windowedBounds.Size);
                     form.WindowState = windowedState;
-                    sessionMode = windowedState == FormWindowState.Maximized ? DisplayMode.Maximized : DisplayMode.Normal;
                 }
                 UpdateHint();
                 LayoutContent();
@@ -187,10 +195,10 @@ public static class WindowPresentation
 
         private void EnterFullScreen(Screen screen)
         {
+            FullScreen = true;
             form.WindowState = FormWindowState.Normal;
             form.FormBorderStyle = FormBorderStyle.None;
             form.Bounds = screen.Bounds;
-            FullScreen = true;
             monitorName = screen.DeviceName;
         }
 
@@ -202,14 +210,15 @@ public static class WindowPresentation
         private void OnShown(object? sender, EventArgs e) { hasShown = true; FadeIn(); }
         private void OnActivated(object? sender, EventArgs e)
         {
-            if (!initialized || disposed || applying || !form.Visible) return;
+            if (!initialized || disposed || applying || !form.Visible || !form.Enabled || form.OwnedForms.Any(f => f.Visible)) return;
             var current = FullScreen ? DisplayMode.FullScreen : form.WindowState == FormWindowState.Maximized ? DisplayMode.Maximized : DisplayMode.Normal;
             if (current != sessionMode) { ApplyMode(); LayoutContent(); }
         }
         private void OnVisibleChanged(object? sender, EventArgs e)
         {
+            if (applying) return;
             if (!form.Visible) { fadeTimer.Stop(); return; }
-            if (!initialized || !hasShown) return;
+            if (!initialized || !hasShown || applying) return;
             ApplyMode();
             LayoutContent();
             FadeIn();
@@ -231,7 +240,7 @@ public static class WindowPresentation
         private void OnResize(object? sender, EventArgs e)
         {
             if (!initialized || disposed || form.WindowState == FormWindowState.Minimized) return;
-            if (!applying && form.Visible && !FullScreen)
+            if (!applying && form.Visible && form.Enabled && Form.ActiveForm == form && !FullScreen)
             {
                 sessionMode = form.WindowState == FormWindowState.Maximized ? DisplayMode.Maximized : DisplayMode.Normal;
                 windowedState = form.WindowState;
@@ -326,7 +335,7 @@ public static class WindowPresentation
             AddInline(Find("lblStreak"), QuizIcon.Flame, Color.FromArgb(180, 169, 255));
             if (Find("lblHeading") is Control heading)
             {
-                form.Controls.Add(new QuizIconView { Name = "icoCompleted", IconKind = QuizIcon.Completed, ForeColor = Color.FromArgb(39, 198, 152), Location = heading.Location, Size = ScaleSize(46, 46) });
+                form.Controls.Add(new QuizIconView { Name = "icoCompleted", IconKind = heading.Tag is GameResultVisual.Lost ? QuizIcon.Defeat : QuizIcon.Completed, ForeColor = heading.Tag is GameResultVisual.Lost ? Color.FromArgb(239, 153, 166) : Color.FromArgb(39, 198, 152), Location = heading.Location, Size = ScaleSize(46, 46) });
                 heading.Left += (int)(64 * Dpi);
                 heading.Width -= (int)(64 * Dpi);
             }
@@ -348,12 +357,20 @@ public static class WindowPresentation
         {
             if (disposed || !initialized || !form.Visible || m.Msg is not (0x100 or 0x104)) return false;
             var target = Control.FromChildHandle(m.HWnd);
-            if (target?.FindForm() != form && Form.ActiveForm != form) return false;
+            // A disabled owner must never handle the active modal window's shortcut.
+            if (!form.Enabled || target?.FindForm() != form || Form.ActiveForm != form) return false;
             var key = (Keys)(int)m.WParam;
             if (key != Keys.F11 && !(key == Keys.Escape && FullScreen)) return false;
             if ((m.LParam.ToInt64() & (1L << 30)) != 0) return true;
             ToggleFullScreen();
             return true;
+        }
+
+        public void PrepareReturn()
+        {
+            if (!initialized || disposed) return;
+            ApplyMode();
+            LayoutContent();
         }
 
         private void OnDisposed(object? sender, EventArgs e)
@@ -363,6 +380,11 @@ public static class WindowPresentation
             Application.RemoveMessageFilter(this);
             foreach (var font in fonts.Values) font.Dispose();
             fonts.Clear();
+        }
+
+        private sealed class BufferedCanvas : Panel
+        {
+            public BufferedCanvas() { DoubleBuffered = true; ResizeRedraw = true; }
         }
 
         private sealed class LayoutItem(Control control, RectangleF bounds, string family, float fontSize, FontStyle style)

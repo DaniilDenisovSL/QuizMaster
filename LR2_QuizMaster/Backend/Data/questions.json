@@ -11,15 +11,15 @@
       },
       {
         "id": "games-easy-001-a2",
-        "text": "Сонік"
+        "text": "Варіо"
       },
       {
         "id": "games-easy-001-a3",
-        "text": "Кріпер"
+        "text": "Боузер"
       },
       {
         "id": "games-easy-001-a4",
-        "text": "Фігури з блоків"
+        "text": "Йоші"
       }
     ],
     "correctAnswerId": "games-easy-001-a1"
@@ -32,7 +32,7 @@
     "answers": [
       {
         "id": "games-easy-002-a1",
-        "text": "Кріпер"
+        "text": "Тейлз"
       },
       {
         "id": "games-easy-002-a2",
@@ -40,11 +40,11 @@
       },
       {
         "id": "games-easy-002-a3",
-        "text": "Фігури з блоків"
+        "text": "Наклз"
       },
       {
         "id": "games-easy-002-a4",
-        "text": "Зельда"
+        "text": "Шедоу"
       }
     ],
     "correctAnswerId": "games-easy-002-a2"
@@ -57,11 +57,11 @@
     "answers": [
       {
         "id": "games-easy-003-a1",
-        "text": "Фігури з блоків"
+        "text": "Зомбі"
       },
       {
         "id": "games-easy-003-a2",
-        "text": "Зельда"
+        "text": "Скелет"
       },
       {
         "id": "games-easy-003-a3",
@@ -69,7 +69,7 @@
       },
       {
         "id": "games-easy-003-a4",
-        "text": "Крапками"
+        "text": "Ендермен"
       }
     ],
     "correctAnswerId": "games-easy-003-a3"
@@ -82,15 +82,15 @@
     "answers": [
       {
         "id": "games-easy-004-a1",
-        "text": "Зельда"
+        "text": "Слова з літер"
       },
       {
         "id": "games-easy-004-a2",
-        "text": "Крапками"
+        "text": "Пари однакових карт"
       },
       {
         "id": "games-easy-004-a3",
-        "text": "Sony"
+        "text": "Лабіринти з доріг"
       },
       {
         "id": "games-easy-004-a4",
@@ -111,15 +111,15 @@
       },
       {
         "id": "games-easy-005-a2",
-        "text": "Крапками"
+        "text": "Піч"
       },
       {
         "id": "games-easy-005-a3",
-        "text": "Sony"
+        "text": "Дейзі"
       },
       {
         "id": "games-easy-005-a4",
-        "text": "Самозванець"
+        "text": "Розаліна"
       }
     ],
     "correctAnswerId": "games-easy-005-a1"
@@ -132,7 +132,7 @@
     "answers": [
       {
         "id": "games-easy-006-a1",
-        "text": "Sony"
+        "text": "Монетами"
       },
       {
         "id": "games-easy-006-a2",
@@ -140,11 +140,11 @@
       },
       {
         "id": "games-easy-006-a3",
-        "text": "Самозванець"
+        "text": "Грибами"
       },
       {
         "id": "games-easy-006-a4",
-        "text": "Еш Кетчум"
+        "text": "Кристалами"
       }
     ],
     "correctAnswerId": "games-easy-006-a2"
@@ -157,11 +157,11 @@
     "answers": [
       {
         "id": "games-easy-007-a1",
-        "text": "Самозванець"
+        "text": "Nintendo"
       },
       {
         "id": "games-easy-007-a2",
-        "text": "Еш Кетчум"
+        "text": "Microsoft"
       },
       {
         "id": "games-easy-007-a3",
@@ -169,7 +169,7 @@
       },
       {
         "id": "games-easy-007-a4",
-        "text": "Будівництво укриттів"
+        "text": "Sega"
       }
     ],
     "correctAnswerId": "games-easy-007-a3"
@@ -182,15 +182,15 @@
     "answers": [
       {
         "id": "games-easy-008-a1",
-        "text": "Еш Кетчум"
+        "text": "Детектив"
       },
       {
         "id": "games-easy-008-a2",
-        "text": "Будівництво укриттів"
+        "text": "Механік"
       },
       {
         "id": "games-easy-008-a3",
-        "text": "Луїджі"
+        "text": "Капітан"
       },
       {
         "id": "games-easy-008-a4",
@@ -211,15 +211,15 @@
       },
       {
         "id": "games-easy-009-a2",
-        "text": "Будівництво укриттів"
+        "text": "Брок"
       },
       {
         "id": "games-easy-009-a3",
-        "text": "Луїджі"
+        "text": "Ґері Оук"
       },
       {
         "id": "games-easy-009-a4",
-        "text": "Сонік"
+        "text": "Джеймс"
       }
     ],
     "correctAnswerId": "games-easy-009-a1"
@@ -232,7 +232,7 @@
     "answers": [
       {
         "id": "games-easy-010-a1",
-        "text": "Луїджі"
+        "text": "Створення магічних заклять"
       },
       {
         "id": "games-easy-010-a2",
@@ -240,11 +240,11 @@
       },
       {
         "id": "games-easy-010-a3",
-        "text": "Сонік"
+        "text": "Прокладання залізниць"
       },
       {
         "id": "games-easy-010-a4",
-        "text": "Кріпер"
+        "text": "Будівництво підводних баз"
       }
     ],
     "correctAnswerId": "games-easy-010-a2"
@@ -261,15 +261,15 @@
       },
       {
         "id": "games-medium-001-a2",
-        "text": "Стів"
+        "text": "1970"
       },
       {
         "id": "games-medium-001-a3",
-        "text": "Nintendo Switch"
+        "text": "1975"
       },
       {
         "id": "games-medium-001-a4",
-        "text": "Танк"
+        "text": "1978"
       }
     ],
     "correctAnswerId": "games-medium-001-a1"
@@ -282,7 +282,7 @@
     "answers": [
       {
         "id": "games-medium-002-a1",
-        "text": "Nintendo Switch"
+        "text": "Кріс"
       },
       {
         "id": "games-medium-002-a2",
@@ -290,11 +290,11 @@
       },
       {
         "id": "games-medium-002-a3",
-        "text": "Танк"
+        "text": "Джек"
       },
       {
         "id": "games-medium-002-a4",
-        "text": "GLaDOS"
+        "text": "Гордон"
       }
     ],
     "correctAnswerId": "games-medium-002-a2"
@@ -307,11 +307,11 @@
     "answers": [
       {
         "id": "games-medium-003-a1",
-        "text": "Танк"
+        "text": "Nintendo 3DS"
       },
       {
         "id": "games-medium-003-a2",
-        "text": "GLaDOS"
+        "text": "Nintendo Wii"
       },
       {
         "id": "games-medium-003-a3",
@@ -319,7 +319,7 @@
       },
       {
         "id": "games-medium-003-a4",
-        "text": "Артур Морґан"
+        "text": "Nintendo GameCube"
       }
     ],
     "correctAnswerId": "games-medium-003-a3"
@@ -332,15 +332,15 @@
     "answers": [
       {
         "id": "games-medium-004-a1",
-        "text": "GLaDOS"
+        "text": "Підтримка"
       },
       {
         "id": "games-medium-004-a2",
-        "text": "Артур Морґан"
+        "text": "Шкода"
       },
       {
         "id": "games-medium-004-a3",
-        "text": "Обсидіан"
+        "text": "Спостерігач"
       },
       {
         "id": "games-medium-004-a4",
@@ -361,15 +361,15 @@
       },
       {
         "id": "games-medium-005-a2",
-        "text": "Артур Морґан"
+        "text": "SHODAN"
       },
       {
         "id": "games-medium-005-a3",
-        "text": "Обсидіан"
+        "text": "HAL 9000"
       },
       {
         "id": "games-medium-005-a4",
-        "text": "1987"
+        "text": "Cortana"
       }
     ],
     "correctAnswerId": "games-medium-005-a1"
@@ -382,7 +382,7 @@
     "answers": [
       {
         "id": "games-medium-006-a1",
-        "text": "Обсидіан"
+        "text": "Джон Марстон"
       },
       {
         "id": "games-medium-006-a2",
@@ -390,11 +390,11 @@
       },
       {
         "id": "games-medium-006-a3",
-        "text": "1987"
+        "text": "Датч ван дер Лінде"
       },
       {
         "id": "games-medium-006-a4",
-        "text": "Valve"
+        "text": "Майка Белл"
       }
     ],
     "correctAnswerId": "games-medium-006-a2"
@@ -407,11 +407,11 @@
     "answers": [
       {
         "id": "games-medium-007-a1",
-        "text": "1987"
+        "text": "Камінь"
       },
       {
         "id": "games-medium-007-a2",
-        "text": "Valve"
+        "text": "Незерит"
       },
       {
         "id": "games-medium-007-a3",
@@ -419,7 +419,7 @@
       },
       {
         "id": "games-medium-007-a4",
-        "text": "MOBA"
+        "text": "Базальт"
       }
     ],
     "correctAnswerId": "games-medium-007-a3"
@@ -432,15 +432,15 @@
     "answers": [
       {
         "id": "games-medium-008-a1",
-        "text": "Valve"
+        "text": "1985"
       },
       {
         "id": "games-medium-008-a2",
-        "text": "MOBA"
+        "text": "1989"
       },
       {
         "id": "games-medium-008-a3",
-        "text": "1972"
+        "text": "1991"
       },
       {
         "id": "games-medium-008-a4",
@@ -461,15 +461,15 @@
       },
       {
         "id": "games-medium-009-a2",
-        "text": "MOBA"
+        "text": "id Software"
       },
       {
         "id": "games-medium-009-a3",
-        "text": "1972"
+        "text": "Bungie"
       },
       {
         "id": "games-medium-009-a4",
-        "text": "Стів"
+        "text": "Bethesda Game Studios"
       }
     ],
     "correctAnswerId": "games-medium-009-a1"
@@ -482,7 +482,7 @@
     "answers": [
       {
         "id": "games-medium-010-a1",
-        "text": "1972"
+        "text": "MMORPG"
       },
       {
         "id": "games-medium-010-a2",
@@ -490,11 +490,11 @@
       },
       {
         "id": "games-medium-010-a3",
-        "text": "Стів"
+        "text": "Покрокова стратегія"
       },
       {
         "id": "games-medium-010-a4",
-        "text": "Nintendo Switch"
+        "text": "Королівська битва"
       }
     ],
     "correctAnswerId": "games-medium-010-a2"
@@ -511,15 +511,15 @@
       },
       {
         "id": "games-hard-001-a2",
-        "text": "1993"
+        "text": "1983"
       },
       {
         "id": "games-hard-001-a3",
-        "text": "Ерік Бароне"
+        "text": "1987"
       },
       {
         "id": "games-hard-001-a4",
-        "text": "Red і Green"
+        "text": "1989"
       }
     ],
     "correctAnswerId": "games-hard-001-a1"
@@ -532,7 +532,7 @@
     "answers": [
       {
         "id": "games-hard-002-a1",
-        "text": "Ерік Бароне"
+        "text": "1991"
       },
       {
         "id": "games-hard-002-a2",
@@ -540,11 +540,11 @@
       },
       {
         "id": "games-hard-002-a3",
-        "text": "Red і Green"
+        "text": "1995"
       },
       {
         "id": "games-hard-002-a4",
-        "text": "2015"
+        "text": "1997"
       }
     ],
     "correctAnswerId": "games-hard-002-a2"
@@ -557,11 +557,11 @@
     "answers": [
       {
         "id": "games-hard-003-a1",
-        "text": "Red і Green"
+        "text": "Маркус Перссон"
       },
       {
         "id": "games-hard-003-a2",
-        "text": "2015"
+        "text": "Тобі Фокс"
       },
       {
         "id": "games-hard-003-a3",
@@ -569,7 +569,7 @@
       },
       {
         "id": "games-hard-003-a4",
-        "text": "2007"
+        "text": "Джон Ромеро"
       }
     ],
     "correctAnswerId": "games-hard-003-a3"
@@ -582,15 +582,15 @@
     "answers": [
       {
         "id": "games-hard-004-a1",
-        "text": "2015"
+        "text": "Red і Blue"
       },
       {
         "id": "games-hard-004-a2",
-        "text": "2007"
+        "text": "Gold і Silver"
       },
       {
         "id": "games-hard-004-a3",
-        "text": "Три дні"
+        "text": "Ruby і Sapphire"
       },
       {
         "id": "games-hard-004-a4",
@@ -611,15 +611,15 @@
       },
       {
         "id": "games-hard-005-a2",
-        "text": "2007"
+        "text": "2013"
       },
       {
         "id": "games-hard-005-a3",
-        "text": "Три дні"
+        "text": "2014"
       },
       {
         "id": "games-hard-005-a4",
-        "text": "Blizzard North"
+        "text": "2016"
       }
     ],
     "correctAnswerId": "games-hard-005-a1"
@@ -632,7 +632,7 @@
     "answers": [
       {
         "id": "games-hard-006-a1",
-        "text": "Три дні"
+        "text": "2005"
       },
       {
         "id": "games-hard-006-a2",
@@ -640,11 +640,11 @@
       },
       {
         "id": "games-hard-006-a3",
-        "text": "Blizzard North"
+        "text": "2006"
       },
       {
         "id": "games-hard-006-a4",
-        "text": "Larian Studios"
+        "text": "2009"
       }
     ],
     "correctAnswerId": "games-hard-006-a2"
@@ -657,11 +657,11 @@
     "answers": [
       {
         "id": "games-hard-007-a1",
-        "text": "Blizzard North"
+        "text": "Один день"
       },
       {
         "id": "games-hard-007-a2",
-        "text": "Larian Studios"
+        "text": "П'ять днів"
       },
       {
         "id": "games-hard-007-a3",
@@ -669,7 +669,7 @@
       },
       {
         "id": "games-hard-007-a4",
-        "text": "1981"
+        "text": "Сім днів"
       }
     ],
     "correctAnswerId": "games-hard-007-a3"
@@ -682,15 +682,15 @@
     "answers": [
       {
         "id": "games-hard-008-a1",
-        "text": "Larian Studios"
+        "text": "Blizzard South"
       },
       {
         "id": "games-hard-008-a2",
-        "text": "1981"
+        "text": "BioWare"
       },
       {
         "id": "games-hard-008-a3",
-        "text": "1985"
+        "text": "Westwood Studios"
       },
       {
         "id": "games-hard-008-a4",
@@ -711,15 +711,15 @@
       },
       {
         "id": "games-hard-009-a2",
-        "text": "1981"
+        "text": "Obsidian Entertainment"
       },
       {
         "id": "games-hard-009-a3",
-        "text": "1985"
+        "text": "BioWare"
       },
       {
         "id": "games-hard-009-a4",
-        "text": "1993"
+        "text": "Owlcat Games"
       }
     ],
     "correctAnswerId": "games-hard-009-a1"
@@ -732,7 +732,7 @@
     "answers": [
       {
         "id": "games-hard-010-a1",
-        "text": "1985"
+        "text": "1979"
       },
       {
         "id": "games-hard-010-a2",
@@ -740,11 +740,11 @@
       },
       {
         "id": "games-hard-010-a3",
-        "text": "1993"
+        "text": "1983"
       },
       {
         "id": "games-hard-010-a4",
-        "text": "Ерік Бароне"
+        "text": "1985"
       }
     ],
     "correctAnswerId": "games-hard-010-a2"
@@ -765,11 +765,11 @@
       },
       {
         "id": "programming-easy-001-a3",
-        "text": "Console.WriteLine"
+        "text": "SQL"
       },
       {
         "id": "programming-easy-001-a4",
-        "text": "bool"
+        "text": "Bash"
       }
     ],
     "correctAnswerId": "programming-easy-001-a1"
@@ -782,7 +782,7 @@
     "answers": [
       {
         "id": "programming-easy-002-a1",
-        "text": "Console.WriteLine"
+        "text": "HTML"
       },
       {
         "id": "programming-easy-002-a2",
@@ -790,11 +790,11 @@
       },
       {
         "id": "programming-easy-002-a3",
-        "text": "bool"
+        "text": "SQL"
       },
       {
         "id": "programming-easy-002-a4",
-        "text": "Цикл"
+        "text": "Git"
       }
     ],
     "correctAnswerId": "programming-easy-002-a2"
@@ -807,11 +807,11 @@
     "answers": [
       {
         "id": "programming-easy-003-a1",
-        "text": "bool"
+        "text": "Console.ReadLine"
       },
       {
         "id": "programming-easy-003-a2",
-        "text": "Цикл"
+        "text": "Console.ReadKey"
       },
       {
         "id": "programming-easy-003-a3",
@@ -819,7 +819,7 @@
       },
       {
         "id": "programming-easy-003-a4",
-        "text": "C#"
+        "text": "Console.Clear"
       }
     ],
     "correctAnswerId": "programming-easy-003-a3"
@@ -832,15 +832,15 @@
     "answers": [
       {
         "id": "programming-easy-004-a1",
-        "text": "Цикл"
+        "text": "int"
       },
       {
         "id": "programming-easy-004-a2",
-        "text": "C#"
+        "text": "string"
       },
       {
         "id": "programming-easy-004-a3",
-        "text": "Git"
+        "text": "double"
       },
       {
         "id": "programming-easy-004-a4",
@@ -861,15 +861,15 @@
       },
       {
         "id": "programming-easy-005-a2",
-        "text": "C#"
+        "text": "Умова"
       },
       {
         "id": "programming-easy-005-a3",
-        "text": "Git"
+        "text": "Коментар"
       },
       {
         "id": "programming-easy-005-a4",
-        "text": "SQL"
+        "text": "Оголошення змінної"
       }
     ],
     "correctAnswerId": "programming-easy-005-a1"
@@ -882,7 +882,7 @@
     "answers": [
       {
         "id": "programming-easy-006-a1",
-        "text": "Git"
+        "text": "Python"
       },
       {
         "id": "programming-easy-006-a2",
@@ -890,11 +890,11 @@
       },
       {
         "id": "programming-easy-006-a3",
-        "text": "SQL"
+        "text": "Java"
       },
       {
         "id": "programming-easy-006-a4",
-        "text": "int"
+        "text": "C++"
       }
     ],
     "correctAnswerId": "programming-easy-006-a2"
@@ -907,11 +907,11 @@
     "answers": [
       {
         "id": "programming-easy-007-a1",
-        "text": "SQL"
+        "text": "Docker"
       },
       {
         "id": "programming-easy-007-a2",
-        "text": "int"
+        "text": "NuGet"
       },
       {
         "id": "programming-easy-007-a3",
@@ -919,7 +919,7 @@
       },
       {
         "id": "programming-easy-007-a4",
-        "text": "Масив"
+        "text": "Postman"
       }
     ],
     "correctAnswerId": "programming-easy-007-a3"
@@ -932,15 +932,15 @@
     "answers": [
       {
         "id": "programming-easy-008-a1",
-        "text": "int"
+        "text": "HTML"
       },
       {
         "id": "programming-easy-008-a2",
-        "text": "Масив"
+        "text": "CSS"
       },
       {
         "id": "programming-easy-008-a3",
-        "text": "HTML"
+        "text": "YAML"
       },
       {
         "id": "programming-easy-008-a4",
@@ -961,15 +961,15 @@
       },
       {
         "id": "programming-easy-009-a2",
-        "text": "Масив"
+        "text": "string"
       },
       {
         "id": "programming-easy-009-a3",
-        "text": "HTML"
+        "text": "bool"
       },
       {
         "id": "programming-easy-009-a4",
-        "text": "CSS"
+        "text": "double"
       }
     ],
     "correctAnswerId": "programming-easy-009-a1"
@@ -982,7 +982,7 @@
     "answers": [
       {
         "id": "programming-easy-010-a1",
-        "text": "HTML"
+        "text": "Стек"
       },
       {
         "id": "programming-easy-010-a2",
@@ -990,11 +990,11 @@
       },
       {
         "id": "programming-easy-010-a3",
-        "text": "CSS"
+        "text": "Словник"
       },
       {
         "id": "programming-easy-010-a4",
-        "text": "Console.WriteLine"
+        "text": "Множина"
       }
     ],
     "correctAnswerId": "programming-easy-010-a2"
@@ -1011,15 +1011,15 @@
       },
       {
         "id": "programming-medium-001-a2",
-        "text": "async"
+        "text": "Наслідування"
       },
       {
         "id": "programming-medium-001-a3",
-        "text": "Контракт членів"
+        "text": "Поліморфізм"
       },
       {
         "id": "programming-medium-001-a4",
-        "text": "O(n)"
+        "text": "Абстракція"
       }
     ],
     "correctAnswerId": "programming-medium-001-a1"
@@ -1032,7 +1032,7 @@
     "answers": [
       {
         "id": "programming-medium-002-a1",
-        "text": "Контракт членів"
+        "text": "await"
       },
       {
         "id": "programming-medium-002-a2",
@@ -1040,11 +1040,11 @@
       },
       {
         "id": "programming-medium-002-a3",
-        "text": "O(n)"
+        "text": "yield"
       },
       {
         "id": "programming-medium-002-a4",
-        "text": "404"
+        "text": "static"
       }
     ],
     "correctAnswerId": "programming-medium-002-a2"
@@ -1057,11 +1057,11 @@
     "answers": [
       {
         "id": "programming-medium-003-a1",
-        "text": "O(n)"
+        "text": "Готовий екземпляр класу"
       },
       {
         "id": "programming-medium-003-a2",
-        "text": "404"
+        "text": "Тільки поля об'єкта"
       },
       {
         "id": "programming-medium-003-a3",
@@ -1069,7 +1069,7 @@
       },
       {
         "id": "programming-medium-003-a4",
-        "text": "JSON"
+        "text": "Таблицю у базі даних"
       }
     ],
     "correctAnswerId": "programming-medium-003-a3"
@@ -1082,15 +1082,15 @@
     "answers": [
       {
         "id": "programming-medium-004-a1",
-        "text": "404"
+        "text": "O(1)"
       },
       {
         "id": "programming-medium-004-a2",
-        "text": "JSON"
+        "text": "O(log n)"
       },
       {
         "id": "programming-medium-004-a3",
-        "text": "Унікальність рядка"
+        "text": "O(n²)"
       },
       {
         "id": "programming-medium-004-a4",
@@ -1111,28 +1111,28 @@
       },
       {
         "id": "programming-medium-005-a2",
-        "text": "JSON"
+        "text": "200"
       },
       {
         "id": "programming-medium-005-a3",
-        "text": "Унікальність рядка"
+        "text": "301"
       },
       {
         "id": "programming-medium-005-a4",
-        "text": "Останнім увійшов — першим вийшов"
+        "text": "500"
       }
     ],
     "correctAnswerId": "programming-medium-005-a1"
   },
   {
     "id": "programming-medium-006",
-    "text": "Який формат використовують для обміну структурованими даними?",
+    "text": "Який формат записує об’єкти як пари ключ–значення у фігурних дужках?",
     "category": "Programming",
     "difficulty": "Medium",
     "answers": [
       {
         "id": "programming-medium-006-a1",
-        "text": "Унікальність рядка"
+        "text": "HTML"
       },
       {
         "id": "programming-medium-006-a2",
@@ -1140,11 +1140,11 @@
       },
       {
         "id": "programming-medium-006-a3",
-        "text": "Останнім увійшов — першим вийшов"
+        "text": "INI"
       },
       {
         "id": "programming-medium-006-a4",
-        "text": "Проміжний або машинний код"
+        "text": "CSV"
       }
     ],
     "correctAnswerId": "programming-medium-006-a2"
@@ -1157,11 +1157,11 @@
     "answers": [
       {
         "id": "programming-medium-007-a1",
-        "text": "Останнім увійшов — першим вийшов"
+        "text": "Автоматичне сортування"
       },
       {
         "id": "programming-medium-007-a2",
-        "text": "Проміжний або машинний код"
+        "text": "Шифрування кожного поля"
       },
       {
         "id": "programming-medium-007-a3",
@@ -1169,7 +1169,7 @@
       },
       {
         "id": "programming-medium-007-a4",
-        "text": "Потрібний сервіс"
+        "text": "Однакові значення всіх рядків"
       }
     ],
     "correctAnswerId": "programming-medium-007-a3"
@@ -1182,15 +1182,15 @@
     "answers": [
       {
         "id": "programming-medium-008-a1",
-        "text": "Проміжний або машинний код"
+        "text": "Першим увійшов — першим вийшов"
       },
       {
         "id": "programming-medium-008-a2",
-        "text": "Потрібний сервіс"
+        "text": "У випадковому порядку"
       },
       {
         "id": "programming-medium-008-a3",
-        "text": "Інкапсуляція"
+        "text": "За алфавітом"
       },
       {
         "id": "programming-medium-008-a4",
@@ -1211,15 +1211,15 @@
       },
       {
         "id": "programming-medium-009-a2",
-        "text": "Потрібний сервіс"
+        "text": "Тільки коментарі"
       },
       {
         "id": "programming-medium-009-a3",
-        "text": "Інкапсуляція"
+        "text": "Тільки файл конфігурації"
       },
       {
         "id": "programming-medium-009-a4",
-        "text": "async"
+        "text": "Зображення інтерфейсу"
       }
     ],
     "correctAnswerId": "programming-medium-009-a1"
@@ -1232,7 +1232,7 @@
     "answers": [
       {
         "id": "programming-medium-010-a1",
-        "text": "Інкапсуляція"
+        "text": "Лише назва класу"
       },
       {
         "id": "programming-medium-010-a2",
@@ -1240,18 +1240,18 @@
       },
       {
         "id": "programming-medium-010-a3",
-        "text": "async"
+        "text": "Копія всього проєкту"
       },
       {
         "id": "programming-medium-010-a4",
-        "text": "Контракт членів"
+        "text": "Тільки коментар методу"
       }
     ],
     "correctAnswerId": "programming-medium-010-a2"
   },
   {
     "id": "programming-hard-001",
-    "text": "На що CLR компілює C# перед виконанням JIT?",
+    "text": "На що компілятор C# перетворює код перед виконанням JIT?",
     "category": "Programming",
     "difficulty": "Hard",
     "answers": [
@@ -1261,15 +1261,15 @@
       },
       {
         "id": "programming-hard-001-a2",
-        "text": "Збалансоване дерево"
+        "text": "Машинний код x64"
       },
       {
         "id": "programming-hard-001-a3",
-        "text": "O(1)"
+        "text": "Байткод JVM"
       },
       {
         "id": "programming-hard-001-a4",
-        "text": "TLS"
+        "text": "Код JavaScript"
       }
     ],
     "correctAnswerId": "programming-hard-001-a1"
@@ -1282,7 +1282,7 @@
     "answers": [
       {
         "id": "programming-hard-002-a1",
-        "text": "O(1)"
+        "text": "Зв'язаний список"
       },
       {
         "id": "programming-hard-002-a2",
@@ -1290,11 +1290,11 @@
       },
       {
         "id": "programming-hard-002-a3",
-        "text": "TLS"
+        "text": "Неупорядкований масив"
       },
       {
         "id": "programming-hard-002-a4",
-        "text": "Atomicity"
+        "text": "Звичайна черга"
       }
     ],
     "correctAnswerId": "programming-hard-002-a2"
@@ -1307,11 +1307,11 @@
     "answers": [
       {
         "id": "programming-hard-003-a1",
-        "text": "TLS"
+        "text": "O(log n)"
       },
       {
         "id": "programming-hard-003-a2",
-        "text": "Atomicity"
+        "text": "O(n)"
       },
       {
         "id": "programming-hard-003-a3",
@@ -1319,7 +1319,7 @@
       },
       {
         "id": "programming-hard-003-a4",
-        "text": "Стан гонитви"
+        "text": "O(n²)"
       }
     ],
     "correctAnswerId": "programming-hard-003-a3"
@@ -1332,15 +1332,15 @@
     "answers": [
       {
         "id": "programming-hard-004-a1",
-        "text": "Atomicity"
+        "text": "FTP"
       },
       {
         "id": "programming-hard-004-a2",
-        "text": "Стан гонитви"
+        "text": "SMTP"
       },
       {
         "id": "programming-hard-004-a3",
-        "text": "Взаємне блокування"
+        "text": "DNS"
       },
       {
         "id": "programming-hard-004-a4",
@@ -1361,15 +1361,15 @@
       },
       {
         "id": "programming-hard-005-a2",
-        "text": "Стан гонитви"
+        "text": "Consistency"
       },
       {
         "id": "programming-hard-005-a3",
-        "text": "Взаємне блокування"
+        "text": "Isolation"
       },
       {
         "id": "programming-hard-005-a4",
-        "text": "Збирач сміття"
+        "text": "Durability"
       }
     ],
     "correctAnswerId": "programming-hard-005-a1"
@@ -1390,11 +1390,11 @@
       },
       {
         "id": "programming-hard-006-a3",
-        "text": "Збирач сміття"
+        "text": "Переповнення стека"
       },
       {
         "id": "programming-hard-006-a4",
-        "text": "Обсяг пам'яті алгоритму"
+        "text": "Витік пам'яті"
       }
     ],
     "correctAnswerId": "programming-hard-006-a2"
@@ -1407,11 +1407,11 @@
     "answers": [
       {
         "id": "programming-hard-007-a1",
-        "text": "Збирач сміття"
+        "text": "Стан гонитви"
       },
       {
         "id": "programming-hard-007-a2",
-        "text": "Обсяг пам'яті алгоритму"
+        "text": "Взаємне виключення"
       },
       {
         "id": "programming-hard-007-a3",
@@ -1419,7 +1419,7 @@
       },
       {
         "id": "programming-hard-007-a4",
-        "text": "Відсутність стану запиту"
+        "text": "Переповнення буфера"
       }
     ],
     "correctAnswerId": "programming-hard-007-a3"
@@ -1432,15 +1432,15 @@
     "answers": [
       {
         "id": "programming-hard-008-a1",
-        "text": "Обсяг пам'яті алгоритму"
+        "text": "JIT-компілятор"
       },
       {
         "id": "programming-hard-008-a2",
-        "text": "Відсутність стану запиту"
+        "text": "Планувальник потоків"
       },
       {
         "id": "programming-hard-008-a3",
-        "text": "Проміжну мову IL"
+        "text": "Завантажувач класів"
       },
       {
         "id": "programming-hard-008-a4",
@@ -1461,15 +1461,15 @@
       },
       {
         "id": "programming-hard-009-a2",
-        "text": "Відсутність стану запиту"
+        "text": "Час виконання алгоритму"
       },
       {
         "id": "programming-hard-009-a3",
-        "text": "Проміжну мову IL"
+        "text": "Кількість рядків коду"
       },
       {
         "id": "programming-hard-009-a4",
-        "text": "Збалансоване дерево"
+        "text": "Розмір вихідного файлу"
       }
     ],
     "correctAnswerId": "programming-hard-009-a1"
@@ -1482,7 +1482,7 @@
     "answers": [
       {
         "id": "programming-hard-010-a1",
-        "text": "Проміжну мову IL"
+        "text": "Обов'язкова сесія на сервері"
       },
       {
         "id": "programming-hard-010-a2",
@@ -1490,11 +1490,11 @@
       },
       {
         "id": "programming-hard-010-a3",
-        "text": "Збалансоване дерево"
+        "text": "Спільний стан усіх клієнтів"
       },
       {
         "id": "programming-hard-010-a4",
-        "text": "O(1)"
+        "text": "Залежність від минулого запиту"
       }
     ],
     "correctAnswerId": "programming-hard-010-a2"
@@ -1511,15 +1511,15 @@
       },
       {
         "id": "sports-easy-001-a2",
-        "text": "Нуль"
+        "text": "9"
       },
       {
         "id": "sports-easy-001-a3",
-        "text": "Три"
+        "text": "10"
       },
       {
         "id": "sports-easy-001-a4",
-        "text": "П'ять"
+        "text": "12"
       }
     ],
     "correctAnswerId": "sports-easy-001-a1"
@@ -1532,7 +1532,7 @@
     "answers": [
       {
         "id": "sports-easy-002-a1",
-        "text": "Три"
+        "text": "Одне очко"
       },
       {
         "id": "sports-easy-002-a2",
@@ -1540,11 +1540,11 @@
       },
       {
         "id": "sports-easy-002-a3",
-        "text": "П'ять"
+        "text": "Рівний рахунок"
       },
       {
         "id": "sports-easy-002-a4",
-        "text": "42,195 км"
+        "text": "Перемога в сеті"
       }
     ],
     "correctAnswerId": "sports-easy-002-a2"
@@ -1557,11 +1557,11 @@
     "answers": [
       {
         "id": "sports-easy-003-a1",
-        "text": "П'ять"
+        "text": "Одне"
       },
       {
         "id": "sports-easy-003-a2",
-        "text": "42,195 км"
+        "text": "Два"
       },
       {
         "id": "sports-easy-003-a3",
@@ -1569,7 +1569,7 @@
       },
       {
         "id": "sports-easy-003-a4",
-        "text": "Король"
+        "text": "Чотири"
       }
     ],
     "correctAnswerId": "sports-easy-003-a3"
@@ -1582,15 +1582,15 @@
     "answers": [
       {
         "id": "sports-easy-004-a1",
-        "text": "42,195 км"
+        "text": "Чотири"
       },
       {
         "id": "sports-easy-004-a2",
-        "text": "Король"
+        "text": "Шість"
       },
       {
         "id": "sports-easy-004-a3",
-        "text": "Шість"
+        "text": "Сім"
       },
       {
         "id": "sports-easy-004-a4",
@@ -1611,15 +1611,15 @@
       },
       {
         "id": "sports-easy-005-a2",
-        "text": "Король"
+        "text": "21,0975 км"
       },
       {
         "id": "sports-easy-005-a3",
-        "text": "Шість"
+        "text": "40 км"
       },
       {
         "id": "sports-easy-005-a4",
-        "text": "Велоспорт"
+        "text": "50 км"
       }
     ],
     "correctAnswerId": "sports-easy-005-a1"
@@ -1632,7 +1632,7 @@
     "answers": [
       {
         "id": "sports-easy-006-a1",
-        "text": "Шість"
+        "text": "Ферзь"
       },
       {
         "id": "sports-easy-006-a2",
@@ -1640,11 +1640,11 @@
       },
       {
         "id": "sports-easy-006-a3",
-        "text": "Велоспорт"
+        "text": "Тура"
       },
       {
         "id": "sports-easy-006-a4",
-        "text": "50 метрів"
+        "text": "Слон"
       }
     ],
     "correctAnswerId": "sports-easy-006-a2"
@@ -1657,11 +1657,11 @@
     "answers": [
       {
         "id": "sports-easy-007-a1",
-        "text": "Велоспорт"
+        "text": "П'ять"
       },
       {
         "id": "sports-easy-007-a2",
-        "text": "50 метрів"
+        "text": "Сім"
       },
       {
         "id": "sports-easy-007-a3",
@@ -1669,7 +1669,7 @@
       },
       {
         "id": "sports-easy-007-a4",
-        "text": "Волан"
+        "text": "Вісім"
       }
     ],
     "correctAnswerId": "sports-easy-007-a3"
@@ -1682,15 +1682,15 @@
     "answers": [
       {
         "id": "sports-easy-008-a1",
-        "text": "50 метрів"
+        "text": "Мотоспорт"
       },
       {
         "id": "sports-easy-008-a2",
-        "text": "Волан"
+        "text": "Легка атлетика"
       },
       {
         "id": "sports-easy-008-a3",
-        "text": "11"
+        "text": "Веслування"
       },
       {
         "id": "sports-easy-008-a4",
@@ -1711,15 +1711,15 @@
       },
       {
         "id": "sports-easy-009-a2",
-        "text": "Волан"
+        "text": "25 метрів"
       },
       {
         "id": "sports-easy-009-a3",
-        "text": "11"
+        "text": "75 метрів"
       },
       {
         "id": "sports-easy-009-a4",
-        "text": "Нуль"
+        "text": "100 метрів"
       }
     ],
     "correctAnswerId": "sports-easy-009-a1"
@@ -1732,7 +1732,7 @@
     "answers": [
       {
         "id": "sports-easy-010-a1",
-        "text": "11"
+        "text": "Шайба"
       },
       {
         "id": "sports-easy-010-a2",
@@ -1740,11 +1740,11 @@
       },
       {
         "id": "sports-easy-010-a3",
-        "text": "Нуль"
+        "text": "М'яч"
       },
       {
         "id": "sports-easy-010-a4",
-        "text": "Три"
+        "text": "Диск"
       }
     ],
     "correctAnswerId": "sports-easy-010-a2"
@@ -1761,15 +1761,15 @@
       },
       {
         "id": "sports-medium-001-a2",
-        "text": "Поул-позиція"
+        "text": "Негайне вилучення"
       },
       {
         "id": "sports-medium-001-a3",
-        "text": "Сім"
+        "text": "Призначення пенальті"
       },
       {
         "id": "sports-medium-001-a4",
-        "text": "Бита"
+        "text": "Зарахування гола"
       }
     ],
     "correctAnswerId": "sports-medium-001-a1"
@@ -1782,7 +1782,7 @@
     "answers": [
       {
         "id": "sports-medium-002-a1",
-        "text": "Сім"
+        "text": "Піт-стоп"
       },
       {
         "id": "sports-medium-002-a2",
@@ -1790,11 +1790,11 @@
       },
       {
         "id": "sports-medium-002-a3",
-        "text": "Бита"
+        "text": "Фальстарт"
       },
       {
         "id": "sports-medium-002-a4",
-        "text": "Шість"
+        "text": "Прогрівальне коло"
       }
     ],
     "correctAnswerId": "sports-medium-002-a2"
@@ -1807,7 +1807,7 @@
     "answers": [
       {
         "id": "sports-medium-003-a1",
-        "text": "Бита"
+        "text": "П'ять"
       },
       {
         "id": "sports-medium-003-a2",
@@ -1819,7 +1819,7 @@
       },
       {
         "id": "sports-medium-003-a4",
-        "text": "Одне"
+        "text": "Вісім"
       }
     ],
     "correctAnswerId": "sports-medium-003-a3"
@@ -1832,15 +1832,15 @@
     "answers": [
       {
         "id": "sports-medium-004-a1",
-        "text": "Шість"
+        "text": "Ракетка"
       },
       {
         "id": "sports-medium-004-a2",
-        "text": "Одне"
+        "text": "Ключка"
       },
       {
         "id": "sports-medium-004-a3",
-        "text": "11"
+        "text": "Весло"
       },
       {
         "id": "sports-medium-004-a4",
@@ -1861,15 +1861,15 @@
       },
       {
         "id": "sports-medium-005-a2",
-        "text": "Одне"
+        "text": "Три"
       },
       {
         "id": "sports-medium-005-a3",
-        "text": "11"
+        "text": "П'ять"
       },
       {
         "id": "sports-medium-005-a4",
-        "text": "Три"
+        "text": "Сім"
       }
     ],
     "correctAnswerId": "sports-medium-005-a1"
@@ -1882,7 +1882,7 @@
     "answers": [
       {
         "id": "sports-medium-006-a1",
-        "text": "11"
+        "text": "Два"
       },
       {
         "id": "sports-medium-006-a2",
@@ -1894,7 +1894,7 @@
       },
       {
         "id": "sports-medium-006-a4",
-        "text": "Шість"
+        "text": "Чотири"
       }
     ],
     "correctAnswerId": "sports-medium-006-a2"
@@ -1907,11 +1907,11 @@
     "answers": [
       {
         "id": "sports-medium-007-a1",
-        "text": "Три"
+        "text": "9"
       },
       {
         "id": "sports-medium-007-a2",
-        "text": "Шість"
+        "text": "15"
       },
       {
         "id": "sports-medium-007-a3",
@@ -1919,7 +1919,7 @@
       },
       {
         "id": "sports-medium-007-a4",
-        "text": "Уругвай"
+        "text": "21"
       }
     ],
     "correctAnswerId": "sports-medium-007-a3"
@@ -1932,15 +1932,15 @@
     "answers": [
       {
         "id": "sports-medium-008-a1",
-        "text": "Шість"
+        "text": "Два"
       },
       {
         "id": "sports-medium-008-a2",
-        "text": "Уругвай"
+        "text": "Чотири"
       },
       {
         "id": "sports-medium-008-a3",
-        "text": "Попередження"
+        "text": "П'ять"
       },
       {
         "id": "sports-medium-008-a4",
@@ -1961,15 +1961,15 @@
       },
       {
         "id": "sports-medium-009-a2",
-        "text": "Уругвай"
+        "text": "П'ять"
       },
       {
         "id": "sports-medium-009-a3",
-        "text": "Попередження"
+        "text": "Сім"
       },
       {
         "id": "sports-medium-009-a4",
-        "text": "Поул-позиція"
+        "text": "Вісім"
       }
     ],
     "correctAnswerId": "sports-medium-009-a1"
@@ -1982,7 +1982,7 @@
     "answers": [
       {
         "id": "sports-medium-010-a1",
-        "text": "Попередження"
+        "text": "Бразилія"
       },
       {
         "id": "sports-medium-010-a2",
@@ -1990,11 +1990,11 @@
       },
       {
         "id": "sports-medium-010-a3",
-        "text": "Поул-позиція"
+        "text": "Аргентина"
       },
       {
         "id": "sports-medium-010-a4",
-        "text": "Сім"
+        "text": "Італія"
       }
     ],
     "correctAnswerId": "sports-medium-010-a2"
@@ -2011,15 +2011,15 @@
       },
       {
         "id": "sports-hard-001-a2",
-        "text": "400 метрів"
+        "text": "Вісім"
       },
       {
         "id": "sports-hard-001-a3",
-        "text": "Сім"
+        "text": "Дев'ять"
       },
       {
         "id": "sports-hard-001-a4",
-        "text": "Дев'ять"
+        "text": "Дванадцять"
       }
     ],
     "correctAnswerId": "sports-hard-001-a1"
@@ -2032,7 +2032,7 @@
     "answers": [
       {
         "id": "sports-hard-002-a1",
-        "text": "Сім"
+        "text": "200 метрів"
       },
       {
         "id": "sports-hard-002-a2",
@@ -2040,11 +2040,11 @@
       },
       {
         "id": "sports-hard-002-a3",
-        "text": "Дев'ять"
+        "text": "300 метрів"
       },
       {
         "id": "sports-hard-002-a4",
-        "text": "110 метрів"
+        "text": "500 метрів"
       }
     ],
     "correctAnswerId": "sports-hard-002-a2"
@@ -2057,11 +2057,11 @@
     "answers": [
       {
         "id": "sports-hard-003-a1",
-        "text": "Дев'ять"
+        "text": "П'ять"
       },
       {
         "id": "sports-hard-003-a2",
-        "text": "110 метрів"
+        "text": "Шість"
       },
       {
         "id": "sports-hard-003-a3",
@@ -2069,7 +2069,7 @@
       },
       {
         "id": "sports-hard-003-a4",
-        "text": "Чотири"
+        "text": "Дев'ять"
       }
     ],
     "correctAnswerId": "sports-hard-003-a3"
@@ -2086,11 +2086,11 @@
       },
       {
         "id": "sports-hard-004-a2",
-        "text": "110 метрів"
+        "text": "Вісім"
       },
       {
         "id": "sports-hard-004-a3",
-        "text": "Чотири"
+        "text": "Десять"
       },
       {
         "id": "sports-hard-004-a4",
@@ -2111,15 +2111,15 @@
       },
       {
         "id": "sports-hard-005-a2",
-        "text": "110 метрів"
+        "text": "П'ять"
       },
       {
         "id": "sports-hard-005-a3",
-        "text": "Чотири"
+        "text": "Шість"
       },
       {
         "id": "sports-hard-005-a4",
-        "text": "250 метрів"
+        "text": "Вісім"
       }
     ],
     "correctAnswerId": "sports-hard-005-a1"
@@ -2132,7 +2132,7 @@
     "answers": [
       {
         "id": "sports-hard-006-a1",
-        "text": "Чотири"
+        "text": "90 метрів"
       },
       {
         "id": "sports-hard-006-a2",
@@ -2140,11 +2140,11 @@
       },
       {
         "id": "sports-hard-006-a3",
-        "text": "Сім"
+        "text": "100 метрів"
       },
       {
         "id": "sports-hard-006-a4",
-        "text": "250 метрів"
+        "text": "120 метрів"
       }
     ],
     "correctAnswerId": "sports-hard-006-a2"
@@ -2157,11 +2157,11 @@
     "answers": [
       {
         "id": "sports-hard-007-a1",
-        "text": "Сім"
+        "text": "Три"
       },
       {
         "id": "sports-hard-007-a2",
-        "text": "250 метрів"
+        "text": "П'ять"
       },
       {
         "id": "sports-hard-007-a3",
@@ -2169,7 +2169,7 @@
       },
       {
         "id": "sports-hard-007-a4",
-        "text": "12"
+        "text": "Шість"
       }
     ],
     "correctAnswerId": "sports-hard-007-a3"
@@ -2182,15 +2182,15 @@
     "answers": [
       {
         "id": "sports-hard-008-a1",
-        "text": "250 метрів"
+        "text": "П'ять"
       },
       {
         "id": "sports-hard-008-a2",
-        "text": "12"
+        "text": "Шість"
       },
       {
         "id": "sports-hard-008-a3",
-        "text": "Десять"
+        "text": "Вісім"
       },
       {
         "id": "sports-hard-008-a4",
@@ -2211,11 +2211,11 @@
       },
       {
         "id": "sports-hard-009-a2",
-        "text": "12"
+        "text": "200 метрів"
       },
       {
         "id": "sports-hard-009-a3",
-        "text": "Десять"
+        "text": "300 метрів"
       },
       {
         "id": "sports-hard-009-a4",
@@ -2232,7 +2232,7 @@
     "answers": [
       {
         "id": "sports-hard-010-a1",
-        "text": "Десять"
+        "text": "8"
       },
       {
         "id": "sports-hard-010-a2",
@@ -2240,18 +2240,18 @@
       },
       {
         "id": "sports-hard-010-a3",
-        "text": "400 метрів"
+        "text": "10"
       },
       {
         "id": "sports-hard-010-a4",
-        "text": "Сім"
+        "text": "15"
       }
     ],
     "correctAnswerId": "sports-hard-010-a2"
   },
   {
     "id": "movies-easy-001",
-    "text": "Як звати героя оригінальної трилогії Star Wars?",
+    "text": "Як звати джедая, сина Енакіна, в оригінальній трилогії Star Wars?",
     "category": "Movies",
     "difficulty": "Easy",
     "answers": [
@@ -2261,15 +2261,15 @@
       },
       {
         "id": "movies-easy-001-a2",
-        "text": "Ельза"
+        "text": "Ган Соло"
       },
       {
         "id": "movies-easy-001-a3",
-        "text": "Вуді"
+        "text": "Обі-Ван Кенобі"
       },
       {
         "id": "movies-easy-001-a4",
-        "text": "Гоґвортс"
+        "text": "Енакін Скайвокер"
       }
     ],
     "correctAnswerId": "movies-easy-001-a1"
@@ -2282,7 +2282,7 @@
     "answers": [
       {
         "id": "movies-easy-002-a1",
-        "text": "Вуді"
+        "text": "Анна"
       },
       {
         "id": "movies-easy-002-a2",
@@ -2290,11 +2290,11 @@
       },
       {
         "id": "movies-easy-002-a3",
-        "text": "Гоґвортс"
+        "text": "Меріда"
       },
       {
         "id": "movies-easy-002-a4",
-        "text": "1997"
+        "text": "Рапунцель"
       }
     ],
     "correctAnswerId": "movies-easy-002-a2"
@@ -2307,11 +2307,11 @@
     "answers": [
       {
         "id": "movies-easy-003-a1",
-        "text": "Гоґвортс"
+        "text": "Базз Лайтер"
       },
       {
         "id": "movies-easy-003-a2",
-        "text": "1997"
+        "text": "Джессі"
       },
       {
         "id": "movies-easy-003-a3",
@@ -2319,7 +2319,7 @@
       },
       {
         "id": "movies-easy-003-a4",
-        "text": "Немо"
+        "text": "Енді"
       }
     ],
     "correctAnswerId": "movies-easy-003-a3"
@@ -2332,15 +2332,15 @@
     "answers": [
       {
         "id": "movies-easy-004-a1",
-        "text": "1997"
+        "text": "Дурмстренґ"
       },
       {
         "id": "movies-easy-004-a2",
-        "text": "Немо"
+        "text": "Шармбатон"
       },
       {
         "id": "movies-easy-004-a3",
-        "text": "Сімба"
+        "text": "Ільверморні"
       },
       {
         "id": "movies-easy-004-a4",
@@ -2361,15 +2361,15 @@
       },
       {
         "id": "movies-easy-005-a2",
-        "text": "Немо"
+        "text": "1995"
       },
       {
         "id": "movies-easy-005-a3",
-        "text": "Сімба"
+        "text": "1999"
       },
       {
         "id": "movies-easy-005-a4",
-        "text": "Нео"
+        "text": "2001"
       }
     ],
     "correctAnswerId": "movies-easy-005-a1"
@@ -2382,7 +2382,7 @@
     "answers": [
       {
         "id": "movies-easy-006-a1",
-        "text": "Сімба"
+        "text": "Марлін"
       },
       {
         "id": "movies-easy-006-a2",
@@ -2390,11 +2390,11 @@
       },
       {
         "id": "movies-easy-006-a3",
-        "text": "Нео"
+        "text": "Дорі"
       },
       {
         "id": "movies-easy-006-a4",
-        "text": "Динозаврів"
+        "text": "Ґілл"
       }
     ],
     "correctAnswerId": "movies-easy-006-a2"
@@ -2407,11 +2407,11 @@
     "answers": [
       {
         "id": "movies-easy-007-a1",
-        "text": "Нео"
+        "text": "Муфаса"
       },
       {
         "id": "movies-easy-007-a2",
-        "text": "Динозаврів"
+        "text": "Шрам"
       },
       {
         "id": "movies-easy-007-a3",
@@ -2419,7 +2419,7 @@
       },
       {
         "id": "movies-easy-007-a4",
-        "text": "Кевін"
+        "text": "Нала"
       }
     ],
     "correctAnswerId": "movies-easy-007-a3"
@@ -2432,15 +2432,15 @@
     "answers": [
       {
         "id": "movies-easy-008-a1",
-        "text": "Динозаврів"
+        "text": "Морфеус"
       },
       {
         "id": "movies-easy-008-a2",
-        "text": "Кевін"
+        "text": "Сайфер"
       },
       {
         "id": "movies-easy-008-a3",
-        "text": "Люк Скайвокер"
+        "text": "Танк"
       },
       {
         "id": "movies-easy-008-a4",
@@ -2461,15 +2461,15 @@
       },
       {
         "id": "movies-easy-009-a2",
-        "text": "Кевін"
+        "text": "Мамонтів"
       },
       {
         "id": "movies-easy-009-a3",
-        "text": "Люк Скайвокер"
+        "text": "Мегалодонів"
       },
       {
         "id": "movies-easy-009-a4",
-        "text": "Ельза"
+        "text": "Шаблезубих тигрів"
       }
     ],
     "correctAnswerId": "movies-easy-009-a1"
@@ -2482,7 +2482,7 @@
     "answers": [
       {
         "id": "movies-easy-010-a1",
-        "text": "Люк Скайвокер"
+        "text": "Пітер"
       },
       {
         "id": "movies-easy-010-a2",
@@ -2490,11 +2490,11 @@
       },
       {
         "id": "movies-easy-010-a3",
-        "text": "Ельза"
+        "text": "Базз"
       },
       {
         "id": "movies-easy-010-a4",
-        "text": "Вуді"
+        "text": "Гаррі"
       }
     ],
     "correctAnswerId": "movies-easy-010-a2"
@@ -2511,15 +2511,15 @@
       },
       {
         "id": "movies-medium-001-a2",
-        "text": "Віто Корлеоне"
+        "text": "Джеймс Кемерон"
       },
       {
         "id": "movies-medium-001-a3",
-        "text": "До гори Долі"
+        "text": "Рідлі Скотт"
       },
       {
         "id": "movies-medium-001-a4",
-        "text": "DeLorean"
+        "text": "Джордж Лукас"
       }
     ],
     "correctAnswerId": "movies-medium-001-a1"
@@ -2532,7 +2532,7 @@
     "answers": [
       {
         "id": "movies-medium-002-a1",
-        "text": "До гори Долі"
+        "text": "Майкл Корлеоне"
       },
       {
         "id": "movies-medium-002-a2",
@@ -2540,11 +2540,11 @@
       },
       {
         "id": "movies-medium-002-a3",
-        "text": "DeLorean"
+        "text": "Сонні Корлеоне"
       },
       {
         "id": "movies-medium-002-a4",
-        "text": "Дом Кобб"
+        "text": "Фредо Корлеоне"
       }
     ],
     "correctAnswerId": "movies-medium-002-a2"
@@ -2557,11 +2557,11 @@
     "answers": [
       {
         "id": "movies-medium-003-a1",
-        "text": "DeLorean"
+        "text": "До Мінас-Тіріта"
       },
       {
         "id": "movies-medium-003-a2",
-        "text": "Дом Кобб"
+        "text": "До Гельмового Яру"
       },
       {
         "id": "movies-medium-003-a3",
@@ -2569,7 +2569,7 @@
       },
       {
         "id": "movies-medium-003-a4",
-        "text": "Тіхіро"
+        "text": "До Едораса"
       }
     ],
     "correctAnswerId": "movies-medium-003-a3"
@@ -2582,15 +2582,15 @@
     "answers": [
       {
         "id": "movies-medium-004-a1",
-        "text": "Дом Кобб"
+        "text": "Ford Mustang"
       },
       {
         "id": "movies-medium-004-a2",
-        "text": "Тіхіро"
+        "text": "Chevrolet Camaro"
       },
       {
         "id": "movies-medium-004-a3",
-        "text": "Ґарґантюа"
+        "text": "Aston Martin DB5"
       },
       {
         "id": "movies-medium-004-a4",
@@ -2611,15 +2611,15 @@
       },
       {
         "id": "movies-medium-005-a2",
-        "text": "Тіхіро"
+        "text": "Артур"
       },
       {
         "id": "movies-medium-005-a3",
-        "text": "Ґарґантюа"
+        "text": "Імс"
       },
       {
         "id": "movies-medium-005-a4",
-        "text": "Ксеноморф"
+        "text": "Роберт Фішер"
       }
     ],
     "correctAnswerId": "movies-medium-005-a1"
@@ -2632,7 +2632,7 @@
     "answers": [
       {
         "id": "movies-medium-006-a1",
-        "text": "Ґарґантюа"
+        "text": "Кікі"
       },
       {
         "id": "movies-medium-006-a2",
@@ -2640,11 +2640,11 @@
       },
       {
         "id": "movies-medium-006-a3",
-        "text": "Ксеноморф"
+        "text": "Сацукі"
       },
       {
         "id": "movies-medium-006-a4",
-        "text": "Велика біла акула"
+        "text": "Сан"
       }
     ],
     "correctAnswerId": "movies-medium-006-a2"
@@ -2657,11 +2657,11 @@
     "answers": [
       {
         "id": "movies-medium-007-a1",
-        "text": "Ксеноморф"
+        "text": "Андромеда"
       },
       {
         "id": "movies-medium-007-a2",
-        "text": "Велика біла акула"
+        "text": "Тау Кіта"
       },
       {
         "id": "movies-medium-007-a3",
@@ -2669,7 +2669,7 @@
       },
       {
         "id": "movies-medium-007-a4",
-        "text": "Пон Джун Хо"
+        "text": "Соляріс"
       }
     ],
     "correctAnswerId": "movies-medium-007-a3"
@@ -2682,15 +2682,15 @@
     "answers": [
       {
         "id": "movies-medium-008-a1",
-        "text": "Велика біла акула"
+        "text": "Хижак"
       },
       {
         "id": "movies-medium-008-a2",
-        "text": "Пон Джун Хо"
+        "text": "Демогоргон"
       },
       {
         "id": "movies-medium-008-a3",
-        "text": "Стівен Спілберґ"
+        "text": "Чужоземець"
       },
       {
         "id": "movies-medium-008-a4",
@@ -2711,15 +2711,15 @@
       },
       {
         "id": "movies-medium-009-a2",
-        "text": "Пон Джун Хо"
+        "text": "Тигрова акула"
       },
       {
         "id": "movies-medium-009-a3",
-        "text": "Стівен Спілберґ"
+        "text": "Акула-молот"
       },
       {
         "id": "movies-medium-009-a4",
-        "text": "Віто Корлеоне"
+        "text": "Акула-бик"
       }
     ],
     "correctAnswerId": "movies-medium-009-a1"
@@ -2732,7 +2732,7 @@
     "answers": [
       {
         "id": "movies-medium-010-a1",
-        "text": "Стівен Спілберґ"
+        "text": "Пак Чхан Ук"
       },
       {
         "id": "movies-medium-010-a2",
@@ -2740,11 +2740,11 @@
       },
       {
         "id": "movies-medium-010-a3",
-        "text": "Віто Корлеоне"
+        "text": "Кім Кі Дук"
       },
       {
         "id": "movies-medium-010-a4",
-        "text": "До гори Долі"
+        "text": "Лі Чхан Дон"
       }
     ],
     "correctAnswerId": "movies-medium-010-a2"
@@ -2761,15 +2761,15 @@
       },
       {
         "id": "movies-hard-001-a2",
-        "text": "1942"
+        "text": "Metropolis"
       },
       {
         "id": "movies-hard-001-a3",
-        "text": "Акіра Куросава"
+        "text": "City Lights"
       },
       {
         "id": "movies-hard-001-a4",
-        "text": "Do Androids Dream of Electric Sheep?"
+        "text": "The General"
       }
     ],
     "correctAnswerId": "movies-hard-001-a1"
@@ -2782,7 +2782,7 @@
     "answers": [
       {
         "id": "movies-hard-002-a1",
-        "text": "Акіра Куросава"
+        "text": "1939"
       },
       {
         "id": "movies-hard-002-a2",
@@ -2790,11 +2790,11 @@
       },
       {
         "id": "movies-hard-002-a3",
-        "text": "Do Androids Dream of Electric Sheep?"
+        "text": "1941"
       },
       {
         "id": "movies-hard-002-a4",
-        "text": "Джон Вільямс"
+        "text": "1945"
       }
     ],
     "correctAnswerId": "movies-hard-002-a2"
@@ -2807,11 +2807,11 @@
     "answers": [
       {
         "id": "movies-hard-003-a1",
-        "text": "Do Androids Dream of Electric Sheep?"
+        "text": "Ясудзіро Одзу"
       },
       {
         "id": "movies-hard-003-a2",
-        "text": "Джон Вільямс"
+        "text": "Кендзі Мідзоґуті"
       },
       {
         "id": "movies-hard-003-a3",
@@ -2819,7 +2819,7 @@
       },
       {
         "id": "movies-hard-003-a4",
-        "text": "Орсон Веллс"
+        "text": "Такеші Кітано"
       }
     ],
     "correctAnswerId": "movies-hard-003-a3"
@@ -2832,15 +2832,15 @@
     "answers": [
       {
         "id": "movies-hard-004-a1",
-        "text": "Джон Вільямс"
+        "text": "The Man in the High Castle"
       },
       {
         "id": "movies-hard-004-a2",
-        "text": "Орсон Веллс"
+        "text": "Ubik"
       },
       {
         "id": "movies-hard-004-a3",
-        "text": "Південна Корея"
+        "text": "A Scanner Darkly"
       },
       {
         "id": "movies-hard-004-a4",
@@ -2861,15 +2861,15 @@
       },
       {
         "id": "movies-hard-005-a2",
-        "text": "Орсон Веллс"
+        "text": "Ганс Циммер"
       },
       {
         "id": "movies-hard-005-a3",
-        "text": "Південна Корея"
+        "text": "Джеррі Ґолдсміт"
       },
       {
         "id": "movies-hard-005-a4",
-        "text": "HAL 9000"
+        "text": "Бернард Геррманн"
       }
     ],
     "correctAnswerId": "movies-hard-005-a1"
@@ -2882,7 +2882,7 @@
     "answers": [
       {
         "id": "movies-hard-006-a1",
-        "text": "Південна Корея"
+        "text": "Альфред Гічкок"
       },
       {
         "id": "movies-hard-006-a2",
@@ -2890,11 +2890,11 @@
       },
       {
         "id": "movies-hard-006-a3",
-        "text": "HAL 9000"
+        "text": "Джон Форд"
       },
       {
         "id": "movies-hard-006-a4",
-        "text": "Квентін Тарантіно"
+        "text": "Біллі Вайлдер"
       }
     ],
     "correctAnswerId": "movies-hard-006-a2"
@@ -2907,11 +2907,11 @@
     "answers": [
       {
         "id": "movies-hard-007-a1",
-        "text": "HAL 9000"
+        "text": "Японія"
       },
       {
         "id": "movies-hard-007-a2",
-        "text": "Квентін Тарантіно"
+        "text": "Китай"
       },
       {
         "id": "movies-hard-007-a3",
@@ -2919,7 +2919,7 @@
       },
       {
         "id": "movies-hard-007-a4",
-        "text": "2019"
+        "text": "Таїланд"
       }
     ],
     "correctAnswerId": "movies-hard-007-a3"
@@ -2932,15 +2932,15 @@
     "answers": [
       {
         "id": "movies-hard-008-a1",
-        "text": "Квентін Тарантіно"
+        "text": "Deep Thought"
       },
       {
         "id": "movies-hard-008-a2",
-        "text": "2019"
+        "text": "Mother"
       },
       {
         "id": "movies-hard-008-a3",
-        "text": "The Jazz Singer"
+        "text": "VIKI"
       },
       {
         "id": "movies-hard-008-a4",
@@ -2961,15 +2961,15 @@
       },
       {
         "id": "movies-hard-009-a2",
-        "text": "2019"
+        "text": "Мартін Скорсезе"
       },
       {
         "id": "movies-hard-009-a3",
-        "text": "The Jazz Singer"
+        "text": "Ґай Річі"
       },
       {
         "id": "movies-hard-009-a4",
-        "text": "1942"
+        "text": "Девід Фінчер"
       }
     ],
     "correctAnswerId": "movies-hard-009-a1"
@@ -2982,7 +2982,7 @@
     "answers": [
       {
         "id": "movies-hard-010-a1",
-        "text": "The Jazz Singer"
+        "text": "2017"
       },
       {
         "id": "movies-hard-010-a2",
@@ -2990,11 +2990,11 @@
       },
       {
         "id": "movies-hard-010-a3",
-        "text": "1942"
+        "text": "2018"
       },
       {
         "id": "movies-hard-010-a4",
-        "text": "Акіра Куросава"
+        "text": "2020"
       }
     ],
     "correctAnswerId": "movies-hard-010-a2"
@@ -3011,15 +3011,15 @@
       },
       {
         "id": "generalknowledge-easy-001-a2",
-        "text": "H₂O"
+        "text": "Марс"
       },
       {
         "id": "generalknowledge-easy-001-a3",
-        "text": "Юпітер"
+        "text": "Венера"
       },
       {
         "id": "generalknowledge-easy-001-a4",
-        "text": "Сім"
+        "text": "Сонце"
       }
     ],
     "correctAnswerId": "generalknowledge-easy-001-a1"
@@ -3032,7 +3032,7 @@
     "answers": [
       {
         "id": "generalknowledge-easy-002-a1",
-        "text": "Юпітер"
+        "text": "CO₂"
       },
       {
         "id": "generalknowledge-easy-002-a2",
@@ -3040,11 +3040,11 @@
       },
       {
         "id": "generalknowledge-easy-002-a3",
-        "text": "Сім"
+        "text": "O₂"
       },
       {
         "id": "generalknowledge-easy-002-a4",
-        "text": "Єна"
+        "text": "NaCl"
       }
     ],
     "correctAnswerId": "generalknowledge-easy-002-a2"
@@ -3057,11 +3057,11 @@
     "answers": [
       {
         "id": "generalknowledge-easy-003-a1",
-        "text": "Сім"
+        "text": "Сатурн"
       },
       {
         "id": "generalknowledge-easy-003-a2",
-        "text": "Єна"
+        "text": "Нептун"
       },
       {
         "id": "generalknowledge-easy-003-a3",
@@ -3069,7 +3069,7 @@
       },
       {
         "id": "generalknowledge-easy-003-a4",
-        "text": "Марс"
+        "text": "Земля"
       }
     ],
     "correctAnswerId": "generalknowledge-easy-003-a3"
@@ -3082,15 +3082,15 @@
     "answers": [
       {
         "id": "generalknowledge-easy-004-a1",
-        "text": "Єна"
+        "text": "П'ять"
       },
       {
         "id": "generalknowledge-easy-004-a2",
-        "text": "Марс"
+        "text": "Шість"
       },
       {
         "id": "generalknowledge-easy-004-a3",
-        "text": "Чотири"
+        "text": "Вісім"
       },
       {
         "id": "generalknowledge-easy-004-a4",
@@ -3111,15 +3111,15 @@
       },
       {
         "id": "generalknowledge-easy-005-a2",
-        "text": "Марс"
+        "text": "Юань"
       },
       {
         "id": "generalknowledge-easy-005-a3",
-        "text": "Чотири"
+        "text": "Вона"
       },
       {
         "id": "generalknowledge-easy-005-a4",
-        "text": "Париж"
+        "text": "Бат"
       }
     ],
     "correctAnswerId": "generalknowledge-easy-005-a1"
@@ -3132,7 +3132,7 @@
     "answers": [
       {
         "id": "generalknowledge-easy-006-a1",
-        "text": "Чотири"
+        "text": "Венера"
       },
       {
         "id": "generalknowledge-easy-006-a2",
@@ -3140,11 +3140,11 @@
       },
       {
         "id": "generalknowledge-easy-006-a3",
-        "text": "Париж"
+        "text": "Меркурій"
       },
       {
         "id": "generalknowledge-easy-006-a4",
-        "text": "Гепард"
+        "text": "Нептун"
       }
     ],
     "correctAnswerId": "generalknowledge-easy-006-a2"
@@ -3157,11 +3157,11 @@
     "answers": [
       {
         "id": "generalknowledge-easy-007-a1",
-        "text": "Париж"
+        "text": "Дві"
       },
       {
         "id": "generalknowledge-easy-007-a2",
-        "text": "Гепард"
+        "text": "Три"
       },
       {
         "id": "generalknowledge-easy-007-a3",
@@ -3169,7 +3169,7 @@
       },
       {
         "id": "generalknowledge-easy-007-a4",
-        "text": "Бджоли"
+        "text": "П'ять"
       }
     ],
     "correctAnswerId": "generalknowledge-easy-007-a3"
@@ -3182,15 +3182,15 @@
     "answers": [
       {
         "id": "generalknowledge-easy-008-a1",
-        "text": "Гепард"
+        "text": "Ліон"
       },
       {
         "id": "generalknowledge-easy-008-a2",
-        "text": "Бджоли"
+        "text": "Марсель"
       },
       {
         "id": "generalknowledge-easy-008-a3",
-        "text": "Місяць"
+        "text": "Тулуза"
       },
       {
         "id": "generalknowledge-easy-008-a4",
@@ -3211,15 +3211,15 @@
       },
       {
         "id": "generalknowledge-easy-009-a2",
-        "text": "Бджоли"
+        "text": "Лев"
       },
       {
         "id": "generalknowledge-easy-009-a3",
-        "text": "Місяць"
+        "text": "Гепардова кішка"
       },
       {
         "id": "generalknowledge-easy-009-a4",
-        "text": "H₂O"
+        "text": "Кінь"
       }
     ],
     "correctAnswerId": "generalknowledge-easy-009-a1"
@@ -3232,7 +3232,7 @@
     "answers": [
       {
         "id": "generalknowledge-easy-010-a1",
-        "text": "Місяць"
+        "text": "Метелики"
       },
       {
         "id": "generalknowledge-easy-010-a2",
@@ -3240,11 +3240,11 @@
       },
       {
         "id": "generalknowledge-easy-010-a3",
-        "text": "H₂O"
+        "text": "Бабки"
       },
       {
         "id": "generalknowledge-easy-010-a4",
-        "text": "Юпітер"
+        "text": "Богомоли"
       }
     ],
     "correctAnswerId": "generalknowledge-easy-010-a2"
@@ -3261,15 +3261,15 @@
       },
       {
         "id": "generalknowledge-medium-001-a2",
-        "text": "Дезоксирибонуклеїнова кислота"
+        "text": "Ag"
       },
       {
         "id": "generalknowledge-medium-001-a3",
-        "text": "Сахара"
+        "text": "Cu"
       },
       {
         "id": "generalknowledge-medium-001-a4",
-        "text": "12"
+        "text": "Fe"
       }
     ],
     "correctAnswerId": "generalknowledge-medium-001-a1"
@@ -3282,7 +3282,7 @@
     "answers": [
       {
         "id": "generalknowledge-medium-002-a1",
-        "text": "Сахара"
+        "text": "Рибонуклеїнова кислота"
       },
       {
         "id": "generalknowledge-medium-002-a2",
@@ -3290,11 +3290,11 @@
       },
       {
         "id": "generalknowledge-medium-002-a3",
-        "text": "12"
+        "text": "Аденозинтрифосфорна кислота"
       },
       {
         "id": "generalknowledge-medium-002-a4",
-        "text": "Канберра"
+        "text": "Соляна кислота"
       }
     ],
     "correctAnswerId": "generalknowledge-medium-002-a2"
@@ -3307,11 +3307,11 @@
     "answers": [
       {
         "id": "generalknowledge-medium-003-a1",
-        "text": "12"
+        "text": "Гобі"
       },
       {
         "id": "generalknowledge-medium-003-a2",
-        "text": "Канберра"
+        "text": "Калахарі"
       },
       {
         "id": "generalknowledge-medium-003-a3",
@@ -3319,7 +3319,7 @@
       },
       {
         "id": "generalknowledge-medium-003-a4",
-        "text": "Перу"
+        "text": "Атакама"
       }
     ],
     "correctAnswerId": "generalknowledge-medium-003-a3"
@@ -3332,15 +3332,15 @@
     "answers": [
       {
         "id": "generalknowledge-medium-004-a1",
-        "text": "Канберра"
+        "text": "10"
       },
       {
         "id": "generalknowledge-medium-004-a2",
-        "text": "Перу"
+        "text": "14"
       },
       {
         "id": "generalknowledge-medium-004-a3",
-        "text": "0 °C"
+        "text": "16"
       },
       {
         "id": "generalknowledge-medium-004-a4",
@@ -3361,15 +3361,15 @@
       },
       {
         "id": "generalknowledge-medium-005-a2",
-        "text": "Перу"
+        "text": "Сідней"
       },
       {
         "id": "generalknowledge-medium-005-a3",
-        "text": "0 °C"
+        "text": "Мельбурн"
       },
       {
         "id": "generalknowledge-medium-005-a4",
-        "text": "206"
+        "text": "Брисбен"
       }
     ],
     "correctAnswerId": "generalknowledge-medium-005-a1"
@@ -3382,7 +3382,7 @@
     "answers": [
       {
         "id": "generalknowledge-medium-006-a1",
-        "text": "0 °C"
+        "text": "Болівія"
       },
       {
         "id": "generalknowledge-medium-006-a2",
@@ -3390,11 +3390,11 @@
       },
       {
         "id": "generalknowledge-medium-006-a3",
-        "text": "206"
+        "text": "Чилі"
       },
       {
         "id": "generalknowledge-medium-006-a4",
-        "text": "Na"
+        "text": "Еквадор"
       }
     ],
     "correctAnswerId": "generalknowledge-medium-006-a2"
@@ -3407,11 +3407,11 @@
     "answers": [
       {
         "id": "generalknowledge-medium-007-a1",
-        "text": "206"
+        "text": "−10 °C"
       },
       {
         "id": "generalknowledge-medium-007-a2",
-        "text": "Na"
+        "text": "10 °C"
       },
       {
         "id": "generalknowledge-medium-007-a3",
@@ -3419,7 +3419,7 @@
       },
       {
         "id": "generalknowledge-medium-007-a4",
-        "text": "Азот"
+        "text": "100 °C"
       }
     ],
     "correctAnswerId": "generalknowledge-medium-007-a3"
@@ -3432,15 +3432,15 @@
     "answers": [
       {
         "id": "generalknowledge-medium-008-a1",
-        "text": "Na"
+        "text": "196"
       },
       {
         "id": "generalknowledge-medium-008-a2",
-        "text": "Азот"
+        "text": "216"
       },
       {
         "id": "generalknowledge-medium-008-a3",
-        "text": "Au"
+        "text": "226"
       },
       {
         "id": "generalknowledge-medium-008-a4",
@@ -3461,15 +3461,15 @@
       },
       {
         "id": "generalknowledge-medium-009-a2",
-        "text": "Азот"
+        "text": "N"
       },
       {
         "id": "generalknowledge-medium-009-a3",
-        "text": "Au"
+        "text": "Ne"
       },
       {
         "id": "generalknowledge-medium-009-a4",
-        "text": "Дезоксирибонуклеїнова кислота"
+        "text": "Ni"
       }
     ],
     "correctAnswerId": "generalknowledge-medium-009-a1"
@@ -3482,7 +3482,7 @@
     "answers": [
       {
         "id": "generalknowledge-medium-010-a1",
-        "text": "Au"
+        "text": "Кисень"
       },
       {
         "id": "generalknowledge-medium-010-a2",
@@ -3490,11 +3490,11 @@
       },
       {
         "id": "generalknowledge-medium-010-a3",
-        "text": "Дезоксирибонуклеїнова кислота"
+        "text": "Вуглекислий газ"
       },
       {
         "id": "generalknowledge-medium-010-a4",
-        "text": "Сахара"
+        "text": "Водень"
       }
     ],
     "correctAnswerId": "generalknowledge-medium-010-a2"
@@ -3511,15 +3511,15 @@
       },
       {
         "id": "generalknowledge-hard-001-a2",
-        "text": "Улан-Батор"
+        "text": "6,022 × 10²¹"
       },
       {
         "id": "generalknowledge-hard-001-a3",
-        "text": "1919"
+        "text": "6,022 × 10²²"
       },
       {
         "id": "generalknowledge-hard-001-a4",
-        "text": "W"
+        "text": "6,022 × 10²⁴"
       }
     ],
     "correctAnswerId": "generalknowledge-hard-001-a1"
@@ -3532,7 +3532,7 @@
     "answers": [
       {
         "id": "generalknowledge-hard-002-a1",
-        "text": "1919"
+        "text": "Бішкек"
       },
       {
         "id": "generalknowledge-hard-002-a2",
@@ -3540,11 +3540,11 @@
       },
       {
         "id": "generalknowledge-hard-002-a3",
-        "text": "W"
+        "text": "Астана"
       },
       {
         "id": "generalknowledge-hard-002-a4",
-        "text": "15"
+        "text": "Ташкент"
       }
     ],
     "correctAnswerId": "generalknowledge-hard-002-a2"
@@ -3557,11 +3557,11 @@
     "answers": [
       {
         "id": "generalknowledge-hard-003-a1",
-        "text": "W"
+        "text": "1917"
       },
       {
         "id": "generalknowledge-hard-003-a2",
-        "text": "15"
+        "text": "1918"
       },
       {
         "id": "generalknowledge-hard-003-a3",
@@ -3569,7 +3569,7 @@
       },
       {
         "id": "generalknowledge-hard-003-a4",
-        "text": "Тимін"
+        "text": "1920"
       }
     ],
     "correctAnswerId": "generalknowledge-hard-003-a3"
@@ -3582,15 +3582,15 @@
     "answers": [
       {
         "id": "generalknowledge-hard-004-a1",
-        "text": "15"
+        "text": "V"
       },
       {
         "id": "generalknowledge-hard-004-a2",
-        "text": "Тимін"
+        "text": "Mo"
       },
       {
         "id": "generalknowledge-hard-004-a3",
-        "text": "Мітохондрія"
+        "text": "Ti"
       },
       {
         "id": "generalknowledge-hard-004-a4",
@@ -3611,15 +3611,15 @@
       },
       {
         "id": "generalknowledge-hard-005-a2",
-        "text": "Тимін"
+        "text": "13"
       },
       {
         "id": "generalknowledge-hard-005-a3",
-        "text": "Мітохондрія"
+        "text": "14"
       },
       {
         "id": "generalknowledge-hard-005-a4",
-        "text": "Ньютон"
+        "text": "16"
       }
     ],
     "correctAnswerId": "generalknowledge-hard-005-a1"
@@ -3632,7 +3632,7 @@
     "answers": [
       {
         "id": "generalknowledge-hard-006-a1",
-        "text": "Мітохондрія"
+        "text": "Гуанін"
       },
       {
         "id": "generalknowledge-hard-006-a2",
@@ -3640,11 +3640,11 @@
       },
       {
         "id": "generalknowledge-hard-006-a3",
-        "text": "Ньютон"
+        "text": "Цитозин"
       },
       {
         "id": "generalknowledge-hard-006-a4",
-        "text": "299 792 458 м/с"
+        "text": "Урацил"
       }
     ],
     "correctAnswerId": "generalknowledge-hard-006-a2"
@@ -3657,11 +3657,11 @@
     "answers": [
       {
         "id": "generalknowledge-hard-007-a1",
-        "text": "Ньютон"
+        "text": "Ядро"
       },
       {
         "id": "generalknowledge-hard-007-a2",
-        "text": "299 792 458 м/с"
+        "text": "Апарат Гольджі"
       },
       {
         "id": "generalknowledge-hard-007-a3",
@@ -3669,7 +3669,7 @@
       },
       {
         "id": "generalknowledge-hard-007-a4",
-        "text": "1453"
+        "text": "Лізосома"
       }
     ],
     "correctAnswerId": "generalknowledge-hard-007-a3"
@@ -3682,15 +3682,15 @@
     "answers": [
       {
         "id": "generalknowledge-hard-008-a1",
-        "text": "299 792 458 м/с"
+        "text": "Джоуль"
       },
       {
         "id": "generalknowledge-hard-008-a2",
-        "text": "1453"
+        "text": "Ват"
       },
       {
         "id": "generalknowledge-hard-008-a3",
-        "text": "6,022 × 10²³"
+        "text": "Паскаль"
       },
       {
         "id": "generalknowledge-hard-008-a4",
@@ -3711,15 +3711,15 @@
       },
       {
         "id": "generalknowledge-hard-009-a2",
-        "text": "1453"
+        "text": "299 792 458 км/с"
       },
       {
         "id": "generalknowledge-hard-009-a3",
-        "text": "6,022 × 10²³"
+        "text": "299 792 м/с"
       },
       {
         "id": "generalknowledge-hard-009-a4",
-        "text": "Улан-Батор"
+        "text": "300 000 000 м/с"
       }
     ],
     "correctAnswerId": "generalknowledge-hard-009-a1"
@@ -3732,7 +3732,7 @@
     "answers": [
       {
         "id": "generalknowledge-hard-010-a1",
-        "text": "6,022 × 10²³"
+        "text": "1451"
       },
       {
         "id": "generalknowledge-hard-010-a2",
@@ -3740,11 +3740,11 @@
       },
       {
         "id": "generalknowledge-hard-010-a3",
-        "text": "Улан-Батор"
+        "text": "1455"
       },
       {
         "id": "generalknowledge-hard-010-a4",
-        "text": "1919"
+        "text": "1461"
       }
     ],
     "correctAnswerId": "generalknowledge-hard-010-a2"
