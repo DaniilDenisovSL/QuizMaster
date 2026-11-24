@@ -47,7 +47,12 @@ public partial class MainMenuForm : Form
         {
             using var setup = new GameSetupForm();
             if (WindowNavigation.ShowDialog(this, setup) != DialogResult.OK) return;
-            var options = new QuizOptions { ShuffleQuestions = false, ShuffleAnswers = false };
+            var shuffleEnabled = setup.ShuffleEnabled;
+            var options = new QuizOptions
+            {
+                ShuffleQuestions = shuffleEnabled,
+                ShuffleAnswers = shuffleEnabled
+            };
             var category = QuizCatalog.ParseCategory(setup.SelectedCategory);
             var difficulty = QuizCatalog.ParseDifficulty(setup.SelectedDifficulty);
             try { questionBank.EnsureCanStart(category, difficulty, options.QuestionCount); }

@@ -170,23 +170,69 @@ internal static class Program
 
     private static void Shuffle()
     {
-        var bank = MakeBank();
+        var unrelatedEasy = new Question("other-easy", "Стороння легка тема", QuizCategory.Games, Difficulty.Easy,
+            Enumerable.Range(1, 4).Select(i => new Answer($"other-easy-a{i}", $"Стороння відповідь {i}")).ToArray(), "other-easy-a1");
+        var unrelatedDifficulty = new Question("other-hard", "Стороння складна тема", QuizCategory.Programming, Difficulty.Hard,
+            Enumerable.Range(1, 4).Select(i => new Answer($"other-hard-a{i}", $"Складна відповідь {i}")).ToArray(), "other-hard-a1");
+        var bank = new QuestionBank(Questions.Concat([unrelatedEasy, unrelatedDifficulty]));
         var originalQuestionIds = bank.Questions.Select(x => x.Id).ToArray();
-        var originalAnswerIds = bank.Questions[0].Answers.Select(x => x.Id).ToArray();
-        var shuffled = new QuizSession(bank);
+        var originalAnswers = bank.Questions.ToDictionary(q => q.Id, q => q.Answers.ToArray());
+        var eligibleIds = bank.Find(QuizCategory.Programming, Difficulty.Easy).Select(q => q.Id).ToHashSet(StringComparer.Ordinal);
+        var shuffledClock = new ManualClock(DateTimeOffset.Parse("2026-01-01T00:00:00Z"));
+        var shuffled = new QuizSession(bank, shuffledClock);
         shuffled.Start(new QuizRequest("Гравець", QuizCategory.Programming, Difficulty.Easy,
             new QuizOptions { QuestionCount = 10, ShuffleQuestions = true, ShuffleAnswers = true, RandomSeed = 44 }));
-        var firstQuestion = shuffled.GetState().CurrentQuestion!;
-        Equal(4, firstQuestion.Answers.Select(a => a.Id).Distinct().Count());
-        True(firstQuestion.Answers.Any(a => a.Id == bank.Questions.Single(q => q.Id == firstQuestion.QuestionId).CorrectAnswerId));
-        SequenceEqual(originalAnswerIds, bank.Questions[0].Answers.Select(x => x.Id));
-        SequenceEqual(originalQuestionIds, bank.Questions.Select(x => x.Id));
+        var shuffledQuestionOrder = new List<string>();
+        var answerOrderChanged = false;
+        var seen = new HashSet<string>(StringComparer.Ordinal);
+        while (shuffled.GetState() is { Status: SessionStatus.QuestionActive, CurrentQuestion: { } ticket } state)
+        {
+            True(seen.Add(ticket.QuestionId));
+            True(eligibleIds.Contains(ticket.QuestionId));
+            shuffledQuestionOrder.Add(ticket.QuestionId);
+            var source = bank.Questions.Single(q => q.Id == ticket.QuestionId);
+            Equal(source.Text, ticket.Text);
+            SequenceEqual(source.Answers.OrderBy(a => a.Id), ticket.Answers.OrderBy(a => a.Id));
+            answerOrderChanged |= !source.Answers.SequenceEqual(ticket.Answers);
 
-        var fixedOrder = new QuizSession(bank);
+            var repeatedRead = shuffled.GetState().CurrentQuestion!;
+            Equal(ticket.QuestionId, repeatedRead.QuestionId);
+            SequenceEqual(ticket.Answers, repeatedRead.Answers);
+            shuffledClock.Advance(TimeSpan.FromSeconds(1));
+            var timerRefresh = shuffled.GetState();
+            Equal(ticket.QuestionId, timerRefresh.CurrentQuestion!.QuestionId);
+            SequenceEqual(ticket.Answers, timerRefresh.CurrentQuestion.Answers);
+            True(timerRefresh.RemainingTime < state.RemainingTime);
+            var outcome = shuffled.SubmitAnswer(state.SessionId, ticket.QuestionToken, source.CorrectAnswerId);
+            Equal(AnswerDisposition.Correct, outcome.Disposition);
+            Equal(source.CorrectAnswerId, outcome.CorrectAnswerId);
+            SequenceEqual(ticket.Answers, shuffled.GetState().CurrentQuestion!.Answers);
+            if (shuffled.GetState().Status == SessionStatus.AwaitingNext)
+                True(shuffled.NextQuestion(state.SessionId, ticket.QuestionToken));
+        }
+        Equal(10, seen.Count);
+        True(!shuffledQuestionOrder.SequenceEqual(bank.Find(QuizCategory.Programming, Difficulty.Easy).Take(10).Select(q => q.Id)));
+        True(answerOrderChanged);
+        Equal(10, shuffled.GetState().Result!.CorrectAnswers);
+        SequenceEqual(originalQuestionIds, bank.Questions.Select(x => x.Id));
+        foreach (var question in bank.Questions)
+            SequenceEqual(originalAnswers[question.Id], question.Answers);
+
+        var fixedOrder = new QuizSession(bank, new ManualClock(DateTimeOffset.Parse("2026-01-01T00:00:00Z")));
         fixedOrder.Start(new QuizRequest("Гравець", QuizCategory.Programming, Difficulty.Easy,
-            new QuizOptions { QuestionCount = 10, ShuffleQuestions = false, ShuffleAnswers = false }));
-        Equal(bank.Questions[0].Id, fixedOrder.GetState().CurrentQuestion!.QuestionId);
-        SequenceEqual(originalAnswerIds, fixedOrder.GetState().CurrentQuestion!.Answers.Select(x => x.Id));
+            new QuizOptions { QuestionCount = 10, ShuffleQuestions = false, ShuffleAnswers = false, RandomSeed = 44 }));
+        var fixedIndex = 0;
+        while (fixedOrder.GetState() is { Status: SessionStatus.QuestionActive, CurrentQuestion: { } fixedTicket } fixedState)
+        {
+            var source = bank.Find(QuizCategory.Programming, Difficulty.Easy)[fixedIndex++];
+            Equal(source.Id, fixedTicket.QuestionId);
+            SequenceEqual(source.Answers, fixedTicket.Answers);
+            Equal(AnswerDisposition.Correct,
+                fixedOrder.SubmitAnswer(fixedState.SessionId, fixedTicket.QuestionToken, source.CorrectAnswerId).Disposition);
+            if (fixedOrder.GetState().Status == SessionStatus.AwaitingNext)
+                True(fixedOrder.NextQuestion(fixedState.SessionId, fixedTicket.QuestionToken));
+        }
+        Equal(10, fixedIndex);
     }
 
     private static void Restart()
