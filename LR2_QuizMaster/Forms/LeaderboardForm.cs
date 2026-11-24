@@ -1,17 +1,14 @@
+using LR2_QuizMaster.Backend.Domain;
+using LR2_QuizMaster.Backend.Services;
 using LR2_QuizMaster.UI;
 
 namespace LR2_QuizMaster.Forms;
 
 public partial class LeaderboardForm : Form
 {
-    private readonly object[][] demoRows =
-    {
-        new object[] { 1, "Олена", "Програмування", "Середня", 980 },
-        new object[] { 2, "Максим", "Ігри", "Складна", 940 },
-        new object[] { 3, "Софія", "Загальні знання", "Середня", 900 },
-        new object[] { 4, "Андрій", "Спорт", "Легка", 870 },
-        new object[] { 5, "Гравець", "Фільми", "Середня", 820 }
-    };
+    private LeaderboardStore leaderboardStore = new();
+    private readonly CancellationTokenSource lifetime = new();
+    private int refreshVersion;
 
     public LeaderboardForm()
     {
@@ -19,22 +16,53 @@ public partial class LeaderboardForm : Form
         WindowPresentation.Attach(this);
         btnBack.Click += (_, _) => Close();
         CancelButton = btnBack;
-        cmbCategory.SelectedIndexChanged += (_, _) => RefreshRows();
-        RefreshRows();
+        cmbCategory.SelectedIndexChanged += async (_, _) => { if (Visible) await RefreshRowsAsync(); };
+        Shown += async (_, _) => await RefreshRowsAsync();
+        FormClosed += (_, _) => { lifetime.Cancel(); lifetime.Dispose(); };
     }
 
-    private void RefreshRows()
+    public LeaderboardForm(LeaderboardStore leaderboardStore) : this() =>
+        this.leaderboardStore = leaderboardStore ?? throw new ArgumentNullException(nameof(leaderboardStore));
+
+    private async Task RefreshRowsAsync()
     {
-        dgvLeaderboard.Rows.Clear();
+        if (IsDisposed || Disposing) return;
+        int version = ++refreshVersion;
         var selected = cmbCategory.SelectedItem?.ToString();
-        var rank = 1;
-        foreach (var row in demoRows)
+        QuizCategory? category = QuizCatalog.TryParseCategory(selected, out var parsed) ? parsed : null;
+        lblDemoData.Text = "Завантаження рекордів…";
+        lblEmptyState.Visible = false;
+        try
         {
-            if (selected != "Усі категорії" && row[2].ToString() != selected) continue;
-            dgvLeaderboard.Rows.Add(rank++, row[1], row[2], row[3], row[4]);
+            var loaded = await leaderboardStore.LoadAsync(lifetime.Token);
+            if (IsDisposed || Disposing || version != refreshVersion) return;
+            var records = loaded.Records.Where(r => category == null || r.Category == category)
+                .OrderByDescending(r => r.Score).ThenByDescending(r => r.Accuracy).ThenByDescending(r => r.FinishedAtUtc).ToArray();
+            dgvLeaderboard.Rows.Clear();
+            for (int i = 0; i < records.Length; i++)
+            {
+                var record = records[i];
+                dgvLeaderboard.Rows.Add(i + 1, record.PlayerName, QuizCatalog.CategoryName(record.Category),
+                    QuizCatalog.DifficultyName(record.Difficulty), record.Score);
+            }
+            dgvLeaderboard.ClearSelection();
+            lblEmptyState.Text = category == null ? "Рекордів ще немає. Зіграй першу гру!" : "У цій категорії ще немає рекордів.";
+            lblEmptyState.Visible = records.Length == 0;
+            if (lblEmptyState.Visible) lblEmptyState.BringToFront();
+            lblDemoData.Text = loaded.Warning == null ? $"Збережених результатів: {records.Length}" :
+                "Файл рекордів пошкоджений. Після нової гри буде збережено резервну копію.";
+            lblDemoData.ForeColor = loaded.Warning == null ? Color.FromArgb(170, 182, 204) : Color.FromArgb(239, 153, 166);
         }
-        lblEmptyState.Visible = dgvLeaderboard.Rows.Count == 0;
-        dgvLeaderboard.ClearSelection();
-        // TODO Backend: отримувати записи із сервісу рекордів замість demoRows.
+        catch (OperationCanceledException) { }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or System.Security.SecurityException)
+        {
+            if (IsDisposed || Disposing || version != refreshVersion) return;
+            dgvLeaderboard.Rows.Clear();
+            lblDemoData.Text = "Не вдалося завантажити рекорди. Перевір доступ до папки даних.";
+            lblDemoData.ForeColor = Color.FromArgb(239, 153, 166);
+            lblEmptyState.Text = "Рекорди тимчасово недоступні.";
+            lblEmptyState.Visible = true;
+            lblEmptyState.BringToFront();
+        }
     }
 }

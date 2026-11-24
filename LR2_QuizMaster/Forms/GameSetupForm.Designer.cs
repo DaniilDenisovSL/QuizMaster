@@ -76,7 +76,8 @@ partial class GameSetupForm
         lblDemo.Name = "lblDemo";
         lblDemo.Location = new Point(680, 24);
         lblDemo.Size = new Size(328, 25);
-        lblDemo.Text = "ДЕМОНСТРАЦІЙНИЙ РЕЖИМ";
+        lblDemo.Text = "";
+        lblDemo.Visible = false;
         lblDemo.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
         lblDemo.ForeColor = Color.FromArgb(170, 182, 204);
         lblDemo.BackColor = Color.FromArgb(16, 24, 39);
@@ -242,7 +243,7 @@ partial class GameSetupForm
         lblRules.Name = "lblRules";
         lblRules.Location = new Point(32, 632);
         lblRules.Size = new Size(650, 27);
-        lblRules.Text = "Демонстрація: 10 питань · 20 с · 3 життя";
+        lblRules.Text = "Параметри гри";
         lblRules.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
         lblRules.ForeColor = Color.FromArgb(170, 182, 204);
         lblRules.BackColor = Color.FromArgb(16, 24, 39);

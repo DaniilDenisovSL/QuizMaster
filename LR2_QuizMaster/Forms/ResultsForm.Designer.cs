@@ -66,7 +66,8 @@ partial class ResultsForm
         lblDemo.Name = "lblDemo";
         lblDemo.Location = new Point(680, 24);
         lblDemo.Size = new Size(328, 25);
-        lblDemo.Text = "ДЕМОНСТРАЦІЙНИЙ РЕЖИМ";
+        lblDemo.Text = "";
+        lblDemo.Visible = false;
         lblDemo.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
         lblDemo.ForeColor = Color.FromArgb(170, 182, 204);
         lblDemo.BackColor = Color.FromArgb(16, 24, 39);
@@ -109,7 +110,7 @@ partial class ResultsForm
         lblTotalScore.Name = "lblTotalScore";
         lblTotalScore.Location = new Point(25, 71);
         lblTotalScore.Size = new Size(880, 78);
-        lblTotalScore.Text = "820 балів";
+        lblTotalScore.Text = "— балів";
         lblTotalScore.Font = new Font("Segoe UI", 46F, FontStyle.Bold, GraphicsUnit.Point);
         lblTotalScore.ForeColor = Color.FromArgb(244, 247, 252);
         lblTotalScore.BackColor = Color.FromArgb(16, 24, 39);
@@ -119,7 +120,7 @@ partial class ResultsForm
         lblCorrect.Name = "lblCorrect";
         lblCorrect.Location = new Point(28, 190);
         lblCorrect.Size = new Size(280, 32);
-        lblCorrect.Text = "Правильно: 8/10";
+        lblCorrect.Text = "Правильно: —";
         lblCorrect.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
         lblCorrect.ForeColor = Color.FromArgb(244, 247, 252);
         lblCorrect.BackColor = Color.FromArgb(16, 24, 39);
@@ -129,7 +130,7 @@ partial class ResultsForm
         lblAccuracy.Name = "lblAccuracy";
         lblAccuracy.Location = new Point(341, 190);
         lblAccuracy.Size = new Size(280, 32);
-        lblAccuracy.Text = "Точність: 80%";
+        lblAccuracy.Text = "Точність: —";
         lblAccuracy.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
         lblAccuracy.ForeColor = Color.FromArgb(244, 247, 252);
         lblAccuracy.BackColor = Color.FromArgb(16, 24, 39);
@@ -139,7 +140,7 @@ partial class ResultsForm
         lblBestStreak.Name = "lblBestStreak";
         lblBestStreak.Location = new Point(648, 190);
         lblBestStreak.Size = new Size(310, 32);
-        lblBestStreak.Text = "Найкраща серія: 5";
+        lblBestStreak.Text = "Найкраща серія: —";
         lblBestStreak.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
         lblBestStreak.ForeColor = Color.FromArgb(244, 247, 252);
         lblBestStreak.BackColor = Color.FromArgb(16, 24, 39);
@@ -149,7 +150,7 @@ partial class ResultsForm
         lblSummaryNote.Name = "lblSummaryNote";
         lblSummaryNote.Location = new Point(32, 527);
         lblSummaryNote.Size = new Size(976, 32);
-        lblSummaryNote.Text = "Демонстраційний результат";
+        lblSummaryNote.Text = "";
         lblSummaryNote.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
         lblSummaryNote.ForeColor = Color.FromArgb(170, 182, 204);
         lblSummaryNote.BackColor = Color.FromArgb(16, 24, 39);

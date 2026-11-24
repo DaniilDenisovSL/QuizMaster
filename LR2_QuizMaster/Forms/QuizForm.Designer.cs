@@ -76,7 +76,8 @@ partial class QuizForm
         lblDemo.Name = "lblDemo";
         lblDemo.Location = new Point(680, 24);
         lblDemo.Size = new Size(328, 25);
-        lblDemo.Text = "ДЕМОНСТРАЦІЙНИЙ РЕЖИМ";
+        lblDemo.Text = "";
+        lblDemo.Visible = false;
         lblDemo.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
         lblDemo.ForeColor = Color.FromArgb(170, 182, 204);
         lblDemo.BackColor = Color.FromArgb(16, 24, 39);
@@ -113,7 +114,7 @@ partial class QuizForm
         lblProgress.Name = "lblProgress";
         lblProgress.Location = new Point(20, 23);
         lblProgress.Size = new Size(250, 33);
-        lblProgress.Text = "Питання 1/10";
+        lblProgress.Text = "Питання —";
         lblProgress.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
         lblProgress.ForeColor = Color.FromArgb(244, 247, 252);
         lblProgress.BackColor = Color.FromArgb(16, 24, 39);
@@ -133,7 +134,7 @@ partial class QuizForm
         lblLives.Name = "lblLives";
         lblLives.Location = new Point(535, 27);
         lblLives.Size = new Size(190, 27);
-        lblLives.Text = "Життя: 3/3";
+        lblLives.Text = "Життя: —";
         lblLives.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
         lblLives.ForeColor = Color.FromArgb(244, 247, 252);
         lblLives.BackColor = Color.FromArgb(16, 24, 39);
@@ -153,7 +154,7 @@ partial class QuizForm
         lblTimer.Name = "lblTimer";
         lblTimer.Location = new Point(32, 244);
         lblTimer.Size = new Size(400, 26);
-        lblTimer.Text = "Час: 18 с";
+        lblTimer.Text = "Час: —";
         lblTimer.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
         lblTimer.ForeColor = Color.FromArgb(244, 247, 252);
         lblTimer.BackColor = Color.FromArgb(16, 24, 39);
@@ -162,7 +163,7 @@ partial class QuizForm
         lblTimerNote.Name = "lblTimerNote";
         lblTimerNote.Location = new Point(694, 247);
         lblTimerNote.Size = new Size(314, 24);
-        lblTimerNote.Text = "Демонстраційне питання";
+        lblTimerNote.Text = "";
         lblTimerNote.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
         lblTimerNote.ForeColor = Color.FromArgb(170, 182, 204);
         lblTimerNote.BackColor = Color.FromArgb(16, 24, 39);
@@ -180,7 +181,7 @@ partial class QuizForm
         lblQuestion.Name = "lblQuestion";
         lblQuestion.Location = new Point(32, 325);
         lblQuestion.Size = new Size(976, 102);
-        lblQuestion.Text = "Яка мова програмування\r\nвикористовується у цьому проєкті?";
+        lblQuestion.Text = "Завантаження питання…";
         lblQuestion.Font = new Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point);
         lblQuestion.ForeColor = Color.FromArgb(244, 247, 252);
         lblQuestion.BackColor = Color.FromArgb(16, 24, 39);
@@ -189,7 +190,7 @@ partial class QuizForm
         btnAnswerA.Name = "btnAnswerA";
         btnAnswerA.Location = new Point(32, 456);
         btnAnswerA.Size = new Size(476, 67);
-        btnAnswerA.Text = "A    Python";
+        btnAnswerA.Text = "A)  —";
         btnAnswerA.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
         btnAnswerA.BackColor = Color.FromArgb(27, 38, 59);
         btnAnswerA.ForeColor = Color.FromArgb(244, 247, 252);
@@ -202,7 +203,7 @@ partial class QuizForm
         btnAnswerB.Name = "btnAnswerB";
         btnAnswerB.Location = new Point(532, 456);
         btnAnswerB.Size = new Size(476, 67);
-        btnAnswerB.Text = "B    C#";
+        btnAnswerB.Text = "B)  —";
         btnAnswerB.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
         btnAnswerB.BackColor = Color.FromArgb(27, 38, 59);
         btnAnswerB.ForeColor = Color.FromArgb(244, 247, 252);
@@ -215,7 +216,7 @@ partial class QuizForm
         btnAnswerC.Name = "btnAnswerC";
         btnAnswerC.Location = new Point(32, 539);
         btnAnswerC.Size = new Size(476, 67);
-        btnAnswerC.Text = "C    Java";
+        btnAnswerC.Text = "C)  —";
         btnAnswerC.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
         btnAnswerC.BackColor = Color.FromArgb(27, 38, 59);
         btnAnswerC.ForeColor = Color.FromArgb(244, 247, 252);
@@ -228,7 +229,7 @@ partial class QuizForm
         btnAnswerD.Name = "btnAnswerD";
         btnAnswerD.Location = new Point(532, 539);
         btnAnswerD.Size = new Size(476, 67);
-        btnAnswerD.Text = "D    C++";
+        btnAnswerD.Text = "D)  —";
         btnAnswerD.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
         btnAnswerD.BackColor = Color.FromArgb(27, 38, 59);
         btnAnswerD.ForeColor = Color.FromArgb(244, 247, 252);

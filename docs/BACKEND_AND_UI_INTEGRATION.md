@@ -1,3 +1,5 @@
+> UI вже підключено до backend. Див. [поточний стан інтеграції](UI_INTEGRATION_STATUS.md). Файл UI_INTEGRATION.patch — попередня пропозиція; повторно застосовувати його не потрібно.
+
 # Backend Quiz Master
 
 Backend винесений у **Backend/Domain** і **Backend/Services** та не посилається на WinForms. Файли **Forms/*.Designer.cs**, **.resx** і **UI/** не змінювалися. Пропозиція окремого підключення до форм — у **docs/UI_INTEGRATION.patch**.
@@ -103,4 +105,5 @@ LR2_QuizMaster.Tests — тестовий harness без зовнішніх NuGe
 dotnet build .\LR2_QuizMaster\LR2_QuizMaster.csproj
 dotnet run --project .\LR2_QuizMaster.Tests\LR2_QuizMaster.Tests.csproj
 ~~~
+
 

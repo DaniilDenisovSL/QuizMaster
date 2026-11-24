@@ -1,3 +1,5 @@
+using LR2_QuizMaster.Backend.Domain;
+
 using LR2_QuizMaster.UI;
 
 namespace LR2_QuizMaster.Forms;
@@ -13,6 +15,8 @@ public partial class GameSetupForm : Form
     {
         InitializeComponent();
         WindowPresentation.Attach(this);
+        var rules = new QuizOptions();
+        lblRules.Text = $"{rules.QuestionCount} питань · {rules.TimePerQuestion.TotalSeconds:0} с · {rules.StartingLives} життя";
         var buttons = new[] { btnGames, btnProgramming, btnSport, btnMovies, btnGeneral };
         foreach (var button in buttons)
         {

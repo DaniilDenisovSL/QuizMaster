@@ -38,6 +38,14 @@ internal static class QuizDrawing
 public class QuizButton : Button
 {
     private bool hover;
+    private bool preserveColorsWhenDisabled;
+
+    [DefaultValue(false)]
+    public bool PreserveColorsWhenDisabled
+    {
+        get => preserveColorsWhenDisabled;
+        set { preserveColorsWhenDisabled = value; Invalidate(); }
+    }
     private bool pressed;
     private float hoverAmount;
     private QuizIcon iconKind;
@@ -85,7 +93,7 @@ public class QuizButton : Button
         float dpi = DeviceDpi / 96f;
         if (Width <= 3 * dpi || Height <= 3 * dpi) return;
         float pad = dpi;
-        Color fill = !Enabled ? Color.FromArgb(35, 45, 64) : QuizDrawing.Lighten(BackColor, pressed ? -7 : (int)(hoverAmount * 18));
+        Color fill = !Enabled && !PreserveColorsWhenDisabled ? Color.FromArgb(35, 45, 64) : QuizDrawing.Lighten(BackColor, pressed ? -7 : (int)(hoverAmount * 18));
         bool accent = BackColor.B > 150 && BackColor.R > 65;
         using var body = QuizDrawing.Round(new RectangleF(pad, pad, Width - pad * 3, Height - pad * 3), 12 * dpi);
         using var brush = new SolidBrush(fill);
@@ -97,13 +105,13 @@ public class QuizButton : Button
         {
             float iconSize = 24 * dpi;
             QuizIcons.Draw(g, IconKind, new RectangleF(20 * dpi, (Height - iconSize) / 2, iconSize, iconSize),
-                Enabled ? ForeColor : Color.FromArgb(147, 160, 182));
+                Enabled || PreserveColorsWhenDisabled ? ForeColor : Color.FromArgb(147, 160, 182));
             textBounds.X = (int)(60 * dpi);
             textBounds.Width = Width - (int)(76 * dpi);
         }
         var flags = TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis | TextFormatFlags.NoPadding;
         if (!UseMnemonic) flags |= TextFormatFlags.NoPrefix;
-        TextRenderer.DrawText(g, Text, Font, textBounds, Enabled ? ForeColor : Color.FromArgb(147, 160, 182), flags);
+        TextRenderer.DrawText(g, Text, Font, textBounds, Enabled || PreserveColorsWhenDisabled ? ForeColor : Color.FromArgb(147, 160, 182), flags);
         if (Focused && ShowFocusCues)
         {
             using var pen = new Pen(Color.FromArgb(180, 169, 255), dpi) { DashStyle = DashStyle.Dot };

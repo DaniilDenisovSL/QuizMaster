@@ -76,7 +76,8 @@ partial class MainMenuForm
         lblDemo.Name = "lblDemo";
         lblDemo.Location = new Point(680, 24);
         lblDemo.Size = new Size(328, 25);
-        lblDemo.Text = "ДЕМОНСТРАЦІЙНИЙ РЕЖИМ";
+        lblDemo.Text = "";
+        lblDemo.Visible = false;
         lblDemo.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
         lblDemo.ForeColor = Color.FromArgb(170, 182, 204);
         lblDemo.BackColor = Color.FromArgb(16, 24, 39);

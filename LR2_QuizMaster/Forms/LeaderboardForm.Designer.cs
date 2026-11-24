@@ -73,7 +73,8 @@ partial class LeaderboardForm
         lblDemo.Name = "lblDemo";
         lblDemo.Location = new Point(680, 24);
         lblDemo.Size = new Size(328, 25);
-        lblDemo.Text = "ДЕМОНСТРАЦІЙНИЙ РЕЖИМ";
+        lblDemo.Text = "";
+        lblDemo.Visible = false;
         lblDemo.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
         lblDemo.ForeColor = Color.FromArgb(170, 182, 204);
         lblDemo.BackColor = Color.FromArgb(16, 24, 39);
@@ -194,7 +195,7 @@ partial class LeaderboardForm
         lblDemoData.Name = "lblDemoData";
         lblDemoData.Location = new Point(32, 604);
         lblDemoData.Size = new Size(976, 29);
-        lblDemoData.Text = "Приклад таблиці · демонстраційні записи";
+        lblDemoData.Text = "";
         lblDemoData.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
         lblDemoData.ForeColor = Color.FromArgb(170, 182, 204);
         lblDemoData.BackColor = Color.FromArgb(16, 24, 39);
@@ -203,7 +204,7 @@ partial class LeaderboardForm
         lblFooter.Name = "lblFooter";
         lblFooter.Location = new Point(32, 645);
         lblFooter.Size = new Size(976, 26);
-        lblFooter.Text = "Тут будуть збережені результати твоїх ігор.";
+        lblFooter.Text = "Рекорди збережені на цьому комп’ютері.";
         lblFooter.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
         lblFooter.ForeColor = Color.FromArgb(170, 182, 204);
         lblFooter.BackColor = Color.FromArgb(16, 24, 39);
