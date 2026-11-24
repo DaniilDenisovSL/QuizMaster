@@ -38,6 +38,8 @@ public sealed class QuizSession
 
         lock (gate)
         {
+            if (chosenOptions.TimePerQuestion > DateTimeOffset.MaxValue - timeProvider.GetUtcNow())
+                throw new ArgumentOutOfRangeException(nameof(newRequest), "Час на питання перевищує допустимий діапазон дат.");
             // Replacing a running game is an explicit restart. New ids invalidate late UI callbacks.
             sessionId = Guid.NewGuid();
             request = newRequest with { PlayerName = player, Options = chosenOptions };

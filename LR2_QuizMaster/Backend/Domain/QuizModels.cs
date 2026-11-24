@@ -24,6 +24,8 @@ public sealed record QuizOptions
 
     public void Validate()
     {
+        if ((long)QuestionCount * PointsPerCorrectAnswer > int.MaxValue)
+            throw new ArgumentOutOfRangeException(nameof(PointsPerCorrectAnswer), "Максимальна сума балів перевищує допустиме значення Int32.");
         if (QuestionCount <= 0) throw new ArgumentOutOfRangeException(nameof(QuestionCount), "Кількість питань має бути більшою за нуль.");
         if (TimePerQuestion <= TimeSpan.Zero) throw new ArgumentOutOfRangeException(nameof(TimePerQuestion), "Час на питання має бути більшим за нуль.");
         if (StartingLives <= 0) throw new ArgumentOutOfRangeException(nameof(StartingLives), "Кількість життів має бути більшою за нуль.");

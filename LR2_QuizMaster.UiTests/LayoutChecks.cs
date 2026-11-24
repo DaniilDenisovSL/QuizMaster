@@ -8,6 +8,7 @@ internal static class LayoutChecks
 {
     private static string output = "";
     private static int assertions;
+    private static bool requireFocus;
     [STAThread]
     internal static int Run(string[] args)
     {
@@ -15,6 +16,7 @@ internal static class LayoutChecks
         Application.SetUnhandledExceptionMode(UnhandledExceptionMode.ThrowException);
         Application.EnableVisualStyles();
         output = args[0]; Directory.CreateDirectory(output);
+        requireFocus = !args.Contains("--no-focus");
         Exception? failure = null;
         using var host = new Form { Opacity = 0, ShowInTaskbar = false };
         host.Shown += async (_, _) =>
@@ -85,11 +87,13 @@ internal static class LayoutChecks
             {
                 CheckTable(child);
                 Assert(!WindowPresentation.IsFullScreen(child),"fixed modal ignores fullscreen inheritance");
-                Assert(parent.Opacity==0 && Form.ActiveForm==child,"owner covered during modal; opacity="+parent.Opacity);
+                Assert(parent.Opacity==0,"owner covered during modal; opacity="+parent.Opacity);
+                if (requireFocus) Assert(Form.ActiveForm==child,"modal receives native activation");
                 Assert(WindowPresentation.IsFullScreen(parent),"opening leaderboard does not reset session mode");
                 int count=Application.OpenForms.Count;
                 var key=Message.Create(child.Handle,0x100,(IntPtr)(int)Keys.F11,IntPtr.Zero);
-                Assert(Application.FilterMessage(ref key),"fixed form consumes F11");
+                if (requireFocus) Assert(Application.FilterMessage(ref key),"fixed form consumes F11");
+                else Console.WriteLine("SKIP native modal activation and F11 routing: --no-focus");
                 Assert(count==Application.OpenForms.Count && child.WindowState==FormWindowState.Normal,"F11 does not open another form");
             }
             catch(Exception ex) { error=ex; }

@@ -10,6 +10,7 @@ internal static class GameChecks
     private static int checks;
     private static string output = "";
     private static QuestionBank bank = null!;
+    private static bool requireFocus;
     [STAThread]
     internal static int Run(string[] args)
     {
@@ -17,6 +18,7 @@ internal static class GameChecks
         Application.SetUnhandledExceptionMode(UnhandledExceptionMode.ThrowException);
         Application.EnableVisualStyles();
         output = args[0]; Directory.CreateDirectory(output);
+        requireFocus = !args.Contains("--no-focus");
         bank = QuestionBank.Load(QuestionBank.DefaultFilePath);
         Exception? failure = null;
         using var host = new Form { Opacity = 0, ShowInTaskbar = false };
@@ -58,6 +60,20 @@ internal static class GameChecks
             Assert(All(setup).OfType<QuizButton>().Count(b => b.Selected) == 1, "one selected difficulty");
         }
         Capture(setup, "01-setup.png");
+        if (!requireFocus)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                WindowPresentation.ToggleFullScreen(setup);
+                Assert(WindowPresentation.IsFullScreen(setup), "fullscreen API entered");
+                WindowPresentation.ToggleFullScreen(setup);
+                Assert(!WindowPresentation.IsFullScreen(setup) && setup.Visible, "fullscreen API restored");
+            }
+            setup.Close();
+            Console.WriteLine("SKIP native F11/Esc and active-window maximize routing: --no-focus");
+            Pass("difficulty cards and repeated fullscreen API transitions");
+            return;
+        }
         int forms = Application.OpenForms.Count;
         for (int i = 0; i < 5; i++)
         {

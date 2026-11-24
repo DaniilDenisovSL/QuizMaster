@@ -42,6 +42,8 @@ public sealed class LeaderboardStore
     {
         ArgumentNullException.ThrowIfNull(result);
         if (result.EndReason == GameEndReason.Interrupted) return false;
+        if (!IsValidRecord(result))
+            throw new ArgumentException("Результат містить некоректні або неузгоджені значення.", nameof(result));
 
         await gate.WaitAsync(cancellationToken).ConfigureAwait(false);
         try
@@ -83,7 +85,9 @@ public sealed class LeaderboardStore
             if (string.IsNullOrWhiteSpace(text)) return new LeaderboardLoadResult(Array.Empty<QuizResult>());
             var records = JsonSerializer.Deserialize<List<QuizResult>>(text, jsonOptions);
             if (records is null) return new LeaderboardLoadResult(Array.Empty<QuizResult>(), "Файл рекордів містить null; показано порожній список.");
-            return new LeaderboardLoadResult(records.Where(IsValidRecord).ToArray());
+            var valid = records.Where(IsValidRecord).DistinctBy(r => r.SessionId).ToArray();
+            return new LeaderboardLoadResult(valid, valid.Length == records.Count ? null :
+                "Некоректні, повторні або перервані результати пропущено. Перед збереженням буде створено резервну копію початкового файлу.");
         }
         catch (JsonException ex)
         {
@@ -91,9 +95,18 @@ public sealed class LeaderboardStore
         }
     }
 
-    private static bool IsValidRecord(QuizResult value) =>
-        value.SessionId != Guid.Empty && !string.IsNullOrWhiteSpace(value.PlayerName) &&
-        value.TotalQuestions > 0 && value.QuestionsPlayed >= 0 && value.CorrectAnswers >= 0;
+    private static bool IsValidRecord(QuizResult? value)
+    {
+        if (value is null || value.SessionId == Guid.Empty || string.IsNullOrWhiteSpace(value.PlayerName) ||
+            !Enum.IsDefined(value.Category) || !Enum.IsDefined(value.Difficulty) || !Enum.IsDefined(value.EndReason) ||
+            value.EndReason == GameEndReason.Interrupted || value.FinishedAtUtc == default || value.Score < 0 ||
+            value.TotalQuestions <= 0 || value.QuestionsPlayed <= 0 || value.QuestionsPlayed > value.TotalQuestions ||
+            value.CorrectAnswers < 0 || value.CorrectAnswers > value.QuestionsPlayed ||
+            value.BestStreak < 0 || value.BestStreak > value.CorrectAnswers ||
+            !double.IsFinite(value.Accuracy) || value.Accuracy < 0 || value.Accuracy > 1 ||
+            (value.EndReason == GameEndReason.Completed && value.QuestionsPlayed != value.TotalQuestions)) return false;
+        return Math.Abs(value.Accuracy - (double)value.CorrectAnswers / value.QuestionsPlayed) < 1e-10;
+    }
 
     private static JsonSerializerOptions CreateJsonOptions()
     {

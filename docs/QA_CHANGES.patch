@@ -1,0 +1,472 @@
+--- a/LR2_QuizMaster/Backend/Domain/QuizModels.cs
++++ b/LR2_QuizMaster/Backend/Domain/QuizModels.cs
+@@ -24,6 +24,8 @@
+ 
+     public void Validate()
+     {
++        if ((long)QuestionCount * PointsPerCorrectAnswer > int.MaxValue)
++            throw new ArgumentOutOfRangeException(nameof(PointsPerCorrectAnswer), "Максимальна сума балів перевищує допустиме значення Int32.");
+         if (QuestionCount <= 0) throw new ArgumentOutOfRangeException(nameof(QuestionCount), "Кількість питань має бути більшою за нуль.");
+         if (TimePerQuestion <= TimeSpan.Zero) throw new ArgumentOutOfRangeException(nameof(TimePerQuestion), "Час на питання має бути більшим за нуль.");
+         if (StartingLives <= 0) throw new ArgumentOutOfRangeException(nameof(StartingLives), "Кількість життів має бути більшою за нуль.");
+--- a/LR2_QuizMaster/Backend/Services/QuestionBank.cs
++++ b/LR2_QuizMaster/Backend/Services/QuestionBank.cs
+@@ -13,7 +13,10 @@
+     {
+         var copy = questions?.ToArray() ?? throw new ArgumentNullException(nameof(questions));
+         Validate(copy);
+-        this.questions = Array.AsReadOnly(copy);
++        this.questions = Array.AsReadOnly(copy.Select(q => q with
++        {
++            Answers = Array.AsReadOnly(q.Answers.ToArray())
++        }).ToArray());
+     }
+ 
+     public IReadOnlyList<Question> Find(QuizCategory category, Difficulty difficulty) =>
+@@ -21,6 +24,9 @@
+ 
+     public void EnsureCanStart(QuizCategory category, Difficulty difficulty, int count)
+     {
++        if (!Enum.IsDefined(category)) throw new ArgumentOutOfRangeException(nameof(category));
++        if (!Enum.IsDefined(difficulty)) throw new ArgumentOutOfRangeException(nameof(difficulty));
++        if (count <= 0) throw new ArgumentOutOfRangeException(nameof(count));
+         var available = Find(category, difficulty).Count;
+         if (available < count) throw new InsufficientQuestionsException(category, difficulty, count, available);
+     }
+@@ -35,10 +41,16 @@
+             options.Converters.Add(new JsonStringEnumConverter());
+             var data = JsonSerializer.Deserialize<List<QuestionDto>>(stream, options)
+                 ?? throw new InvalidDataException("Файл банку питань порожній або містить null.");
+-            return new QuestionBank(data.Select(x => new Question(
+-                x.Id ?? "", x.Text ?? "", x.Category, x.Difficulty,
+-                (x.Answers ?? []).Select(a => new Answer(a.Id ?? "", a.Text ?? "")).ToArray(),
+-                x.CorrectAnswerId ?? "")));
++            return new QuestionBank(data.Select(x =>
++            {
++                if (x is null) throw new InvalidDataException("Питання не може мати значення null.");
++                if (x.Category is null || x.Difficulty is null)
++                    throw new InvalidDataException($"Питання <{x.Id}> повинно містити категорію та складність.");
++                return new Question(x.Id ?? "", x.Text ?? "", x.Category.Value, x.Difficulty.Value,
++                    (x.Answers ?? []).Select(a => a is null
++                        ? throw new InvalidDataException($"Питання <{x.Id}> містить відповідь зі значенням null.")
++                        : new Answer(a.Id ?? "", a.Text ?? "")).ToArray(), x.CorrectAnswerId ?? "");
++            }));
+         }
+         catch (JsonException ex)
+         {
+@@ -81,8 +93,8 @@
+     {
+         public string? Id { get; set; }
+         public string? Text { get; set; }
+-        public QuizCategory Category { get; set; }
+-        public Difficulty Difficulty { get; set; }
++        public QuizCategory? Category { get; set; }
++        public Difficulty? Difficulty { get; set; }
+         public List<AnswerDto>? Answers { get; set; }
+         public string? CorrectAnswerId { get; set; }
+     }
+--- a/LR2_QuizMaster/Backend/Services/QuizSession.cs
++++ b/LR2_QuizMaster/Backend/Services/QuizSession.cs
+@@ -38,6 +38,8 @@
+ 
+         lock (gate)
+         {
++            if (chosenOptions.TimePerQuestion > DateTimeOffset.MaxValue - timeProvider.GetUtcNow())
++                throw new ArgumentOutOfRangeException(nameof(newRequest), "Час на питання перевищує допустимий діапазон дат.");
+             // Replacing a running game is an explicit restart. New ids invalidate late UI callbacks.
+             sessionId = Guid.NewGuid();
+             request = newRequest with { PlayerName = player, Options = chosenOptions };
+--- a/LR2_QuizMaster/Backend/Services/LeaderboardStore.cs
++++ b/LR2_QuizMaster/Backend/Services/LeaderboardStore.cs
+@@ -42,6 +42,8 @@
+     {
+         ArgumentNullException.ThrowIfNull(result);
+         if (result.EndReason == GameEndReason.Interrupted) return false;
++        if (!IsValidRecord(result))
++            throw new ArgumentException("Результат містить некоректні або неузгоджені значення.", nameof(result));
+ 
+         await gate.WaitAsync(cancellationToken).ConfigureAwait(false);
+         try
+@@ -83,7 +85,9 @@
+             if (string.IsNullOrWhiteSpace(text)) return new LeaderboardLoadResult(Array.Empty<QuizResult>());
+             var records = JsonSerializer.Deserialize<List<QuizResult>>(text, jsonOptions);
+             if (records is null) return new LeaderboardLoadResult(Array.Empty<QuizResult>(), "Файл рекордів містить null; показано порожній список.");
+-            return new LeaderboardLoadResult(records.Where(IsValidRecord).ToArray());
++            var valid = records.Where(IsValidRecord).DistinctBy(r => r.SessionId).ToArray();
++            return new LeaderboardLoadResult(valid, valid.Length == records.Count ? null :
++                "Некоректні, повторні або перервані результати пропущено. Перед збереженням буде створено резервну копію початкового файлу.");
+         }
+         catch (JsonException ex)
+         {
+@@ -91,9 +95,18 @@
+         }
+     }
+ 
+-    private static bool IsValidRecord(QuizResult value) =>
+-        value.SessionId != Guid.Empty && !string.IsNullOrWhiteSpace(value.PlayerName) &&
+-        value.TotalQuestions > 0 && value.QuestionsPlayed >= 0 && value.CorrectAnswers >= 0;
++    private static bool IsValidRecord(QuizResult? value)
++    {
++        if (value is null || value.SessionId == Guid.Empty || string.IsNullOrWhiteSpace(value.PlayerName) ||
++            !Enum.IsDefined(value.Category) || !Enum.IsDefined(value.Difficulty) || !Enum.IsDefined(value.EndReason) ||
++            value.EndReason == GameEndReason.Interrupted || value.FinishedAtUtc == default || value.Score < 0 ||
++            value.TotalQuestions <= 0 || value.QuestionsPlayed <= 0 || value.QuestionsPlayed > value.TotalQuestions ||
++            value.CorrectAnswers < 0 || value.CorrectAnswers > value.QuestionsPlayed ||
++            value.BestStreak < 0 || value.BestStreak > value.CorrectAnswers ||
++            !double.IsFinite(value.Accuracy) || value.Accuracy < 0 || value.Accuracy > 1 ||
++            (value.EndReason == GameEndReason.Completed && value.QuestionsPlayed != value.TotalQuestions)) return false;
++        return Math.Abs(value.Accuracy - (double)value.CorrectAnswers / value.QuestionsPlayed) < 1e-10;
++    }
+ 
+     private static JsonSerializerOptions CreateJsonOptions()
+     {
+--- a/LR2_QuizMaster.Tests/Program.cs
++++ b/LR2_QuizMaster.Tests/Program.cs
+@@ -20,7 +20,7 @@
+         Run("restart clears all state", Restart);
+         await RunAsync("leaderboard saves, filters, deduplicates and handles corruption", Leaderboard);
+         Console.WriteLine($"Passed {passed} backend checks.");
+-        return 0;
++        return await RegressionChecks.RunAll();
+     }
+ 
+     private static void Bank()
+@@ -264,7 +264,7 @@
+             Equal(0, (await store.LoadAsync()).Records.Count);
+ 
+             var record = new QuizResult(Guid.NewGuid(), "Олена", QuizCategory.Games, Difficulty.Easy,
+-                300, 3, 4, 10, 0.75, 3, GameEndReason.Completed, DateTimeOffset.UtcNow);
++                300, 3, 4, 4, 0.75, 3, GameEndReason.Completed, DateTimeOffset.UtcNow);
+             True(await store.SaveAsync(record));
+             True(!await store.SaveAsync(record));
+             var interrupted = record with { SessionId = Guid.NewGuid(), EndReason = GameEndReason.Interrupted };
+--- /dev/null
++++ b/LR2_QuizMaster.Tests/RegressionChecks.cs
+@@ -0,0 +1,254 @@
++using System.Text.Json;
++using System.Text.Json.Nodes;
++using System.Text.Json.Serialization;
++using LR2_QuizMaster.Backend.Domain;
++using LR2_QuizMaster.Backend.Services;
++
++internal static class RegressionChecks
++{
++    private static readonly JsonSerializerOptions Json = new() { Converters = { new JsonStringEnumConverter() } };
++    private static string folder = "";
++    internal static async Task<int> RunAll()
++    {
++        folder = Path.Combine(AppContext.BaseDirectory, "qa-" + Guid.NewGuid().ToString("N"));
++        Directory.CreateDirectory(folder);
++        var tests = new (string Name, Func<Task> Test)[]
++        {
++            ("N01 required category and difficulty", () => Sync(RequiredMetadata)),
++            ("N02 null question JSON", () => Sync(() => InvalidBank("[null]"))),
++            ("N03 null answer JSON", () => Sync(NullAnswer)),
++            ("N04 question bank owns answer collections", () => Sync(ImmutableBank)),
++            ("N05 null leaderboard entries", NullRecords),
++            ("N06 invalid records, warning and recovery backup", InvalidRecords),
++            ("N07 duplicate and interrupted records on load", DuplicateRecords),
++            ("N08 invalid result rejected on save", RejectInvalidSave),
++            ("N09 score overflow rejected before starting", () => Sync(ScoreOverflow)),
++            ("N10 excessive deadline preserves current session", () => Sync(ExcessiveDeadline)),
++            ("N11 invalid request preserves current session", () => Sync(InvalidRequest)),
++            ("N12 invalid answers and premature next", () => Sync(InvalidAnswers)),
++            ("N13 exact deadline and late clicks", () => Sync(Deadline)),
++            ("N14 concurrent duplicate answer", ConcurrentAnswers),
++            ("P01 concurrent saves through separate stores", ConcurrentSaves),
++            ("N15 missing, malformed and empty bank", () => Sync(MalformedBanks)),
++            ("N16 cancelled save leaves existing file intact", CancelledSave),
++            ("P02 trimmed name, zero points and result accuracy", () => Sync(NameAndScore)),
++            ("P03 leaderboard score, accuracy and date ordering", SortedRecords),
++            ("N17 invalid configuration and catalog values", () => Sync(InvalidConfiguration)),
++        };
++        int failed = 0;
++        try
++        {
++            foreach (var (name, test) in tests)
++            {
++                try { await test(); Console.WriteLine("PASS " + name); }
++                catch (Exception ex) { failed++; Console.WriteLine("FAIL " + name + ": " + ex.Message); }
++            }
++        }
++        finally { Directory.Delete(folder, recursive: true); }
++        Console.WriteLine($"Regression scenarios: {tests.Length}, passed: {tests.Length - failed}, failed: {failed}.");
++        return failed == 0 ? 0 : 1;
++    }
++
++    private static Task Sync(Action test) { test(); return Task.CompletedTask; }
++    private static string PathFor(string name) => Path.Combine(folder, name + ".json");
++    private static Question Sample(string id = "q1") => new(id, "Question", QuizCategory.Games, Difficulty.Easy,
++        Enumerable.Range(1, 4).Select(i => new Answer(id + "a" + i, "Answer " + i)).ToArray(), id + "a1");
++    private static QuizRequest Request(QuizOptions? options = null) => new(" Player ", QuizCategory.Games, Difficulty.Easy,
++        options ?? new QuizOptions { QuestionCount = 2, ShuffleAnswers = false, ShuffleQuestions = false });
++    private static QuizResult Record() => new(Guid.NewGuid(), "Player", QuizCategory.Games, Difficulty.Easy,
++        100, 1, 2, 2, .5, 1, GameEndReason.Completed, DateTimeOffset.UtcNow);
++    private static (QuizSession Session, Clock Clock) Session()
++    {
++        var clock = new Clock();
++        var session = new QuizSession(new QuestionBank([Sample(), Sample("q2")]), clock);
++        session.Start(Request());
++        return (session, clock);
++    }
++    private static void Check(bool condition, string message) { if (!condition) throw new Exception(message); }
++    private static void Throws<T>(Action action) where T : Exception
++    {
++        try { action(); } catch (T) { return; }
++        throw new Exception("Expected " + typeof(T).Name);
++    }
++    private static async Task ThrowsAsync<T>(Func<Task> action) where T : Exception
++    {
++        try { await action(); } catch (T) { return; }
++        throw new Exception("Expected " + typeof(T).Name);
++    }
++    private static JsonObject QuestionJson() => JsonSerializer.SerializeToNode(Sample(), Json)!.AsObject();
++    private static void InvalidBank(string json)
++    {
++        var path = PathFor("bank-" + Guid.NewGuid()); File.WriteAllText(path, json);
++        Throws<InvalidDataException>(() => QuestionBank.Load(path));
++    }
++    private static void RequiredMetadata()
++    {
++        foreach (var field in new[] { "Category", "Difficulty" })
++        {
++            var question = QuestionJson(); question.Remove(field);
++            InvalidBank(new JsonArray(question).ToJsonString());
++            question = QuestionJson(); question[field] = null;
++            InvalidBank(new JsonArray(question).ToJsonString());
++        }
++    }
++    private static void NullAnswer()
++    {
++        var question = QuestionJson(); question["Answers"]!.AsArray()[0] = null;
++        InvalidBank(new JsonArray(question).ToJsonString());
++    }
++    private static void ImmutableBank()
++    {
++        var question = Sample(); var answers = (Answer[])question.Answers;
++        var bank = new QuestionBank([question]);
++        answers[0] = new Answer("tampered", "Tampered");
++        Check(bank.Questions[0].Answers[0].Id == "q1a1", "caller changed validated bank");
++        var session = new QuizSession(bank); session.Start(Request(new QuizOptions { QuestionCount = 1 }));
++        Check(session.GetState().CurrentQuestion!.Answers.Any(a => a.Id == "q1a1"), "correct answer removed");
++        Throws<NotSupportedException>(() => ((IList<Answer>)bank.Questions[0].Answers)[0] = answers[0]);
++    }
++    private static async Task NullRecords()
++    {
++        var path = PathFor("null-record"); File.WriteAllText(path, "[null]");
++        var loaded = await new LeaderboardStore(path).LoadAsync();
++        Check(loaded.Records.Count == 0 && loaded.Warning != null, "null record needs warning");
++    }
++    private static IEnumerable<QuizResult> BadRecords()
++    {
++        var r = Record();
++        return [r with { Category = (QuizCategory)99 }, r with { Difficulty = (Difficulty)99 },
++            r with { EndReason = (GameEndReason)99 }, r with { Score = -1 }, r with { QuestionsPlayed = 3 },
++            r with { CorrectAnswers = 3 }, r with { Accuracy = 1.5 }, r with { Accuracy = .1 },
++            r with { BestStreak = 2 }, r with { BestStreak = -1 }, r with { SessionId = Guid.Empty },
++            r with { PlayerName = " " }, r with { FinishedAtUtc = default }, r with { QuestionsPlayed = 1, Accuracy = 1 }];
++    }
++    private static async Task InvalidRecords()
++    {
++        var valid = Record(); var path = PathFor("invalid-records");
++        File.WriteAllText(path, JsonSerializer.Serialize(BadRecords().Prepend(valid), Json));
++        var store = new LeaderboardStore(path); var loaded = await store.LoadAsync();
++        Check(loaded.Records.Count == 1 && loaded.Records[0] == valid && loaded.Warning != null, "invalid records retained or warning missing");
++        var oldBytes = File.ReadAllBytes(path); Check(await store.SaveAsync(Record()), "new record not saved");
++        var backup = Directory.GetFiles(folder, "invalid-records.json.*.bak").Single();
++        Check(oldBytes.SequenceEqual(File.ReadAllBytes(backup)), "backup did not preserve damaged data");
++        Check((await store.LoadAsync()).Records.Count == 2, "valid records lost on recovery");
++    }
++    private static async Task DuplicateRecords()
++    {
++        var r = Record(); var path = PathFor("duplicates");
++        File.WriteAllText(path, JsonSerializer.Serialize(new[] { r, r, r with { SessionId = Guid.NewGuid(), EndReason = GameEndReason.Interrupted } }, Json));
++        var loaded = await new LeaderboardStore(path).LoadAsync();
++        Check(loaded.Records.Count == 1 && loaded.Warning != null, "duplicate or interrupted result retained");
++    }
++    private static async Task RejectInvalidSave()
++    {
++        var path = PathFor("reject-save"); var store = new LeaderboardStore(path);
++        Check(await store.SaveAsync(Record()), "valid record rejected"); var original = File.ReadAllBytes(path);
++        foreach (var r in BadRecords().Append(Record() with { Accuracy = double.NaN }))
++            await ThrowsAsync<ArgumentException>(() => store.SaveAsync(r));
++        Check(original.SequenceEqual(File.ReadAllBytes(path)), "invalid save changed file");
++    }
++    private static void ScoreOverflow()
++    {
++        var (session, _) = Session(); var before = session.GetState();
++        Throws<ArgumentOutOfRangeException>(() => session.Start(Request(new QuizOptions { QuestionCount = 2, PointsPerCorrectAnswer = int.MaxValue })));
++        Check(session.GetState().SessionId == before.SessionId, "invalid restart changed session");
++    }
++    private static void ExcessiveDeadline()
++    {
++        var (session, _) = Session(); var before = session.GetState();
++        Throws<ArgumentOutOfRangeException>(() => session.Start(Request(new QuizOptions { QuestionCount = 2, TimePerQuestion = TimeSpan.MaxValue })));
++        Check(session.GetState().SessionId == before.SessionId, "deadline failure replaced session");
++    }
++    private static void InvalidRequest()
++    {
++        var (session, _) = Session(); var before = session.GetState();
++        Throws<ArgumentException>(() => session.Start(Request() with { PlayerName = "  " }));
++        Throws<InsufficientQuestionsException>(() => session.Start(Request(new QuizOptions { QuestionCount = 3 })));
++        Check(session.GetState().SessionId == before.SessionId && session.GetState().Score == 0, "failed start corrupted game");
++    }
++    private static void InvalidAnswers()
++    {
++        var (session, _) = Session(); var state = session.GetState(); var t = state.CurrentQuestion!;
++        Check(!session.NextQuestion(state.SessionId, t.QuestionToken), "next before answer accepted");
++        foreach (var id in new[] { "unknown", "", null! })
++            Check(session.SubmitAnswer(state.SessionId, t.QuestionToken, id).Disposition == AnswerDisposition.InvalidAnswer, "invalid answer accepted");
++        Check(session.GetState().Lives == 3 && session.GetState().Score == 0, "invalid answer changed state");
++        Check(session.SubmitAnswer(Guid.NewGuid(), t.QuestionToken, "q1a1").Disposition == AnswerDisposition.StaleSession, "foreign session accepted");
++        Check(session.SubmitAnswer(state.SessionId, Guid.NewGuid(), "q1a1").Disposition == AnswerDisposition.StaleQuestion, "foreign token accepted");
++    }
++    private static void Deadline()
++    {
++        var (session, clock) = Session(); var state = session.GetState(); var t = state.CurrentQuestion!;
++        clock.Advance(TimeSpan.FromSeconds(20));
++        Check(session.SubmitAnswer(state.SessionId, t.QuestionToken, "q1a1").Disposition == AnswerDisposition.TimedOut, "answer at deadline counted");
++        session.SubmitAnswer(state.SessionId, t.QuestionToken, "q1a1");
++        Check(session.GetState().Lives == 2 && session.GetState().Score == 0, "late clicks changed score/lives");
++    }
++    private static async Task ConcurrentAnswers()
++    {
++        var (session, _) = Session(); var state = session.GetState(); var t = state.CurrentQuestion!;
++        var outcomes = await Task.WhenAll(Enumerable.Range(0, 20).Select(_ => Task.Run(() => session.SubmitAnswer(state.SessionId, t.QuestionToken, "q1a1"))));
++        Check(outcomes.Count(o => o.WasAccepted) == 1 && session.GetState().Score == 100, "duplicate concurrent answer counted");
++    }
++    private static async Task ConcurrentSaves()
++    {
++        var path = PathFor("concurrent"); var r = Record();
++        var outcomes = await Task.WhenAll(Enumerable.Range(0, 20).Select(_ => new LeaderboardStore(path).SaveAsync(r)));
++        Check(outcomes.Count(v => v) == 1, "same session saved twice");
++        await Task.WhenAll(Enumerable.Range(0, 12).Select(_ => new LeaderboardStore(path).SaveAsync(Record())));
++        Check((await new LeaderboardStore(path).LoadAsync()).Records.Count == 13, "concurrent unique records lost");
++    }
++    private static void MalformedBanks()
++    {
++        Throws<FileNotFoundException>(() => QuestionBank.Load(PathFor("missing")));
++        foreach (var json in new[] { "", "{broken", "null", "[]" }) InvalidBank(json);
++        var q = Sample(); Throws<InvalidDataException>(() => new QuestionBank([q, q]));
++        Throws<InvalidDataException>(() => new QuestionBank([q with { CorrectAnswerId = "missing" }]));
++        Throws<InvalidDataException>(() => new QuestionBank([q with { Answers = q.Answers.Take(3).ToArray() }]));
++        Throws<InvalidDataException>(() => new QuestionBank([q with { Answers = [q.Answers[0], q.Answers[0], q.Answers[2], q.Answers[3]] }]));
++        Throws<InvalidDataException>(() => new QuestionBank([q with { Category = (QuizCategory)99 }]));
++    }
++    private static async Task CancelledSave()
++    {
++        var path = PathFor("cancelled"); var store = new LeaderboardStore(path);
++        await store.SaveAsync(Record()); var original = File.ReadAllBytes(path);
++        using var cts = new CancellationTokenSource(); cts.Cancel();
++        await ThrowsAsync<OperationCanceledException>(() => store.SaveAsync(Record(), cts.Token));
++        Check(original.SequenceEqual(File.ReadAllBytes(path)), "cancelled save changed file");
++    }
++    private static void NameAndScore()
++    {
++        var session = new QuizSession(new QuestionBank([Sample()]));
++        session.Start(Request(new QuizOptions { QuestionCount = 1, PointsPerCorrectAnswer = 0 }));
++        var state = session.GetState(); session.SubmitAnswer(state.SessionId, state.CurrentQuestion!.QuestionToken, "q1a1");
++        var result = session.GetState().Result!;
++        Check(result.PlayerName == "Player" && result.Score == 0 && result.Accuracy == 1 && result.CorrectAnswers == 1, "trimmed name/zero score result incorrect");
++    }
++    private static async Task SortedRecords()
++    {
++        var store = new LeaderboardStore(PathFor("sorting")); var a = Record() with { Score = 200 };
++        var b = Record() with { Score = 100, CorrectAnswers = 2, Accuracy = 1 };
++        var c = Record() with { Score = 100, FinishedAtUtc = DateTimeOffset.UtcNow.AddDays(-1) };
++        var d = Record() with { Score = 100, FinishedAtUtc = DateTimeOffset.UtcNow };
++        foreach (var r in new[] { c, d, b, a }) await store.SaveAsync(r);
++        Check((await store.GetSortedAsync()).Select(r => r.SessionId).SequenceEqual(new[] { a.SessionId, b.SessionId, d.SessionId, c.SessionId }), "ranking order incorrect");
++        Check((await store.GetSortedAsync(QuizCategory.Movies)).Count == 0, "category filter incorrect");
++    }
++    private static void InvalidConfiguration()
++    {
++        foreach (var options in new[] { new QuizOptions { QuestionCount = 0 }, new QuizOptions { StartingLives = 0 }, new QuizOptions { TimePerQuestion = TimeSpan.Zero }, new QuizOptions { PointsPerCorrectAnswer = -1 } })
++            Throws<ArgumentOutOfRangeException>(options.Validate);
++        Throws<ArgumentException>(() => QuizCatalog.ParseCategory("unknown"));
++        Check(!QuizCatalog.TryParseDifficulty(null, out _), "null difficulty parsed");
++        var bank = new QuestionBank([Sample()]);
++        Throws<ArgumentOutOfRangeException>(() => bank.EnsureCanStart((QuizCategory)99, Difficulty.Easy, 1));
++        Throws<ArgumentOutOfRangeException>(() => bank.EnsureCanStart(QuizCategory.Games, (Difficulty)99, 1));
++        Throws<ArgumentOutOfRangeException>(() => bank.EnsureCanStart(QuizCategory.Games, Difficulty.Easy, 0));
++    }
++    private sealed class Clock : TimeProvider
++    {
++        private DateTimeOffset now = new(2026, 1, 1, 0, 0, 0, TimeSpan.Zero);
++        public override DateTimeOffset GetUtcNow() => now;
++        public void Advance(TimeSpan delta) => now += delta;
++    }
++}
+--- a/LR2_QuizMaster.UiTests/GameChecks.cs
++++ b/LR2_QuizMaster.UiTests/GameChecks.cs
+@@ -10,6 +10,7 @@
+     private static int checks;
+     private static string output = "";
+     private static QuestionBank bank = null!;
++    private static bool requireFocus;
+     [STAThread]
+     internal static int Run(string[] args)
+     {
+@@ -17,6 +18,7 @@
+         Application.SetUnhandledExceptionMode(UnhandledExceptionMode.ThrowException);
+         Application.EnableVisualStyles();
+         output = args[0]; Directory.CreateDirectory(output);
++        requireFocus = !args.Contains("--no-focus");
+         bank = QuestionBank.Load(QuestionBank.DefaultFilePath);
+         Exception? failure = null;
+         using var host = new Form { Opacity = 0, ShowInTaskbar = false };
+@@ -58,6 +60,20 @@
+             Assert(All(setup).OfType<QuizButton>().Count(b => b.Selected) == 1, "one selected difficulty");
+         }
+         Capture(setup, "01-setup.png");
++        if (!requireFocus)
++        {
++            for (int i = 0; i < 5; i++)
++            {
++                WindowPresentation.ToggleFullScreen(setup);
++                Assert(WindowPresentation.IsFullScreen(setup), "fullscreen API entered");
++                WindowPresentation.ToggleFullScreen(setup);
++                Assert(!WindowPresentation.IsFullScreen(setup) && setup.Visible, "fullscreen API restored");
++            }
++            setup.Close();
++            Console.WriteLine("SKIP native F11/Esc and active-window maximize routing: --no-focus");
++            Pass("difficulty cards and repeated fullscreen API transitions");
++            return;
++        }
+         int forms = Application.OpenForms.Count;
+         for (int i = 0; i < 5; i++)
+         {
+--- a/LR2_QuizMaster.UiTests/LayoutChecks.cs
++++ b/LR2_QuizMaster.UiTests/LayoutChecks.cs
+@@ -8,6 +8,7 @@
+ {
+     private static string output = "";
+     private static int assertions;
++    private static bool requireFocus;
+     [STAThread]
+     internal static int Run(string[] args)
+     {
+@@ -15,6 +16,7 @@
+         Application.SetUnhandledExceptionMode(UnhandledExceptionMode.ThrowException);
+         Application.EnableVisualStyles();
+         output = args[0]; Directory.CreateDirectory(output);
++        requireFocus = !args.Contains("--no-focus");
+         Exception? failure = null;
+         using var host = new Form { Opacity = 0, ShowInTaskbar = false };
+         host.Shown += async (_, _) =>
+@@ -85,11 +87,13 @@
+             {
+                 CheckTable(child);
+                 Assert(!WindowPresentation.IsFullScreen(child),"fixed modal ignores fullscreen inheritance");
+-                Assert(parent.Opacity==0 && Form.ActiveForm==child,"owner covered during modal; opacity="+parent.Opacity);
++                Assert(parent.Opacity==0,"owner covered during modal; opacity="+parent.Opacity);
++                if (requireFocus) Assert(Form.ActiveForm==child,"modal receives native activation");
+                 Assert(WindowPresentation.IsFullScreen(parent),"opening leaderboard does not reset session mode");
+                 int count=Application.OpenForms.Count;
+                 var key=Message.Create(child.Handle,0x100,(IntPtr)(int)Keys.F11,IntPtr.Zero);
+-                Assert(Application.FilterMessage(ref key),"fixed form consumes F11");
++                if (requireFocus) Assert(Application.FilterMessage(ref key),"fixed form consumes F11");
++                else Console.WriteLine("SKIP native modal activation and F11 routing: --no-focus");
+                 Assert(count==Application.OpenForms.Count && child.WindowState==FormWindowState.Normal,"F11 does not open another form");
+             }
+             catch(Exception ex) { error=ex; }

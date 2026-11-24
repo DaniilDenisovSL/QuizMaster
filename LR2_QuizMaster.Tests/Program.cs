@@ -20,7 +20,7 @@ internal static class Program
         Run("restart clears all state", Restart);
         await RunAsync("leaderboard saves, filters, deduplicates and handles corruption", Leaderboard);
         Console.WriteLine($"Passed {passed} backend checks.");
-        return 0;
+        return await RegressionChecks.RunAll();
     }
 
     private static void Bank()
@@ -264,7 +264,7 @@ internal static class Program
             Equal(0, (await store.LoadAsync()).Records.Count);
 
             var record = new QuizResult(Guid.NewGuid(), "Олена", QuizCategory.Games, Difficulty.Easy,
-                300, 3, 4, 10, 0.75, 3, GameEndReason.Completed, DateTimeOffset.UtcNow);
+                300, 3, 4, 4, 0.75, 3, GameEndReason.Completed, DateTimeOffset.UtcNow);
             True(await store.SaveAsync(record));
             True(!await store.SaveAsync(record));
             var interrupted = record with { SessionId = Guid.NewGuid(), EndReason = GameEndReason.Interrupted };
