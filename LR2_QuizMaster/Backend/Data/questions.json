@@ -1,0 +1,3752 @@
+[
+  {
+    "id": "games-easy-001",
+    "text": "Як звати брата Маріо у серії Super Mario?",
+    "category": "Games",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "games-easy-001-a1",
+        "text": "Луїджі"
+      },
+      {
+        "id": "games-easy-001-a2",
+        "text": "Сонік"
+      },
+      {
+        "id": "games-easy-001-a3",
+        "text": "Кріпер"
+      },
+      {
+        "id": "games-easy-001-a4",
+        "text": "Фігури з блоків"
+      }
+    ],
+    "correctAnswerId": "games-easy-001-a1"
+  },
+  {
+    "id": "games-easy-002",
+    "text": "Як називається синій їжак з ігор Sega?",
+    "category": "Games",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "games-easy-002-a1",
+        "text": "Кріпер"
+      },
+      {
+        "id": "games-easy-002-a2",
+        "text": "Сонік"
+      },
+      {
+        "id": "games-easy-002-a3",
+        "text": "Фігури з блоків"
+      },
+      {
+        "id": "games-easy-002-a4",
+        "text": "Зельда"
+      }
+    ],
+    "correctAnswerId": "games-easy-002-a2"
+  },
+  {
+    "id": "games-easy-003",
+    "text": "Який моб у Minecraft вибухає поруч із гравцем?",
+    "category": "Games",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "games-easy-003-a1",
+        "text": "Фігури з блоків"
+      },
+      {
+        "id": "games-easy-003-a2",
+        "text": "Зельда"
+      },
+      {
+        "id": "games-easy-003-a3",
+        "text": "Кріпер"
+      },
+      {
+        "id": "games-easy-003-a4",
+        "text": "Крапками"
+      }
+    ],
+    "correctAnswerId": "games-easy-003-a3"
+  },
+  {
+    "id": "games-easy-004",
+    "text": "Що складають у класичному Tetris?",
+    "category": "Games",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "games-easy-004-a1",
+        "text": "Зельда"
+      },
+      {
+        "id": "games-easy-004-a2",
+        "text": "Крапками"
+      },
+      {
+        "id": "games-easy-004-a3",
+        "text": "Sony"
+      },
+      {
+        "id": "games-easy-004-a4",
+        "text": "Фігури з блоків"
+      }
+    ],
+    "correctAnswerId": "games-easy-004-a4"
+  },
+  {
+    "id": "games-easy-005",
+    "text": "Як звати принцесу з серії The Legend of Zelda?",
+    "category": "Games",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "games-easy-005-a1",
+        "text": "Зельда"
+      },
+      {
+        "id": "games-easy-005-a2",
+        "text": "Крапками"
+      },
+      {
+        "id": "games-easy-005-a3",
+        "text": "Sony"
+      },
+      {
+        "id": "games-easy-005-a4",
+        "text": "Самозванець"
+      }
+    ],
+    "correctAnswerId": "games-easy-005-a1"
+  },
+  {
+    "id": "games-easy-006",
+    "text": "Чим Пакман харчується в лабіринті?",
+    "category": "Games",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "games-easy-006-a1",
+        "text": "Sony"
+      },
+      {
+        "id": "games-easy-006-a2",
+        "text": "Крапками"
+      },
+      {
+        "id": "games-easy-006-a3",
+        "text": "Самозванець"
+      },
+      {
+        "id": "games-easy-006-a4",
+        "text": "Еш Кетчум"
+      }
+    ],
+    "correctAnswerId": "games-easy-006-a2"
+  },
+  {
+    "id": "games-easy-007",
+    "text": "Яка компанія створила консоль PlayStation?",
+    "category": "Games",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "games-easy-007-a1",
+        "text": "Самозванець"
+      },
+      {
+        "id": "games-easy-007-a2",
+        "text": "Еш Кетчум"
+      },
+      {
+        "id": "games-easy-007-a3",
+        "text": "Sony"
+      },
+      {
+        "id": "games-easy-007-a4",
+        "text": "Будівництво укриттів"
+      }
+    ],
+    "correctAnswerId": "games-easy-007-a3"
+  },
+  {
+    "id": "games-easy-008",
+    "text": "Як називається прихований зрадник у Among Us?",
+    "category": "Games",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "games-easy-008-a1",
+        "text": "Еш Кетчум"
+      },
+      {
+        "id": "games-easy-008-a2",
+        "text": "Будівництво укриттів"
+      },
+      {
+        "id": "games-easy-008-a3",
+        "text": "Луїджі"
+      },
+      {
+        "id": "games-easy-008-a4",
+        "text": "Самозванець"
+      }
+    ],
+    "correctAnswerId": "games-easy-008-a4"
+  },
+  {
+    "id": "games-easy-009",
+    "text": "Як звати тренера покемонів у першому сезоні аніме?",
+    "category": "Games",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "games-easy-009-a1",
+        "text": "Еш Кетчум"
+      },
+      {
+        "id": "games-easy-009-a2",
+        "text": "Будівництво укриттів"
+      },
+      {
+        "id": "games-easy-009-a3",
+        "text": "Луїджі"
+      },
+      {
+        "id": "games-easy-009-a4",
+        "text": "Сонік"
+      }
+    ],
+    "correctAnswerId": "games-easy-009-a1"
+  },
+  {
+    "id": "games-easy-010",
+    "text": "Яка механіка будівництва стала відомою у Fortnite Battle Royale?",
+    "category": "Games",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "games-easy-010-a1",
+        "text": "Луїджі"
+      },
+      {
+        "id": "games-easy-010-a2",
+        "text": "Будівництво укриттів"
+      },
+      {
+        "id": "games-easy-010-a3",
+        "text": "Сонік"
+      },
+      {
+        "id": "games-easy-010-a4",
+        "text": "Кріпер"
+      }
+    ],
+    "correctAnswerId": "games-easy-010-a2"
+  },
+  {
+    "id": "games-medium-001",
+    "text": "У якому році вийшла аркадна гра Pong?",
+    "category": "Games",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "games-medium-001-a1",
+        "text": "1972"
+      },
+      {
+        "id": "games-medium-001-a2",
+        "text": "Стів"
+      },
+      {
+        "id": "games-medium-001-a3",
+        "text": "Nintendo Switch"
+      },
+      {
+        "id": "games-medium-001-a4",
+        "text": "Танк"
+      }
+    ],
+    "correctAnswerId": "games-medium-001-a1"
+  },
+  {
+    "id": "games-medium-002",
+    "text": "Як називається персонаж Minecraft, що з'являється за замовчуванням?",
+    "category": "Games",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "games-medium-002-a1",
+        "text": "Nintendo Switch"
+      },
+      {
+        "id": "games-medium-002-a2",
+        "text": "Стів"
+      },
+      {
+        "id": "games-medium-002-a3",
+        "text": "Танк"
+      },
+      {
+        "id": "games-medium-002-a4",
+        "text": "GLaDOS"
+      }
+    ],
+    "correctAnswerId": "games-medium-002-a2"
+  },
+  {
+    "id": "games-medium-003",
+    "text": "Яка консоль Nintendo поєднує портативний і телевізійний режими?",
+    "category": "Games",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "games-medium-003-a1",
+        "text": "Танк"
+      },
+      {
+        "id": "games-medium-003-a2",
+        "text": "GLaDOS"
+      },
+      {
+        "id": "games-medium-003-a3",
+        "text": "Nintendo Switch"
+      },
+      {
+        "id": "games-medium-003-a4",
+        "text": "Артур Морґан"
+      }
+    ],
+    "correctAnswerId": "games-medium-003-a3"
+  },
+  {
+    "id": "games-medium-004",
+    "text": "До якої ролі належить Райнхардт у Overwatch?",
+    "category": "Games",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "games-medium-004-a1",
+        "text": "GLaDOS"
+      },
+      {
+        "id": "games-medium-004-a2",
+        "text": "Артур Морґан"
+      },
+      {
+        "id": "games-medium-004-a3",
+        "text": "Обсидіан"
+      },
+      {
+        "id": "games-medium-004-a4",
+        "text": "Танк"
+      }
+    ],
+    "correctAnswerId": "games-medium-004-a4"
+  },
+  {
+    "id": "games-medium-005",
+    "text": "Як називається штучний інтелект у Portal?",
+    "category": "Games",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "games-medium-005-a1",
+        "text": "GLaDOS"
+      },
+      {
+        "id": "games-medium-005-a2",
+        "text": "Артур Морґан"
+      },
+      {
+        "id": "games-medium-005-a3",
+        "text": "Обсидіан"
+      },
+      {
+        "id": "games-medium-005-a4",
+        "text": "1987"
+      }
+    ],
+    "correctAnswerId": "games-medium-005-a1"
+  },
+  {
+    "id": "games-medium-006",
+    "text": "Як звати головного героя Red Dead Redemption 2?",
+    "category": "Games",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "games-medium-006-a1",
+        "text": "Обсидіан"
+      },
+      {
+        "id": "games-medium-006-a2",
+        "text": "Артур Морґан"
+      },
+      {
+        "id": "games-medium-006-a3",
+        "text": "1987"
+      },
+      {
+        "id": "games-medium-006-a4",
+        "text": "Valve"
+      }
+    ],
+    "correctAnswerId": "games-medium-006-a2"
+  },
+  {
+    "id": "games-medium-007",
+    "text": "З якого матеріалу будують портал до Незеру в Minecraft?",
+    "category": "Games",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "games-medium-007-a1",
+        "text": "1987"
+      },
+      {
+        "id": "games-medium-007-a2",
+        "text": "Valve"
+      },
+      {
+        "id": "games-medium-007-a3",
+        "text": "Обсидіан"
+      },
+      {
+        "id": "games-medium-007-a4",
+        "text": "MOBA"
+      }
+    ],
+    "correctAnswerId": "games-medium-007-a3"
+  },
+  {
+    "id": "games-medium-008",
+    "text": "У якому році вийшла перша Final Fantasy в Японії?",
+    "category": "Games",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "games-medium-008-a1",
+        "text": "Valve"
+      },
+      {
+        "id": "games-medium-008-a2",
+        "text": "MOBA"
+      },
+      {
+        "id": "games-medium-008-a3",
+        "text": "1972"
+      },
+      {
+        "id": "games-medium-008-a4",
+        "text": "1987"
+      }
+    ],
+    "correctAnswerId": "games-medium-008-a4"
+  },
+  {
+    "id": "games-medium-009",
+    "text": "Яка студія розробила Half-Life 2?",
+    "category": "Games",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "games-medium-009-a1",
+        "text": "Valve"
+      },
+      {
+        "id": "games-medium-009-a2",
+        "text": "MOBA"
+      },
+      {
+        "id": "games-medium-009-a3",
+        "text": "1972"
+      },
+      {
+        "id": "games-medium-009-a4",
+        "text": "Стів"
+      }
+    ],
+    "correctAnswerId": "games-medium-009-a1"
+  },
+  {
+    "id": "games-medium-010",
+    "text": "Який жанр найточніше описує Dota 2?",
+    "category": "Games",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "games-medium-010-a1",
+        "text": "1972"
+      },
+      {
+        "id": "games-medium-010-a2",
+        "text": "MOBA"
+      },
+      {
+        "id": "games-medium-010-a3",
+        "text": "Стів"
+      },
+      {
+        "id": "games-medium-010-a4",
+        "text": "Nintendo Switch"
+      }
+    ],
+    "correctAnswerId": "games-medium-010-a2"
+  },
+  {
+    "id": "games-hard-001",
+    "text": "У якому році Super Mario Bros. уперше вийшла в Японії для Famicom?",
+    "category": "Games",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "games-hard-001-a1",
+        "text": "1985"
+      },
+      {
+        "id": "games-hard-001-a2",
+        "text": "1993"
+      },
+      {
+        "id": "games-hard-001-a3",
+        "text": "Ерік Бароне"
+      },
+      {
+        "id": "games-hard-001-a4",
+        "text": "Red і Green"
+      }
+    ],
+    "correctAnswerId": "games-hard-001-a1"
+  },
+  {
+    "id": "games-hard-002",
+    "text": "У якому році вийшла перша гра Doom?",
+    "category": "Games",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "games-hard-002-a1",
+        "text": "Ерік Бароне"
+      },
+      {
+        "id": "games-hard-002-a2",
+        "text": "1993"
+      },
+      {
+        "id": "games-hard-002-a3",
+        "text": "Red і Green"
+      },
+      {
+        "id": "games-hard-002-a4",
+        "text": "2015"
+      }
+    ],
+    "correctAnswerId": "games-hard-002-a2"
+  },
+  {
+    "id": "games-hard-003",
+    "text": "Хто створив Stardew Valley під псевдонімом ConcernedApe?",
+    "category": "Games",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "games-hard-003-a1",
+        "text": "Red і Green"
+      },
+      {
+        "id": "games-hard-003-a2",
+        "text": "2015"
+      },
+      {
+        "id": "games-hard-003-a3",
+        "text": "Ерік Бароне"
+      },
+      {
+        "id": "games-hard-003-a4",
+        "text": "2007"
+      }
+    ],
+    "correctAnswerId": "games-hard-003-a3"
+  },
+  {
+    "id": "games-hard-004",
+    "text": "Які версії перших ігор Pokémon вийшли в Японії у 1996 році?",
+    "category": "Games",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "games-hard-004-a1",
+        "text": "2015"
+      },
+      {
+        "id": "games-hard-004-a2",
+        "text": "2007"
+      },
+      {
+        "id": "games-hard-004-a3",
+        "text": "Три дні"
+      },
+      {
+        "id": "games-hard-004-a4",
+        "text": "Red і Green"
+      }
+    ],
+    "correctAnswerId": "games-hard-004-a4"
+  },
+  {
+    "id": "games-hard-005",
+    "text": "У якому році вийшла The Witcher 3: Wild Hunt?",
+    "category": "Games",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "games-hard-005-a1",
+        "text": "2015"
+      },
+      {
+        "id": "games-hard-005-a2",
+        "text": "2007"
+      },
+      {
+        "id": "games-hard-005-a3",
+        "text": "Три дні"
+      },
+      {
+        "id": "games-hard-005-a4",
+        "text": "Blizzard North"
+      }
+    ],
+    "correctAnswerId": "games-hard-005-a1"
+  },
+  {
+    "id": "games-hard-006",
+    "text": "У якому році вийшла перша Assassin's Creed?",
+    "category": "Games",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "games-hard-006-a1",
+        "text": "Три дні"
+      },
+      {
+        "id": "games-hard-006-a2",
+        "text": "2007"
+      },
+      {
+        "id": "games-hard-006-a3",
+        "text": "Blizzard North"
+      },
+      {
+        "id": "games-hard-006-a4",
+        "text": "Larian Studios"
+      }
+    ],
+    "correctAnswerId": "games-hard-006-a2"
+  },
+  {
+    "id": "games-hard-007",
+    "text": "Скільки внутрішньоігрових днів триває цикл у Majora's Mask?",
+    "category": "Games",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "games-hard-007-a1",
+        "text": "Blizzard North"
+      },
+      {
+        "id": "games-hard-007-a2",
+        "text": "Larian Studios"
+      },
+      {
+        "id": "games-hard-007-a3",
+        "text": "Три дні"
+      },
+      {
+        "id": "games-hard-007-a4",
+        "text": "1981"
+      }
+    ],
+    "correctAnswerId": "games-hard-007-a3"
+  },
+  {
+    "id": "games-hard-008",
+    "text": "Яка студія розробила Diablo 1996 року?",
+    "category": "Games",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "games-hard-008-a1",
+        "text": "Larian Studios"
+      },
+      {
+        "id": "games-hard-008-a2",
+        "text": "1981"
+      },
+      {
+        "id": "games-hard-008-a3",
+        "text": "1985"
+      },
+      {
+        "id": "games-hard-008-a4",
+        "text": "Blizzard North"
+      }
+    ],
+    "correctAnswerId": "games-hard-008-a4"
+  },
+  {
+    "id": "games-hard-009",
+    "text": "Яка студія розробила Baldur's Gate 3?",
+    "category": "Games",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "games-hard-009-a1",
+        "text": "Larian Studios"
+      },
+      {
+        "id": "games-hard-009-a2",
+        "text": "1981"
+      },
+      {
+        "id": "games-hard-009-a3",
+        "text": "1985"
+      },
+      {
+        "id": "games-hard-009-a4",
+        "text": "1993"
+      }
+    ],
+    "correctAnswerId": "games-hard-009-a1"
+  },
+  {
+    "id": "games-hard-010",
+    "text": "У якому році вийшов оригінальний аркадний Donkey Kong?",
+    "category": "Games",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "games-hard-010-a1",
+        "text": "1985"
+      },
+      {
+        "id": "games-hard-010-a2",
+        "text": "1981"
+      },
+      {
+        "id": "games-hard-010-a3",
+        "text": "1993"
+      },
+      {
+        "id": "games-hard-010-a4",
+        "text": "Ерік Бароне"
+      }
+    ],
+    "correctAnswerId": "games-hard-010-a2"
+  },
+  {
+    "id": "programming-easy-001",
+    "text": "Яка мова розмітки задає структуру вебсторінки?",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "programming-easy-001-a1",
+        "text": "HTML"
+      },
+      {
+        "id": "programming-easy-001-a2",
+        "text": "CSS"
+      },
+      {
+        "id": "programming-easy-001-a3",
+        "text": "Console.WriteLine"
+      },
+      {
+        "id": "programming-easy-001-a4",
+        "text": "bool"
+      }
+    ],
+    "correctAnswerId": "programming-easy-001-a1"
+  },
+  {
+    "id": "programming-easy-002",
+    "text": "Яка технологія зазвичай відповідає за вигляд вебсторінки?",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "programming-easy-002-a1",
+        "text": "Console.WriteLine"
+      },
+      {
+        "id": "programming-easy-002-a2",
+        "text": "CSS"
+      },
+      {
+        "id": "programming-easy-002-a3",
+        "text": "bool"
+      },
+      {
+        "id": "programming-easy-002-a4",
+        "text": "Цикл"
+      }
+    ],
+    "correctAnswerId": "programming-easy-002-a2"
+  },
+  {
+    "id": "programming-easy-003",
+    "text": "Яка команда C# виводить текст у консоль?",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "programming-easy-003-a1",
+        "text": "bool"
+      },
+      {
+        "id": "programming-easy-003-a2",
+        "text": "Цикл"
+      },
+      {
+        "id": "programming-easy-003-a3",
+        "text": "Console.WriteLine"
+      },
+      {
+        "id": "programming-easy-003-a4",
+        "text": "C#"
+      }
+    ],
+    "correctAnswerId": "programming-easy-003-a3"
+  },
+  {
+    "id": "programming-easy-004",
+    "text": "Який тип даних представляє true або false?",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "programming-easy-004-a1",
+        "text": "Цикл"
+      },
+      {
+        "id": "programming-easy-004-a2",
+        "text": "C#"
+      },
+      {
+        "id": "programming-easy-004-a3",
+        "text": "Git"
+      },
+      {
+        "id": "programming-easy-004-a4",
+        "text": "bool"
+      }
+    ],
+    "correctAnswerId": "programming-easy-004-a4"
+  },
+  {
+    "id": "programming-easy-005",
+    "text": "Яка конструкція повторює блок коду кілька разів?",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "programming-easy-005-a1",
+        "text": "Цикл"
+      },
+      {
+        "id": "programming-easy-005-a2",
+        "text": "C#"
+      },
+      {
+        "id": "programming-easy-005-a3",
+        "text": "Git"
+      },
+      {
+        "id": "programming-easy-005-a4",
+        "text": "SQL"
+      }
+    ],
+    "correctAnswerId": "programming-easy-005-a1"
+  },
+  {
+    "id": "programming-easy-006",
+    "text": "Яка мова є основною для цього проєкту?",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "programming-easy-006-a1",
+        "text": "Git"
+      },
+      {
+        "id": "programming-easy-006-a2",
+        "text": "C#"
+      },
+      {
+        "id": "programming-easy-006-a3",
+        "text": "SQL"
+      },
+      {
+        "id": "programming-easy-006-a4",
+        "text": "int"
+      }
+    ],
+    "correctAnswerId": "programming-easy-006-a2"
+  },
+  {
+    "id": "programming-easy-007",
+    "text": "Яка система відстежує історію змін у коді?",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "programming-easy-007-a1",
+        "text": "SQL"
+      },
+      {
+        "id": "programming-easy-007-a2",
+        "text": "int"
+      },
+      {
+        "id": "programming-easy-007-a3",
+        "text": "Git"
+      },
+      {
+        "id": "programming-easy-007-a4",
+        "text": "Масив"
+      }
+    ],
+    "correctAnswerId": "programming-easy-007-a3"
+  },
+  {
+    "id": "programming-easy-008",
+    "text": "Якою мовою формулюють запити до реляційних баз?",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "programming-easy-008-a1",
+        "text": "int"
+      },
+      {
+        "id": "programming-easy-008-a2",
+        "text": "Масив"
+      },
+      {
+        "id": "programming-easy-008-a3",
+        "text": "HTML"
+      },
+      {
+        "id": "programming-easy-008-a4",
+        "text": "SQL"
+      }
+    ],
+    "correctAnswerId": "programming-easy-008-a4"
+  },
+  {
+    "id": "programming-easy-009",
+    "text": "Який тип C# зберігає ціле число?",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "programming-easy-009-a1",
+        "text": "int"
+      },
+      {
+        "id": "programming-easy-009-a2",
+        "text": "Масив"
+      },
+      {
+        "id": "programming-easy-009-a3",
+        "text": "HTML"
+      },
+      {
+        "id": "programming-easy-009-a4",
+        "text": "CSS"
+      }
+    ],
+    "correctAnswerId": "programming-easy-009-a1"
+  },
+  {
+    "id": "programming-easy-010",
+    "text": "Як називається впорядкована колекція фіксованої довжини?",
+    "category": "Programming",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "programming-easy-010-a1",
+        "text": "HTML"
+      },
+      {
+        "id": "programming-easy-010-a2",
+        "text": "Масив"
+      },
+      {
+        "id": "programming-easy-010-a3",
+        "text": "CSS"
+      },
+      {
+        "id": "programming-easy-010-a4",
+        "text": "Console.WriteLine"
+      }
+    ],
+    "correctAnswerId": "programming-easy-010-a2"
+  },
+  {
+    "id": "programming-medium-001",
+    "text": "Який принцип ООП об'єднує дані й методи та приховує стан?",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "programming-medium-001-a1",
+        "text": "Інкапсуляція"
+      },
+      {
+        "id": "programming-medium-001-a2",
+        "text": "async"
+      },
+      {
+        "id": "programming-medium-001-a3",
+        "text": "Контракт членів"
+      },
+      {
+        "id": "programming-medium-001-a4",
+        "text": "O(n)"
+      }
+    ],
+    "correctAnswerId": "programming-medium-001-a1"
+  },
+  {
+    "id": "programming-medium-002",
+    "text": "Яке ключове слово C# позначає асинхронний метод?",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "programming-medium-002-a1",
+        "text": "Контракт членів"
+      },
+      {
+        "id": "programming-medium-002-a2",
+        "text": "async"
+      },
+      {
+        "id": "programming-medium-002-a3",
+        "text": "O(n)"
+      },
+      {
+        "id": "programming-medium-002-a4",
+        "text": "404"
+      }
+    ],
+    "correctAnswerId": "programming-medium-002-a2"
+  },
+  {
+    "id": "programming-medium-003",
+    "text": "Що описує інтерфейс у C#?",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "programming-medium-003-a1",
+        "text": "O(n)"
+      },
+      {
+        "id": "programming-medium-003-a2",
+        "text": "404"
+      },
+      {
+        "id": "programming-medium-003-a3",
+        "text": "Контракт членів"
+      },
+      {
+        "id": "programming-medium-003-a4",
+        "text": "JSON"
+      }
+    ],
+    "correctAnswerId": "programming-medium-003-a3"
+  },
+  {
+    "id": "programming-medium-004",
+    "text": "Яка складність лінійного пошуку в найгіршому випадку?",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "programming-medium-004-a1",
+        "text": "404"
+      },
+      {
+        "id": "programming-medium-004-a2",
+        "text": "JSON"
+      },
+      {
+        "id": "programming-medium-004-a3",
+        "text": "Унікальність рядка"
+      },
+      {
+        "id": "programming-medium-004-a4",
+        "text": "O(n)"
+      }
+    ],
+    "correctAnswerId": "programming-medium-004-a4"
+  },
+  {
+    "id": "programming-medium-005",
+    "text": "Який код HTTP означає «Не знайдено»?",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "programming-medium-005-a1",
+        "text": "404"
+      },
+      {
+        "id": "programming-medium-005-a2",
+        "text": "JSON"
+      },
+      {
+        "id": "programming-medium-005-a3",
+        "text": "Унікальність рядка"
+      },
+      {
+        "id": "programming-medium-005-a4",
+        "text": "Останнім увійшов — першим вийшов"
+      }
+    ],
+    "correctAnswerId": "programming-medium-005-a1"
+  },
+  {
+    "id": "programming-medium-006",
+    "text": "Який формат використовують для обміну структурованими даними?",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "programming-medium-006-a1",
+        "text": "Унікальність рядка"
+      },
+      {
+        "id": "programming-medium-006-a2",
+        "text": "JSON"
+      },
+      {
+        "id": "programming-medium-006-a3",
+        "text": "Останнім увійшов — першим вийшов"
+      },
+      {
+        "id": "programming-medium-006-a4",
+        "text": "Проміжний або машинний код"
+      }
+    ],
+    "correctAnswerId": "programming-medium-006-a2"
+  },
+  {
+    "id": "programming-medium-007",
+    "text": "Що гарантує первинний ключ таблиці бази даних?",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "programming-medium-007-a1",
+        "text": "Останнім увійшов — першим вийшов"
+      },
+      {
+        "id": "programming-medium-007-a2",
+        "text": "Проміжний або машинний код"
+      },
+      {
+        "id": "programming-medium-007-a3",
+        "text": "Унікальність рядка"
+      },
+      {
+        "id": "programming-medium-007-a4",
+        "text": "Потрібний сервіс"
+      }
+    ],
+    "correctAnswerId": "programming-medium-007-a3"
+  },
+  {
+    "id": "programming-medium-008",
+    "text": "За яким принципом працює стек?",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "programming-medium-008-a1",
+        "text": "Проміжний або машинний код"
+      },
+      {
+        "id": "programming-medium-008-a2",
+        "text": "Потрібний сервіс"
+      },
+      {
+        "id": "programming-medium-008-a3",
+        "text": "Інкапсуляція"
+      },
+      {
+        "id": "programming-medium-008-a4",
+        "text": "Останнім увійшов — першим вийшов"
+      }
+    ],
+    "correctAnswerId": "programming-medium-008-a4"
+  },
+  {
+    "id": "programming-medium-009",
+    "text": "Що компілятор перетворює з вихідного коду?",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "programming-medium-009-a1",
+        "text": "Проміжний або машинний код"
+      },
+      {
+        "id": "programming-medium-009-a2",
+        "text": "Потрібний сервіс"
+      },
+      {
+        "id": "programming-medium-009-a3",
+        "text": "Інкапсуляція"
+      },
+      {
+        "id": "programming-medium-009-a4",
+        "text": "async"
+      }
+    ],
+    "correctAnswerId": "programming-medium-009-a1"
+  },
+  {
+    "id": "programming-medium-010",
+    "text": "Що передається об'єкту ззовні при впровадженні залежностей?",
+    "category": "Programming",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "programming-medium-010-a1",
+        "text": "Інкапсуляція"
+      },
+      {
+        "id": "programming-medium-010-a2",
+        "text": "Потрібний сервіс"
+      },
+      {
+        "id": "programming-medium-010-a3",
+        "text": "async"
+      },
+      {
+        "id": "programming-medium-010-a4",
+        "text": "Контракт членів"
+      }
+    ],
+    "correctAnswerId": "programming-medium-010-a2"
+  },
+  {
+    "id": "programming-hard-001",
+    "text": "На що CLR компілює C# перед виконанням JIT?",
+    "category": "Programming",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "programming-hard-001-a1",
+        "text": "Проміжну мову IL"
+      },
+      {
+        "id": "programming-hard-001-a2",
+        "text": "Збалансоване дерево"
+      },
+      {
+        "id": "programming-hard-001-a3",
+        "text": "O(1)"
+      },
+      {
+        "id": "programming-hard-001-a4",
+        "text": "TLS"
+      }
+    ],
+    "correctAnswerId": "programming-hard-001-a1"
+  },
+  {
+    "id": "programming-hard-002",
+    "text": "Яка структура даних лежить в основі типового індексу B-tree?",
+    "category": "Programming",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "programming-hard-002-a1",
+        "text": "O(1)"
+      },
+      {
+        "id": "programming-hard-002-a2",
+        "text": "Збалансоване дерево"
+      },
+      {
+        "id": "programming-hard-002-a3",
+        "text": "TLS"
+      },
+      {
+        "id": "programming-hard-002-a4",
+        "text": "Atomicity"
+      }
+    ],
+    "correctAnswerId": "programming-hard-002-a2"
+  },
+  {
+    "id": "programming-hard-003",
+    "text": "Яка середня складність пошуку в хеш-таблиці?",
+    "category": "Programming",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "programming-hard-003-a1",
+        "text": "TLS"
+      },
+      {
+        "id": "programming-hard-003-a2",
+        "text": "Atomicity"
+      },
+      {
+        "id": "programming-hard-003-a3",
+        "text": "O(1)"
+      },
+      {
+        "id": "programming-hard-003-a4",
+        "text": "Стан гонитви"
+      }
+    ],
+    "correctAnswerId": "programming-hard-003-a3"
+  },
+  {
+    "id": "programming-hard-004",
+    "text": "Який протокол додає шифрування до HTTP-з'єднання?",
+    "category": "Programming",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "programming-hard-004-a1",
+        "text": "Atomicity"
+      },
+      {
+        "id": "programming-hard-004-a2",
+        "text": "Стан гонитви"
+      },
+      {
+        "id": "programming-hard-004-a3",
+        "text": "Взаємне блокування"
+      },
+      {
+        "id": "programming-hard-004-a4",
+        "text": "TLS"
+      }
+    ],
+    "correctAnswerId": "programming-hard-004-a4"
+  },
+  {
+    "id": "programming-hard-005",
+    "text": "Яка властивість ACID вимагає виконати транзакцію повністю або ніяк?",
+    "category": "Programming",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "programming-hard-005-a1",
+        "text": "Atomicity"
+      },
+      {
+        "id": "programming-hard-005-a2",
+        "text": "Стан гонитви"
+      },
+      {
+        "id": "programming-hard-005-a3",
+        "text": "Взаємне блокування"
+      },
+      {
+        "id": "programming-hard-005-a4",
+        "text": "Збирач сміття"
+      }
+    ],
+    "correctAnswerId": "programming-hard-005-a1"
+  },
+  {
+    "id": "programming-hard-006",
+    "text": "Як називається помилка непередбаченого порядку виконання потоків?",
+    "category": "Programming",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "programming-hard-006-a1",
+        "text": "Взаємне блокування"
+      },
+      {
+        "id": "programming-hard-006-a2",
+        "text": "Стан гонитви"
+      },
+      {
+        "id": "programming-hard-006-a3",
+        "text": "Збирач сміття"
+      },
+      {
+        "id": "programming-hard-006-a4",
+        "text": "Обсяг пам'яті алгоритму"
+      }
+    ],
+    "correctAnswerId": "programming-hard-006-a2"
+  },
+  {
+    "id": "programming-hard-007",
+    "text": "Яка проблема виникає, коли потоки чекають ресурси один одного?",
+    "category": "Programming",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "programming-hard-007-a1",
+        "text": "Збирач сміття"
+      },
+      {
+        "id": "programming-hard-007-a2",
+        "text": "Обсяг пам'яті алгоритму"
+      },
+      {
+        "id": "programming-hard-007-a3",
+        "text": "Взаємне блокування"
+      },
+      {
+        "id": "programming-hard-007-a4",
+        "text": "Відсутність стану запиту"
+      }
+    ],
+    "correctAnswerId": "programming-hard-007-a3"
+  },
+  {
+    "id": "programming-hard-008",
+    "text": "Хто звільняє недосяжні керовані об'єкти в .NET?",
+    "category": "Programming",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "programming-hard-008-a1",
+        "text": "Обсяг пам'яті алгоритму"
+      },
+      {
+        "id": "programming-hard-008-a2",
+        "text": "Відсутність стану запиту"
+      },
+      {
+        "id": "programming-hard-008-a3",
+        "text": "Проміжну мову IL"
+      },
+      {
+        "id": "programming-hard-008-a4",
+        "text": "Збирач сміття"
+      }
+    ],
+    "correctAnswerId": "programming-hard-008-a4"
+  },
+  {
+    "id": "programming-hard-009",
+    "text": "Що оцінює нотація O у вимірі простору?",
+    "category": "Programming",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "programming-hard-009-a1",
+        "text": "Обсяг пам'яті алгоритму"
+      },
+      {
+        "id": "programming-hard-009-a2",
+        "text": "Відсутність стану запиту"
+      },
+      {
+        "id": "programming-hard-009-a3",
+        "text": "Проміжну мову IL"
+      },
+      {
+        "id": "programming-hard-009-a4",
+        "text": "Збалансоване дерево"
+      }
+    ],
+    "correctAnswerId": "programming-hard-009-a1"
+  },
+  {
+    "id": "programming-hard-010",
+    "text": "Яка властивість REST обробляє кожен запит незалежно від попередніх?",
+    "category": "Programming",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "programming-hard-010-a1",
+        "text": "Проміжну мову IL"
+      },
+      {
+        "id": "programming-hard-010-a2",
+        "text": "Відсутність стану запиту"
+      },
+      {
+        "id": "programming-hard-010-a3",
+        "text": "Збалансоване дерево"
+      },
+      {
+        "id": "programming-hard-010-a4",
+        "text": "O(1)"
+      }
+    ],
+    "correctAnswerId": "programming-hard-010-a2"
+  },
+  {
+    "id": "sports-easy-001",
+    "text": "Скільки гравців однієї команди грають у футбол на полі?",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "sports-easy-001-a1",
+        "text": "11"
+      },
+      {
+        "id": "sports-easy-001-a2",
+        "text": "Нуль"
+      },
+      {
+        "id": "sports-easy-001-a3",
+        "text": "Три"
+      },
+      {
+        "id": "sports-easy-001-a4",
+        "text": "П'ять"
+      }
+    ],
+    "correctAnswerId": "sports-easy-001-a1"
+  },
+  {
+    "id": "sports-easy-002",
+    "text": "Що означає рахунок love у тенісі?",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "sports-easy-002-a1",
+        "text": "Три"
+      },
+      {
+        "id": "sports-easy-002-a2",
+        "text": "Нуль"
+      },
+      {
+        "id": "sports-easy-002-a3",
+        "text": "П'ять"
+      },
+      {
+        "id": "sports-easy-002-a4",
+        "text": "42,195 км"
+      }
+    ],
+    "correctAnswerId": "sports-easy-002-a2"
+  },
+  {
+    "id": "sports-easy-003",
+    "text": "Скільки очок дає кидок з-за триочкової лінії?",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "sports-easy-003-a1",
+        "text": "П'ять"
+      },
+      {
+        "id": "sports-easy-003-a2",
+        "text": "42,195 км"
+      },
+      {
+        "id": "sports-easy-003-a3",
+        "text": "Три"
+      },
+      {
+        "id": "sports-easy-003-a4",
+        "text": "Король"
+      }
+    ],
+    "correctAnswerId": "sports-easy-003-a3"
+  },
+  {
+    "id": "sports-easy-004",
+    "text": "Скільки кілець на олімпійському символі?",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "sports-easy-004-a1",
+        "text": "42,195 км"
+      },
+      {
+        "id": "sports-easy-004-a2",
+        "text": "Король"
+      },
+      {
+        "id": "sports-easy-004-a3",
+        "text": "Шість"
+      },
+      {
+        "id": "sports-easy-004-a4",
+        "text": "П'ять"
+      }
+    ],
+    "correctAnswerId": "sports-easy-004-a4"
+  },
+  {
+    "id": "sports-easy-005",
+    "text": "Яка стандартна довжина марафону?",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "sports-easy-005-a1",
+        "text": "42,195 км"
+      },
+      {
+        "id": "sports-easy-005-a2",
+        "text": "Король"
+      },
+      {
+        "id": "sports-easy-005-a3",
+        "text": "Шість"
+      },
+      {
+        "id": "sports-easy-005-a4",
+        "text": "Велоспорт"
+      }
+    ],
+    "correctAnswerId": "sports-easy-005-a1"
+  },
+  {
+    "id": "sports-easy-006",
+    "text": "Яка фігура в шахах є головною ціллю атаки?",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "sports-easy-006-a1",
+        "text": "Шість"
+      },
+      {
+        "id": "sports-easy-006-a2",
+        "text": "Король"
+      },
+      {
+        "id": "sports-easy-006-a3",
+        "text": "Велоспорт"
+      },
+      {
+        "id": "sports-easy-006-a4",
+        "text": "50 метрів"
+      }
+    ],
+    "correctAnswerId": "sports-easy-006-a2"
+  },
+  {
+    "id": "sports-easy-007",
+    "text": "Скільки гравців однієї команди на майданчику у волейболі?",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "sports-easy-007-a1",
+        "text": "Велоспорт"
+      },
+      {
+        "id": "sports-easy-007-a2",
+        "text": "50 метрів"
+      },
+      {
+        "id": "sports-easy-007-a3",
+        "text": "Шість"
+      },
+      {
+        "id": "sports-easy-007-a4",
+        "text": "Волан"
+      }
+    ],
+    "correctAnswerId": "sports-easy-007-a3"
+  },
+  {
+    "id": "sports-easy-008",
+    "text": "У якому виді спорту проводять Тур де Франс?",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "sports-easy-008-a1",
+        "text": "50 метрів"
+      },
+      {
+        "id": "sports-easy-008-a2",
+        "text": "Волан"
+      },
+      {
+        "id": "sports-easy-008-a3",
+        "text": "11"
+      },
+      {
+        "id": "sports-easy-008-a4",
+        "text": "Велоспорт"
+      }
+    ],
+    "correctAnswerId": "sports-easy-008-a4"
+  },
+  {
+    "id": "sports-easy-009",
+    "text": "Яка довжина олімпійського басейну?",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "sports-easy-009-a1",
+        "text": "50 метрів"
+      },
+      {
+        "id": "sports-easy-009-a2",
+        "text": "Волан"
+      },
+      {
+        "id": "sports-easy-009-a3",
+        "text": "11"
+      },
+      {
+        "id": "sports-easy-009-a4",
+        "text": "Нуль"
+      }
+    ],
+    "correctAnswerId": "sports-easy-009-a1"
+  },
+  {
+    "id": "sports-easy-010",
+    "text": "Який предмет б'є гравець у бадмінтоні?",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "sports-easy-010-a1",
+        "text": "11"
+      },
+      {
+        "id": "sports-easy-010-a2",
+        "text": "Волан"
+      },
+      {
+        "id": "sports-easy-010-a3",
+        "text": "Нуль"
+      },
+      {
+        "id": "sports-easy-010-a4",
+        "text": "Три"
+      }
+    ],
+    "correctAnswerId": "sports-easy-010-a2"
+  },
+  {
+    "id": "sports-medium-001",
+    "text": "Що означає жовта картка у футболі?",
+    "category": "Sports",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "sports-medium-001-a1",
+        "text": "Попередження"
+      },
+      {
+        "id": "sports-medium-001-a2",
+        "text": "Поул-позиція"
+      },
+      {
+        "id": "sports-medium-001-a3",
+        "text": "Сім"
+      },
+      {
+        "id": "sports-medium-001-a4",
+        "text": "Бита"
+      }
+    ],
+    "correctAnswerId": "sports-medium-001-a1"
+  },
+  {
+    "id": "sports-medium-002",
+    "text": "Як називається старт на першому місці у Формулі-1?",
+    "category": "Sports",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "sports-medium-002-a1",
+        "text": "Сім"
+      },
+      {
+        "id": "sports-medium-002-a2",
+        "text": "Поул-позиція"
+      },
+      {
+        "id": "sports-medium-002-a3",
+        "text": "Бита"
+      },
+      {
+        "id": "sports-medium-002-a4",
+        "text": "Шість"
+      }
+    ],
+    "correctAnswerId": "sports-medium-002-a2"
+  },
+  {
+    "id": "sports-medium-003",
+    "text": "Скільки гравців однієї команди на майданчику у гандболі?",
+    "category": "Sports",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "sports-medium-003-a1",
+        "text": "Бита"
+      },
+      {
+        "id": "sports-medium-003-a2",
+        "text": "Шість"
+      },
+      {
+        "id": "sports-medium-003-a3",
+        "text": "Сім"
+      },
+      {
+        "id": "sports-medium-003-a4",
+        "text": "Одне"
+      }
+    ],
+    "correctAnswerId": "sports-medium-003-a3"
+  },
+  {
+    "id": "sports-medium-004",
+    "text": "Чим відбивають м'яч у бейсболі?",
+    "category": "Sports",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "sports-medium-004-a1",
+        "text": "Шість"
+      },
+      {
+        "id": "sports-medium-004-a2",
+        "text": "Одне"
+      },
+      {
+        "id": "sports-medium-004-a3",
+        "text": "11"
+      },
+      {
+        "id": "sports-medium-004-a4",
+        "text": "Бита"
+      }
+    ],
+    "correctAnswerId": "sports-medium-004-a4"
+  },
+  {
+    "id": "sports-medium-005",
+    "text": "Скільки очок дає тачдаун в американському футболі?",
+    "category": "Sports",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "sports-medium-005-a1",
+        "text": "Шість"
+      },
+      {
+        "id": "sports-medium-005-a2",
+        "text": "Одне"
+      },
+      {
+        "id": "sports-medium-005-a3",
+        "text": "11"
+      },
+      {
+        "id": "sports-medium-005-a4",
+        "text": "Три"
+      }
+    ],
+    "correctAnswerId": "sports-medium-005-a1"
+  },
+  {
+    "id": "sports-medium-006",
+    "text": "Скільки очок дає штрафний кидок у баскетболі?",
+    "category": "Sports",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "sports-medium-006-a1",
+        "text": "11"
+      },
+      {
+        "id": "sports-medium-006-a2",
+        "text": "Одне"
+      },
+      {
+        "id": "sports-medium-006-a3",
+        "text": "Три"
+      },
+      {
+        "id": "sports-medium-006-a4",
+        "text": "Шість"
+      }
+    ],
+    "correctAnswerId": "sports-medium-006-a2"
+  },
+  {
+    "id": "sports-medium-007",
+    "text": "До скількох очок грають партію у настільному тенісі?",
+    "category": "Sports",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "sports-medium-007-a1",
+        "text": "Три"
+      },
+      {
+        "id": "sports-medium-007-a2",
+        "text": "Шість"
+      },
+      {
+        "id": "sports-medium-007-a3",
+        "text": "11"
+      },
+      {
+        "id": "sports-medium-007-a4",
+        "text": "Уругвай"
+      }
+    ],
+    "correctAnswerId": "sports-medium-007-a3"
+  },
+  {
+    "id": "sports-medium-008",
+    "text": "Скільки періодів має стандартний матч НХЛ?",
+    "category": "Sports",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "sports-medium-008-a1",
+        "text": "Шість"
+      },
+      {
+        "id": "sports-medium-008-a2",
+        "text": "Уругвай"
+      },
+      {
+        "id": "sports-medium-008-a3",
+        "text": "Попередження"
+      },
+      {
+        "id": "sports-medium-008-a4",
+        "text": "Три"
+      }
+    ],
+    "correctAnswerId": "sports-medium-008-a4"
+  },
+  {
+    "id": "sports-medium-009",
+    "text": "Скільки гравців однієї команди на льоду без вилучень?",
+    "category": "Sports",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "sports-medium-009-a1",
+        "text": "Шість"
+      },
+      {
+        "id": "sports-medium-009-a2",
+        "text": "Уругвай"
+      },
+      {
+        "id": "sports-medium-009-a3",
+        "text": "Попередження"
+      },
+      {
+        "id": "sports-medium-009-a4",
+        "text": "Поул-позиція"
+      }
+    ],
+    "correctAnswerId": "sports-medium-009-a1"
+  },
+  {
+    "id": "sports-medium-010",
+    "text": "Яка країна виграла перший чемпіонат світу з футболу 1930 року?",
+    "category": "Sports",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "sports-medium-010-a1",
+        "text": "Попередження"
+      },
+      {
+        "id": "sports-medium-010-a2",
+        "text": "Уругвай"
+      },
+      {
+        "id": "sports-medium-010-a3",
+        "text": "Поул-позиція"
+      },
+      {
+        "id": "sports-medium-010-a4",
+        "text": "Сім"
+      }
+    ],
+    "correctAnswerId": "sports-medium-010-a2"
+  },
+  {
+    "id": "sports-hard-001",
+    "text": "Скільки видів змагань входить до чоловічого десятиборства?",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "sports-hard-001-a1",
+        "text": "Десять"
+      },
+      {
+        "id": "sports-hard-001-a2",
+        "text": "400 метрів"
+      },
+      {
+        "id": "sports-hard-001-a3",
+        "text": "Сім"
+      },
+      {
+        "id": "sports-hard-001-a4",
+        "text": "Дев'ять"
+      }
+    ],
+    "correctAnswerId": "sports-hard-001-a1"
+  },
+  {
+    "id": "sports-hard-002",
+    "text": "Яка довжина кола стандартної відкритої легкоатлетичної доріжки?",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "sports-hard-002-a1",
+        "text": "Сім"
+      },
+      {
+        "id": "sports-hard-002-a2",
+        "text": "400 метрів"
+      },
+      {
+        "id": "sports-hard-002-a3",
+        "text": "Дев'ять"
+      },
+      {
+        "id": "sports-hard-002-a4",
+        "text": "110 метрів"
+      }
+    ],
+    "correctAnswerId": "sports-hard-002-a2"
+  },
+  {
+    "id": "sports-hard-003",
+    "text": "Скільки очок потрібно для виграшу звичайного тенісного тай-брейку з різницею у два?",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "sports-hard-003-a1",
+        "text": "Дев'ять"
+      },
+      {
+        "id": "sports-hard-003-a2",
+        "text": "110 метрів"
+      },
+      {
+        "id": "sports-hard-003-a3",
+        "text": "Сім"
+      },
+      {
+        "id": "sports-hard-003-a4",
+        "text": "Чотири"
+      }
+    ],
+    "correctAnswerId": "sports-hard-003-a3"
+  },
+  {
+    "id": "sports-hard-004",
+    "text": "Скільки інінгів має стандартний професійний бейсбольний матч?",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "sports-hard-004-a1",
+        "text": "Сім"
+      },
+      {
+        "id": "sports-hard-004-a2",
+        "text": "110 метрів"
+      },
+      {
+        "id": "sports-hard-004-a3",
+        "text": "Чотири"
+      },
+      {
+        "id": "sports-hard-004-a4",
+        "text": "Дев'ять"
+      }
+    ],
+    "correctAnswerId": "sports-hard-004-a4"
+  },
+  {
+    "id": "sports-hard-005",
+    "text": "Скільки дисциплін входить до жіночого семиборства?",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "sports-hard-005-a1",
+        "text": "Сім"
+      },
+      {
+        "id": "sports-hard-005-a2",
+        "text": "110 метрів"
+      },
+      {
+        "id": "sports-hard-005-a3",
+        "text": "Чотири"
+      },
+      {
+        "id": "sports-hard-005-a4",
+        "text": "250 метрів"
+      }
+    ],
+    "correctAnswerId": "sports-hard-005-a1"
+  },
+  {
+    "id": "sports-hard-006",
+    "text": "Яка олімпійська дистанція чоловічого бігу з бар'єрами?",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "sports-hard-006-a1",
+        "text": "Чотири"
+      },
+      {
+        "id": "sports-hard-006-a2",
+        "text": "110 метрів"
+      },
+      {
+        "id": "sports-hard-006-a3",
+        "text": "Сім"
+      },
+      {
+        "id": "sports-hard-006-a4",
+        "text": "250 метрів"
+      }
+    ],
+    "correctAnswerId": "sports-hard-006-a2"
+  },
+  {
+    "id": "sports-hard-007",
+    "text": "Скільки турнірів становлять календарний тенісний Grand Slam?",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "sports-hard-007-a1",
+        "text": "Сім"
+      },
+      {
+        "id": "sports-hard-007-a2",
+        "text": "250 метрів"
+      },
+      {
+        "id": "sports-hard-007-a3",
+        "text": "Чотири"
+      },
+      {
+        "id": "sports-hard-007-a4",
+        "text": "12"
+      }
+    ],
+    "correctAnswerId": "sports-hard-007-a3"
+  },
+  {
+    "id": "sports-hard-008",
+    "text": "Скільки гравців однієї команди у воді у водному поло?",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "sports-hard-008-a1",
+        "text": "250 метрів"
+      },
+      {
+        "id": "sports-hard-008-a2",
+        "text": "12"
+      },
+      {
+        "id": "sports-hard-008-a3",
+        "text": "Десять"
+      },
+      {
+        "id": "sports-hard-008-a4",
+        "text": "Сім"
+      }
+    ],
+    "correctAnswerId": "sports-hard-008-a4"
+  },
+  {
+    "id": "sports-hard-009",
+    "text": "Яка стандартна довжина олімпійського велотреку?",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "sports-hard-009-a1",
+        "text": "250 метрів"
+      },
+      {
+        "id": "sports-hard-009-a2",
+        "text": "12"
+      },
+      {
+        "id": "sports-hard-009-a3",
+        "text": "Десять"
+      },
+      {
+        "id": "sports-hard-009-a4",
+        "text": "400 метрів"
+      }
+    ],
+    "correctAnswerId": "sports-hard-009-a1"
+  },
+  {
+    "id": "sports-hard-010",
+    "text": "Скільки раундів зазвичай має титульний професійний бій з боксу?",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "sports-hard-010-a1",
+        "text": "Десять"
+      },
+      {
+        "id": "sports-hard-010-a2",
+        "text": "12"
+      },
+      {
+        "id": "sports-hard-010-a3",
+        "text": "400 метрів"
+      },
+      {
+        "id": "sports-hard-010-a4",
+        "text": "Сім"
+      }
+    ],
+    "correctAnswerId": "sports-hard-010-a2"
+  },
+  {
+    "id": "movies-easy-001",
+    "text": "Як звати героя оригінальної трилогії Star Wars?",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "movies-easy-001-a1",
+        "text": "Люк Скайвокер"
+      },
+      {
+        "id": "movies-easy-001-a2",
+        "text": "Ельза"
+      },
+      {
+        "id": "movies-easy-001-a3",
+        "text": "Вуді"
+      },
+      {
+        "id": "movies-easy-001-a4",
+        "text": "Гоґвортс"
+      }
+    ],
+    "correctAnswerId": "movies-easy-001-a1"
+  },
+  {
+    "id": "movies-easy-002",
+    "text": "Як звати снігову королеву у Frozen?",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "movies-easy-002-a1",
+        "text": "Вуді"
+      },
+      {
+        "id": "movies-easy-002-a2",
+        "text": "Ельза"
+      },
+      {
+        "id": "movies-easy-002-a3",
+        "text": "Гоґвортс"
+      },
+      {
+        "id": "movies-easy-002-a4",
+        "text": "1997"
+      }
+    ],
+    "correctAnswerId": "movies-easy-002-a2"
+  },
+  {
+    "id": "movies-easy-003",
+    "text": "Як звати ковбоя-іграшку з Toy Story?",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "movies-easy-003-a1",
+        "text": "Гоґвортс"
+      },
+      {
+        "id": "movies-easy-003-a2",
+        "text": "1997"
+      },
+      {
+        "id": "movies-easy-003-a3",
+        "text": "Вуді"
+      },
+      {
+        "id": "movies-easy-003-a4",
+        "text": "Немо"
+      }
+    ],
+    "correctAnswerId": "movies-easy-003-a3"
+  },
+  {
+    "id": "movies-easy-004",
+    "text": "Як називається школа чарівництва Гаррі Поттера?",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "movies-easy-004-a1",
+        "text": "1997"
+      },
+      {
+        "id": "movies-easy-004-a2",
+        "text": "Немо"
+      },
+      {
+        "id": "movies-easy-004-a3",
+        "text": "Сімба"
+      },
+      {
+        "id": "movies-easy-004-a4",
+        "text": "Гоґвортс"
+      }
+    ],
+    "correctAnswerId": "movies-easy-004-a4"
+  },
+  {
+    "id": "movies-easy-005",
+    "text": "У якому році вийшов Titanic Джеймса Кемерона?",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "movies-easy-005-a1",
+        "text": "1997"
+      },
+      {
+        "id": "movies-easy-005-a2",
+        "text": "Немо"
+      },
+      {
+        "id": "movies-easy-005-a3",
+        "text": "Сімба"
+      },
+      {
+        "id": "movies-easy-005-a4",
+        "text": "Нео"
+      }
+    ],
+    "correctAnswerId": "movies-easy-005-a1"
+  },
+  {
+    "id": "movies-easy-006",
+    "text": "Як звати рибу-клоуна з Finding Nemo?",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "movies-easy-006-a1",
+        "text": "Сімба"
+      },
+      {
+        "id": "movies-easy-006-a2",
+        "text": "Немо"
+      },
+      {
+        "id": "movies-easy-006-a3",
+        "text": "Нео"
+      },
+      {
+        "id": "movies-easy-006-a4",
+        "text": "Динозаврів"
+      }
+    ],
+    "correctAnswerId": "movies-easy-006-a2"
+  },
+  {
+    "id": "movies-easy-007",
+    "text": "Як звати лева-спадкоємця у The Lion King?",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "movies-easy-007-a1",
+        "text": "Нео"
+      },
+      {
+        "id": "movies-easy-007-a2",
+        "text": "Динозаврів"
+      },
+      {
+        "id": "movies-easy-007-a3",
+        "text": "Сімба"
+      },
+      {
+        "id": "movies-easy-007-a4",
+        "text": "Кевін"
+      }
+    ],
+    "correctAnswerId": "movies-easy-007-a3"
+  },
+  {
+    "id": "movies-easy-008",
+    "text": "Яке ім'я обирає герой The Matrix?",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "movies-easy-008-a1",
+        "text": "Динозаврів"
+      },
+      {
+        "id": "movies-easy-008-a2",
+        "text": "Кевін"
+      },
+      {
+        "id": "movies-easy-008-a3",
+        "text": "Люк Скайвокер"
+      },
+      {
+        "id": "movies-easy-008-a4",
+        "text": "Нео"
+      }
+    ],
+    "correctAnswerId": "movies-easy-008-a4"
+  },
+  {
+    "id": "movies-easy-009",
+    "text": "Яких доісторичних тварин відтворили в Jurassic Park?",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "movies-easy-009-a1",
+        "text": "Динозаврів"
+      },
+      {
+        "id": "movies-easy-009-a2",
+        "text": "Кевін"
+      },
+      {
+        "id": "movies-easy-009-a3",
+        "text": "Люк Скайвокер"
+      },
+      {
+        "id": "movies-easy-009-a4",
+        "text": "Ельза"
+      }
+    ],
+    "correctAnswerId": "movies-easy-009-a1"
+  },
+  {
+    "id": "movies-easy-010",
+    "text": "Як звати хлопчика у фільмі Home Alone?",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "movies-easy-010-a1",
+        "text": "Люк Скайвокер"
+      },
+      {
+        "id": "movies-easy-010-a2",
+        "text": "Кевін"
+      },
+      {
+        "id": "movies-easy-010-a3",
+        "text": "Ельза"
+      },
+      {
+        "id": "movies-easy-010-a4",
+        "text": "Вуді"
+      }
+    ],
+    "correctAnswerId": "movies-easy-010-a2"
+  },
+  {
+    "id": "movies-medium-001",
+    "text": "Хто зняв Jurassic Park 1993 року?",
+    "category": "Movies",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "movies-medium-001-a1",
+        "text": "Стівен Спілберґ"
+      },
+      {
+        "id": "movies-medium-001-a2",
+        "text": "Віто Корлеоне"
+      },
+      {
+        "id": "movies-medium-001-a3",
+        "text": "До гори Долі"
+      },
+      {
+        "id": "movies-medium-001-a4",
+        "text": "DeLorean"
+      }
+    ],
+    "correctAnswerId": "movies-medium-001-a1"
+  },
+  {
+    "id": "movies-medium-002",
+    "text": "Як звати голову родини Корлеоне у першій частині The Godfather?",
+    "category": "Movies",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "movies-medium-002-a1",
+        "text": "До гори Долі"
+      },
+      {
+        "id": "movies-medium-002-a2",
+        "text": "Віто Корлеоне"
+      },
+      {
+        "id": "movies-medium-002-a3",
+        "text": "DeLorean"
+      },
+      {
+        "id": "movies-medium-002-a4",
+        "text": "Дом Кобб"
+      }
+    ],
+    "correctAnswerId": "movies-medium-002-a2"
+  },
+  {
+    "id": "movies-medium-003",
+    "text": "Куди Фродо має віднести Перстень у The Lord of the Rings?",
+    "category": "Movies",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "movies-medium-003-a1",
+        "text": "DeLorean"
+      },
+      {
+        "id": "movies-medium-003-a2",
+        "text": "Дом Кобб"
+      },
+      {
+        "id": "movies-medium-003-a3",
+        "text": "До гори Долі"
+      },
+      {
+        "id": "movies-medium-003-a4",
+        "text": "Тіхіро"
+      }
+    ],
+    "correctAnswerId": "movies-medium-003-a3"
+  },
+  {
+    "id": "movies-medium-004",
+    "text": "Як називається машина часу у Back to the Future?",
+    "category": "Movies",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "movies-medium-004-a1",
+        "text": "Дом Кобб"
+      },
+      {
+        "id": "movies-medium-004-a2",
+        "text": "Тіхіро"
+      },
+      {
+        "id": "movies-medium-004-a3",
+        "text": "Ґарґантюа"
+      },
+      {
+        "id": "movies-medium-004-a4",
+        "text": "DeLorean"
+      }
+    ],
+    "correctAnswerId": "movies-medium-004-a4"
+  },
+  {
+    "id": "movies-medium-005",
+    "text": "Як звати героя Леонардо ДіКапріо у Inception?",
+    "category": "Movies",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "movies-medium-005-a1",
+        "text": "Дом Кобб"
+      },
+      {
+        "id": "movies-medium-005-a2",
+        "text": "Тіхіро"
+      },
+      {
+        "id": "movies-medium-005-a3",
+        "text": "Ґарґантюа"
+      },
+      {
+        "id": "movies-medium-005-a4",
+        "text": "Ксеноморф"
+      }
+    ],
+    "correctAnswerId": "movies-medium-005-a1"
+  },
+  {
+    "id": "movies-medium-006",
+    "text": "Як звати дівчинку, що потрапляє у світ духів у Spirited Away?",
+    "category": "Movies",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "movies-medium-006-a1",
+        "text": "Ґарґантюа"
+      },
+      {
+        "id": "movies-medium-006-a2",
+        "text": "Тіхіро"
+      },
+      {
+        "id": "movies-medium-006-a3",
+        "text": "Ксеноморф"
+      },
+      {
+        "id": "movies-medium-006-a4",
+        "text": "Велика біла акула"
+      }
+    ],
+    "correctAnswerId": "movies-medium-006-a2"
+  },
+  {
+    "id": "movies-medium-007",
+    "text": "Як називається чорна діра у Interstellar?",
+    "category": "Movies",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "movies-medium-007-a1",
+        "text": "Ксеноморф"
+      },
+      {
+        "id": "movies-medium-007-a2",
+        "text": "Велика біла акула"
+      },
+      {
+        "id": "movies-medium-007-a3",
+        "text": "Ґарґантюа"
+      },
+      {
+        "id": "movies-medium-007-a4",
+        "text": "Пон Джун Хо"
+      }
+    ],
+    "correctAnswerId": "movies-medium-007-a3"
+  },
+  {
+    "id": "movies-medium-008",
+    "text": "Як називається інопланетна істота у франшизі Alien?",
+    "category": "Movies",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "movies-medium-008-a1",
+        "text": "Велика біла акула"
+      },
+      {
+        "id": "movies-medium-008-a2",
+        "text": "Пон Джун Хо"
+      },
+      {
+        "id": "movies-medium-008-a3",
+        "text": "Стівен Спілберґ"
+      },
+      {
+        "id": "movies-medium-008-a4",
+        "text": "Ксеноморф"
+      }
+    ],
+    "correctAnswerId": "movies-medium-008-a4"
+  },
+  {
+    "id": "movies-medium-009",
+    "text": "Яка тварина нападає на плавців у Jaws?",
+    "category": "Movies",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "movies-medium-009-a1",
+        "text": "Велика біла акула"
+      },
+      {
+        "id": "movies-medium-009-a2",
+        "text": "Пон Джун Хо"
+      },
+      {
+        "id": "movies-medium-009-a3",
+        "text": "Стівен Спілберґ"
+      },
+      {
+        "id": "movies-medium-009-a4",
+        "text": "Віто Корлеоне"
+      }
+    ],
+    "correctAnswerId": "movies-medium-009-a1"
+  },
+  {
+    "id": "movies-medium-010",
+    "text": "Хто зняв південнокорейський фільм Parasite?",
+    "category": "Movies",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "movies-medium-010-a1",
+        "text": "Стівен Спілберґ"
+      },
+      {
+        "id": "movies-medium-010-a2",
+        "text": "Пон Джун Хо"
+      },
+      {
+        "id": "movies-medium-010-a3",
+        "text": "Віто Корлеоне"
+      },
+      {
+        "id": "movies-medium-010-a4",
+        "text": "До гори Долі"
+      }
+    ],
+    "correctAnswerId": "movies-medium-010-a2"
+  },
+  {
+    "id": "movies-hard-001",
+    "text": "Який фільм 1927 року часто називають першим повнометражним зі синхронними діалогами?",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "movies-hard-001-a1",
+        "text": "The Jazz Singer"
+      },
+      {
+        "id": "movies-hard-001-a2",
+        "text": "1942"
+      },
+      {
+        "id": "movies-hard-001-a3",
+        "text": "Акіра Куросава"
+      },
+      {
+        "id": "movies-hard-001-a4",
+        "text": "Do Androids Dream of Electric Sheep?"
+      }
+    ],
+    "correctAnswerId": "movies-hard-001-a1"
+  },
+  {
+    "id": "movies-hard-002",
+    "text": "У якому році вперше вийшов Casablanca?",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "movies-hard-002-a1",
+        "text": "Акіра Куросава"
+      },
+      {
+        "id": "movies-hard-002-a2",
+        "text": "1942"
+      },
+      {
+        "id": "movies-hard-002-a3",
+        "text": "Do Androids Dream of Electric Sheep?"
+      },
+      {
+        "id": "movies-hard-002-a4",
+        "text": "Джон Вільямс"
+      }
+    ],
+    "correctAnswerId": "movies-hard-002-a2"
+  },
+  {
+    "id": "movies-hard-003",
+    "text": "Хто зняв японський фільм Seven Samurai?",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "movies-hard-003-a1",
+        "text": "Do Androids Dream of Electric Sheep?"
+      },
+      {
+        "id": "movies-hard-003-a2",
+        "text": "Джон Вільямс"
+      },
+      {
+        "id": "movies-hard-003-a3",
+        "text": "Акіра Куросава"
+      },
+      {
+        "id": "movies-hard-003-a4",
+        "text": "Орсон Веллс"
+      }
+    ],
+    "correctAnswerId": "movies-hard-003-a3"
+  },
+  {
+    "id": "movies-hard-004",
+    "text": "Який роман Філіпа Діка надихнув Blade Runner?",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "movies-hard-004-a1",
+        "text": "Джон Вільямс"
+      },
+      {
+        "id": "movies-hard-004-a2",
+        "text": "Орсон Веллс"
+      },
+      {
+        "id": "movies-hard-004-a3",
+        "text": "Південна Корея"
+      },
+      {
+        "id": "movies-hard-004-a4",
+        "text": "Do Androids Dream of Electric Sheep?"
+      }
+    ],
+    "correctAnswerId": "movies-hard-004-a4"
+  },
+  {
+    "id": "movies-hard-005",
+    "text": "Хто написав музику до Jaws 1975 року?",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "movies-hard-005-a1",
+        "text": "Джон Вільямс"
+      },
+      {
+        "id": "movies-hard-005-a2",
+        "text": "Орсон Веллс"
+      },
+      {
+        "id": "movies-hard-005-a3",
+        "text": "Південна Корея"
+      },
+      {
+        "id": "movies-hard-005-a4",
+        "text": "HAL 9000"
+      }
+    ],
+    "correctAnswerId": "movies-hard-005-a1"
+  },
+  {
+    "id": "movies-hard-006",
+    "text": "Хто зрежисував і зіграв головну роль у Citizen Kane?",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "movies-hard-006-a1",
+        "text": "Південна Корея"
+      },
+      {
+        "id": "movies-hard-006-a2",
+        "text": "Орсон Веллс"
+      },
+      {
+        "id": "movies-hard-006-a3",
+        "text": "HAL 9000"
+      },
+      {
+        "id": "movies-hard-006-a4",
+        "text": "Квентін Тарантіно"
+      }
+    ],
+    "correctAnswerId": "movies-hard-006-a2"
+  },
+  {
+    "id": "movies-hard-007",
+    "text": "Яка країна виробництва фільму Parasite?",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "movies-hard-007-a1",
+        "text": "HAL 9000"
+      },
+      {
+        "id": "movies-hard-007-a2",
+        "text": "Квентін Тарантіно"
+      },
+      {
+        "id": "movies-hard-007-a3",
+        "text": "Південна Корея"
+      },
+      {
+        "id": "movies-hard-007-a4",
+        "text": "2019"
+      }
+    ],
+    "correctAnswerId": "movies-hard-007-a3"
+  },
+  {
+    "id": "movies-hard-008",
+    "text": "Який комп'ютер керує кораблем у 2001: A Space Odyssey?",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "movies-hard-008-a1",
+        "text": "Квентін Тарантіно"
+      },
+      {
+        "id": "movies-hard-008-a2",
+        "text": "2019"
+      },
+      {
+        "id": "movies-hard-008-a3",
+        "text": "The Jazz Singer"
+      },
+      {
+        "id": "movies-hard-008-a4",
+        "text": "HAL 9000"
+      }
+    ],
+    "correctAnswerId": "movies-hard-008-a4"
+  },
+  {
+    "id": "movies-hard-009",
+    "text": "Хто зрежисував Pulp Fiction?",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "movies-hard-009-a1",
+        "text": "Квентін Тарантіно"
+      },
+      {
+        "id": "movies-hard-009-a2",
+        "text": "2019"
+      },
+      {
+        "id": "movies-hard-009-a3",
+        "text": "The Jazz Singer"
+      },
+      {
+        "id": "movies-hard-009-a4",
+        "text": "1942"
+      }
+    ],
+    "correctAnswerId": "movies-hard-009-a1"
+  },
+  {
+    "id": "movies-hard-010",
+    "text": "У якому році Parasite здобув «Золоту пальмову гілку» в Каннах?",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "movies-hard-010-a1",
+        "text": "The Jazz Singer"
+      },
+      {
+        "id": "movies-hard-010-a2",
+        "text": "2019"
+      },
+      {
+        "id": "movies-hard-010-a3",
+        "text": "1942"
+      },
+      {
+        "id": "movies-hard-010-a4",
+        "text": "Акіра Куросава"
+      }
+    ],
+    "correctAnswerId": "movies-hard-010-a2"
+  },
+  {
+    "id": "generalknowledge-easy-001",
+    "text": "Яке природне тіло є супутником Землі?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "generalknowledge-easy-001-a1",
+        "text": "Місяць"
+      },
+      {
+        "id": "generalknowledge-easy-001-a2",
+        "text": "H₂O"
+      },
+      {
+        "id": "generalknowledge-easy-001-a3",
+        "text": "Юпітер"
+      },
+      {
+        "id": "generalknowledge-easy-001-a4",
+        "text": "Сім"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-easy-001-a1"
+  },
+  {
+    "id": "generalknowledge-easy-002",
+    "text": "Яка хімічна формула води?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "generalknowledge-easy-002-a1",
+        "text": "Юпітер"
+      },
+      {
+        "id": "generalknowledge-easy-002-a2",
+        "text": "H₂O"
+      },
+      {
+        "id": "generalknowledge-easy-002-a3",
+        "text": "Сім"
+      },
+      {
+        "id": "generalknowledge-easy-002-a4",
+        "text": "Єна"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-easy-002-a2"
+  },
+  {
+    "id": "generalknowledge-easy-003",
+    "text": "Яка планета Сонячної системи найбільша?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "generalknowledge-easy-003-a1",
+        "text": "Сім"
+      },
+      {
+        "id": "generalknowledge-easy-003-a2",
+        "text": "Єна"
+      },
+      {
+        "id": "generalknowledge-easy-003-a3",
+        "text": "Юпітер"
+      },
+      {
+        "id": "generalknowledge-easy-003-a4",
+        "text": "Марс"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-easy-003-a3"
+  },
+  {
+    "id": "generalknowledge-easy-004",
+    "text": "Скільки континентів у шкільній моделі семи континентів?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "generalknowledge-easy-004-a1",
+        "text": "Єна"
+      },
+      {
+        "id": "generalknowledge-easy-004-a2",
+        "text": "Марс"
+      },
+      {
+        "id": "generalknowledge-easy-004-a3",
+        "text": "Чотири"
+      },
+      {
+        "id": "generalknowledge-easy-004-a4",
+        "text": "Сім"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-easy-004-a4"
+  },
+  {
+    "id": "generalknowledge-easy-005",
+    "text": "Яка валюта Японії?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "generalknowledge-easy-005-a1",
+        "text": "Єна"
+      },
+      {
+        "id": "generalknowledge-easy-005-a2",
+        "text": "Марс"
+      },
+      {
+        "id": "generalknowledge-easy-005-a3",
+        "text": "Чотири"
+      },
+      {
+        "id": "generalknowledge-easy-005-a4",
+        "text": "Париж"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-easy-005-a1"
+  },
+  {
+    "id": "generalknowledge-easy-006",
+    "text": "Яку планету називають Червоною планетою?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "generalknowledge-easy-006-a1",
+        "text": "Чотири"
+      },
+      {
+        "id": "generalknowledge-easy-006-a2",
+        "text": "Марс"
+      },
+      {
+        "id": "generalknowledge-easy-006-a3",
+        "text": "Париж"
+      },
+      {
+        "id": "generalknowledge-easy-006-a4",
+        "text": "Гепард"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-easy-006-a2"
+  },
+  {
+    "id": "generalknowledge-easy-007",
+    "text": "Скільки камер має серце людини?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "generalknowledge-easy-007-a1",
+        "text": "Париж"
+      },
+      {
+        "id": "generalknowledge-easy-007-a2",
+        "text": "Гепард"
+      },
+      {
+        "id": "generalknowledge-easy-007-a3",
+        "text": "Чотири"
+      },
+      {
+        "id": "generalknowledge-easy-007-a4",
+        "text": "Бджоли"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-easy-007-a3"
+  },
+  {
+    "id": "generalknowledge-easy-008",
+    "text": "Яка столиця Франції?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "generalknowledge-easy-008-a1",
+        "text": "Гепард"
+      },
+      {
+        "id": "generalknowledge-easy-008-a2",
+        "text": "Бджоли"
+      },
+      {
+        "id": "generalknowledge-easy-008-a3",
+        "text": "Місяць"
+      },
+      {
+        "id": "generalknowledge-easy-008-a4",
+        "text": "Париж"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-easy-008-a4"
+  },
+  {
+    "id": "generalknowledge-easy-009",
+    "text": "Яка наземна тварина найшвидша на короткій дистанції?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "generalknowledge-easy-009-a1",
+        "text": "Гепард"
+      },
+      {
+        "id": "generalknowledge-easy-009-a2",
+        "text": "Бджоли"
+      },
+      {
+        "id": "generalknowledge-easy-009-a3",
+        "text": "Місяць"
+      },
+      {
+        "id": "generalknowledge-easy-009-a4",
+        "text": "H₂O"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-easy-009-a1"
+  },
+  {
+    "id": "generalknowledge-easy-010",
+    "text": "Які комахи виробляють мед?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Easy",
+    "answers": [
+      {
+        "id": "generalknowledge-easy-010-a1",
+        "text": "Місяць"
+      },
+      {
+        "id": "generalknowledge-easy-010-a2",
+        "text": "Бджоли"
+      },
+      {
+        "id": "generalknowledge-easy-010-a3",
+        "text": "H₂O"
+      },
+      {
+        "id": "generalknowledge-easy-010-a4",
+        "text": "Юпітер"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-easy-010-a2"
+  },
+  {
+    "id": "generalknowledge-medium-001",
+    "text": "Який хімічний символ має золото?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "generalknowledge-medium-001-a1",
+        "text": "Au"
+      },
+      {
+        "id": "generalknowledge-medium-001-a2",
+        "text": "Дезоксирибонуклеїнова кислота"
+      },
+      {
+        "id": "generalknowledge-medium-001-a3",
+        "text": "Сахара"
+      },
+      {
+        "id": "generalknowledge-medium-001-a4",
+        "text": "12"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-medium-001-a1"
+  },
+  {
+    "id": "generalknowledge-medium-002",
+    "text": "Як розшифровується DNA українською?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "generalknowledge-medium-002-a1",
+        "text": "Сахара"
+      },
+      {
+        "id": "generalknowledge-medium-002-a2",
+        "text": "Дезоксирибонуклеїнова кислота"
+      },
+      {
+        "id": "generalknowledge-medium-002-a3",
+        "text": "12"
+      },
+      {
+        "id": "generalknowledge-medium-002-a4",
+        "text": "Канберра"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-medium-002-a2"
+  },
+  {
+    "id": "generalknowledge-medium-003",
+    "text": "Яка найбільша спекотна пустеля світу?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "generalknowledge-medium-003-a1",
+        "text": "12"
+      },
+      {
+        "id": "generalknowledge-medium-003-a2",
+        "text": "Канберра"
+      },
+      {
+        "id": "generalknowledge-medium-003-a3",
+        "text": "Сахара"
+      },
+      {
+        "id": "generalknowledge-medium-003-a4",
+        "text": "Перу"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-medium-003-a3"
+  },
+  {
+    "id": "generalknowledge-medium-004",
+    "text": "Яке число є квадратним коренем із 144?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "generalknowledge-medium-004-a1",
+        "text": "Канберра"
+      },
+      {
+        "id": "generalknowledge-medium-004-a2",
+        "text": "Перу"
+      },
+      {
+        "id": "generalknowledge-medium-004-a3",
+        "text": "0 °C"
+      },
+      {
+        "id": "generalknowledge-medium-004-a4",
+        "text": "12"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-medium-004-a4"
+  },
+  {
+    "id": "generalknowledge-medium-005",
+    "text": "Яка столиця Австралії?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "generalknowledge-medium-005-a1",
+        "text": "Канберра"
+      },
+      {
+        "id": "generalknowledge-medium-005-a2",
+        "text": "Перу"
+      },
+      {
+        "id": "generalknowledge-medium-005-a3",
+        "text": "0 °C"
+      },
+      {
+        "id": "generalknowledge-medium-005-a4",
+        "text": "206"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-medium-005-a1"
+  },
+  {
+    "id": "generalknowledge-medium-006",
+    "text": "У якій сучасній країні розташоване Мачу-Пікчу?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "generalknowledge-medium-006-a1",
+        "text": "0 °C"
+      },
+      {
+        "id": "generalknowledge-medium-006-a2",
+        "text": "Перу"
+      },
+      {
+        "id": "generalknowledge-medium-006-a3",
+        "text": "206"
+      },
+      {
+        "id": "generalknowledge-medium-006-a4",
+        "text": "Na"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-medium-006-a2"
+  },
+  {
+    "id": "generalknowledge-medium-007",
+    "text": "За якої температури вода замерзає за Цельсієм при стандартному тиску?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "generalknowledge-medium-007-a1",
+        "text": "206"
+      },
+      {
+        "id": "generalknowledge-medium-007-a2",
+        "text": "Na"
+      },
+      {
+        "id": "generalknowledge-medium-007-a3",
+        "text": "0 °C"
+      },
+      {
+        "id": "generalknowledge-medium-007-a4",
+        "text": "Азот"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-medium-007-a3"
+  },
+  {
+    "id": "generalknowledge-medium-008",
+    "text": "Скільки кісток зазвичай має скелет дорослої людини?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "generalknowledge-medium-008-a1",
+        "text": "Na"
+      },
+      {
+        "id": "generalknowledge-medium-008-a2",
+        "text": "Азот"
+      },
+      {
+        "id": "generalknowledge-medium-008-a3",
+        "text": "Au"
+      },
+      {
+        "id": "generalknowledge-medium-008-a4",
+        "text": "206"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-medium-008-a4"
+  },
+  {
+    "id": "generalknowledge-medium-009",
+    "text": "Який хімічний символ має натрій?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "generalknowledge-medium-009-a1",
+        "text": "Na"
+      },
+      {
+        "id": "generalknowledge-medium-009-a2",
+        "text": "Азот"
+      },
+      {
+        "id": "generalknowledge-medium-009-a3",
+        "text": "Au"
+      },
+      {
+        "id": "generalknowledge-medium-009-a4",
+        "text": "Дезоксирибонуклеїнова кислота"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-medium-009-a1"
+  },
+  {
+    "id": "generalknowledge-medium-010",
+    "text": "Який газ становить найбільшу частку земної атмосфери?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Medium",
+    "answers": [
+      {
+        "id": "generalknowledge-medium-010-a1",
+        "text": "Au"
+      },
+      {
+        "id": "generalknowledge-medium-010-a2",
+        "text": "Азот"
+      },
+      {
+        "id": "generalknowledge-medium-010-a3",
+        "text": "Дезоксирибонуклеїнова кислота"
+      },
+      {
+        "id": "generalknowledge-medium-010-a4",
+        "text": "Сахара"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-medium-010-a2"
+  },
+  {
+    "id": "generalknowledge-hard-001",
+    "text": "Чому приблизно дорівнює стала Авогадро на моль?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "generalknowledge-hard-001-a1",
+        "text": "6,022 × 10²³"
+      },
+      {
+        "id": "generalknowledge-hard-001-a2",
+        "text": "Улан-Батор"
+      },
+      {
+        "id": "generalknowledge-hard-001-a3",
+        "text": "1919"
+      },
+      {
+        "id": "generalknowledge-hard-001-a4",
+        "text": "W"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-hard-001-a1"
+  },
+  {
+    "id": "generalknowledge-hard-002",
+    "text": "Яка столиця Монголії?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "generalknowledge-hard-002-a1",
+        "text": "1919"
+      },
+      {
+        "id": "generalknowledge-hard-002-a2",
+        "text": "Улан-Батор"
+      },
+      {
+        "id": "generalknowledge-hard-002-a3",
+        "text": "W"
+      },
+      {
+        "id": "generalknowledge-hard-002-a4",
+        "text": "15"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-hard-002-a2"
+  },
+  {
+    "id": "generalknowledge-hard-003",
+    "text": "У якому році підписали Версальський договір?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "generalknowledge-hard-003-a1",
+        "text": "W"
+      },
+      {
+        "id": "generalknowledge-hard-003-a2",
+        "text": "15"
+      },
+      {
+        "id": "generalknowledge-hard-003-a3",
+        "text": "1919"
+      },
+      {
+        "id": "generalknowledge-hard-003-a4",
+        "text": "Тимін"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-hard-003-a3"
+  },
+  {
+    "id": "generalknowledge-hard-004",
+    "text": "Який хімічний символ має вольфрам?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "generalknowledge-hard-004-a1",
+        "text": "15"
+      },
+      {
+        "id": "generalknowledge-hard-004-a2",
+        "text": "Тимін"
+      },
+      {
+        "id": "generalknowledge-hard-004-a3",
+        "text": "Мітохондрія"
+      },
+      {
+        "id": "generalknowledge-hard-004-a4",
+        "text": "W"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-hard-004-a4"
+  },
+  {
+    "id": "generalknowledge-hard-005",
+    "text": "Яке десяткове число відповідає двійковому запису 1111?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "generalknowledge-hard-005-a1",
+        "text": "15"
+      },
+      {
+        "id": "generalknowledge-hard-005-a2",
+        "text": "Тимін"
+      },
+      {
+        "id": "generalknowledge-hard-005-a3",
+        "text": "Мітохондрія"
+      },
+      {
+        "id": "generalknowledge-hard-005-a4",
+        "text": "Ньютон"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-hard-005-a1"
+  },
+  {
+    "id": "generalknowledge-hard-006",
+    "text": "З якою основою зазвичай утворює пару аденін у ДНК?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "generalknowledge-hard-006-a1",
+        "text": "Мітохондрія"
+      },
+      {
+        "id": "generalknowledge-hard-006-a2",
+        "text": "Тимін"
+      },
+      {
+        "id": "generalknowledge-hard-006-a3",
+        "text": "Ньютон"
+      },
+      {
+        "id": "generalknowledge-hard-006-a4",
+        "text": "299 792 458 м/с"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-hard-006-a2"
+  },
+  {
+    "id": "generalknowledge-hard-007",
+    "text": "Яка органела виробляє більшу частину АТФ клітини?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "generalknowledge-hard-007-a1",
+        "text": "Ньютон"
+      },
+      {
+        "id": "generalknowledge-hard-007-a2",
+        "text": "299 792 458 м/с"
+      },
+      {
+        "id": "generalknowledge-hard-007-a3",
+        "text": "Мітохондрія"
+      },
+      {
+        "id": "generalknowledge-hard-007-a4",
+        "text": "1453"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-hard-007-a3"
+  },
+  {
+    "id": "generalknowledge-hard-008",
+    "text": "Яка одиниця SI вимірює силу?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "generalknowledge-hard-008-a1",
+        "text": "299 792 458 м/с"
+      },
+      {
+        "id": "generalknowledge-hard-008-a2",
+        "text": "1453"
+      },
+      {
+        "id": "generalknowledge-hard-008-a3",
+        "text": "6,022 × 10²³"
+      },
+      {
+        "id": "generalknowledge-hard-008-a4",
+        "text": "Ньютон"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-hard-008-a4"
+  },
+  {
+    "id": "generalknowledge-hard-009",
+    "text": "Яка точна швидкість світла у вакуумі в метрах за секунду?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "generalknowledge-hard-009-a1",
+        "text": "299 792 458 м/с"
+      },
+      {
+        "id": "generalknowledge-hard-009-a2",
+        "text": "1453"
+      },
+      {
+        "id": "generalknowledge-hard-009-a3",
+        "text": "6,022 × 10²³"
+      },
+      {
+        "id": "generalknowledge-hard-009-a4",
+        "text": "Улан-Батор"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-hard-009-a1"
+  },
+  {
+    "id": "generalknowledge-hard-010",
+    "text": "У якому році османи захопили Константинополь?",
+    "category": "GeneralKnowledge",
+    "difficulty": "Hard",
+    "answers": [
+      {
+        "id": "generalknowledge-hard-010-a1",
+        "text": "6,022 × 10²³"
+      },
+      {
+        "id": "generalknowledge-hard-010-a2",
+        "text": "1453"
+      },
+      {
+        "id": "generalknowledge-hard-010-a3",
+        "text": "Улан-Батор"
+      },
+      {
+        "id": "generalknowledge-hard-010-a4",
+        "text": "1919"
+      }
+    ],
+    "correctAnswerId": "generalknowledge-hard-010-a2"
+  }
+]
